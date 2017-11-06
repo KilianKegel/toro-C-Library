@@ -86,23 +86,23 @@ in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
 
 ```c
 //
-// welcome.c
+// WELCOME.c
 //
 #include <stdio.h>
 
 int main(int argc, char **argv){
     
-    printf("Welcome, to the jungle\n");
+    printf("WELCOME, to the jungle\n");
     
     return 0;
 }
 ```
 
-welcome.c can be translated in the VS2017 64Bit command line environment by running the build script below:
+WELCOME.c can be translated in the VS2017 64Bit command line environment by running the build script below:
 
 ```bat
-cl /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS welcome.c
-link /NODEFAULTLIB /ENTRY:_MainEntryPointShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION welcome.obj toritoC64R.lib
+cl /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
+link /NODEFAULTLIB /ENTRY:_MainEntryPointShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toritoC64R.lib
 ```
 
 
@@ -112,6 +112,8 @@ The "torito C Library" is still in state of EVALUATION
 Field tests are urgently required.
 
 Feedback is very WELCOME.
+
+A non-EVALUATION-library will be provided for helpful supporters for free.
 
 The functions below are already implemented and carefully tested, every single one of them.
 
@@ -124,7 +126,7 @@ strncmp, strncpy, strpbrk, strspn, strstr, strtok, strtol, strtoul, swprintf, ti
 vsnprintf, vsprintf, vswprintf, wcscat, wcschr, wcscmp, wcscpy, wcscspn, wcslen, wcsncat, wcsncmp, wcsncpy, wcspbrk, wcsrchr, wcsspn, wcsstr, 
 wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 
-A non-EVALUATION-library will be provided for helpful supporters for free.
+
 
 ## Known bugs
 
