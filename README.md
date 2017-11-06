@@ -128,11 +128,12 @@ A non-EVALUATION-library will be provided for helpful supporters for free.
 
 ## Known bugs
 
-1. scanf()/printf()-family's floating point formatting is not (yet) implemented.
-2. strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
+* scanf()/printf()-family's floating point formatting is not (yet) implemented.
+* scanf() "[]"
+* strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.
-3. functions missing e.g. system(), rename(), delete(), settime(), various wide-functions introduced in C95.
-4. <time.h>: UTC-only support. No Daylightsaving, no timezones. 
-5. <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
+* functions missing e.g. system(), rename(), delete(), settime(), various wide-functions introduced in C95.
+* <time.h>: UTC-only support. No Daylightsaving, no timezones. 
+* <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
    have to be used instead.
-6. <locale.h>: support still missing
+* <locale.h>: support still missing
