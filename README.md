@@ -109,9 +109,9 @@ link /NODEFAULTLIB /ENTRY:_MainEntryPointShell /OUT:welcome.efi /SUBSYSTEM:EFI_A
 ## Status
 The "torito C Library" is still in state of EVALUATION
 
-Field tests are required.
+Field tests are urgently required.
 
-Feedback is urgently needed.
+Feedback is very WELCOME.
 
 The functions below are already implemented and carefully tested, every single one of them.
 
