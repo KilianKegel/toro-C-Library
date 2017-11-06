@@ -128,8 +128,8 @@ A non-EVALUATION-library will be provided for helpful supporters for free.
 
 ## Known bugs
 
-* scanf()/printf()-family's floating point formatting is not (yet) implemented.
-* scanf() "[]"
+* printf()-family's format specifiers a,e,f,g not yet implemented
+* scanf()-family's format specifiers [],p,a,e,f,g  not yet implemented
 * strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.
 * functions missing e.g. system(), rename(), delete(), settime(), various wide-functions introduced in C95.
