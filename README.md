@@ -87,7 +87,7 @@ Despite the fact that appetite for destruction was sold 30 Million times, and so
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
 in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
 
-https://www.youtube.com/watch?v=o1tj2zJ2Wvg
+Check out out what they've witheld from us: ;-) https://www.youtube.com/watch?v=o1tj2zJ2Wvg
 
 ```c
 //
