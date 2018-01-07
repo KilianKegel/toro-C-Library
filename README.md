@@ -144,3 +144,13 @@ wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
    have to be used instead.
 * <locale.h>: support still missing
+
+# Revision histrory
+### 20180107/R85
+* added: base 2..36 support to Standard C strol() and stroul()
+* fixed: time() function N/A in Windows build
+* fixed: time base in Windows build is QPC now, not TSC.
+* fixed: gets() functions fails with lines starting with '\n'
+### 20171105/R78
+* initial revision
+
