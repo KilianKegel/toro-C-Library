@@ -1,6 +1,9 @@
 # Torito C Library
 
-The "torito C Library" is an implementation targeting the ANSI/ISO C Standard Library compatibility
+The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
+for Microsoft Visual Studio 2017.
+
+"torito C Library" is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using 
 design --and debug-- infrastructure provided by Microsoft Visual Studio 2017 VS2017.
 
@@ -84,6 +87,8 @@ Despite the fact that appetite for destruction was sold 30 Million times, and so
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
 in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
 
+https://www.youtube.com/watch?v=o1tj2zJ2Wvg
+
 ```c
 //
 // WELCOME.c
@@ -132,8 +137,8 @@ wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 
 * printf()-family's format specifiers a,e,f,g not yet implemented
 * scanf()-family's format specifiers [],p,a,e,f,g  not yet implemented
-* strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
-   Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.
+* 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
+   Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
 * functions missing e.g. system(), rename(), delete(), settime(), various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones. 
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
