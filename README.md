@@ -146,7 +146,7 @@ wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 * <locale.h>: support still missing
 
 # Revision histrory
-### 20180107/R85
+### 20180108/R85
 * added: base 2..36 support to Standard C strol() and stroul()
 * fixed: time() function N/A in Windows build
 * fixed: time base in Windows build is QPC now, not TSC.
