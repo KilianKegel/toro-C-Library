@@ -82,7 +82,7 @@ The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS20
 
 The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
 in "THE C PROGRAMMING LANGUAGE" ("White Book C") is adjusted to today´s need to honor
-the appetite for destruction introduced 30 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
+the appetite for destruction introduced 31 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
 Despite the fact that appetite for destruction was sold 30 Million times, and so became the 
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
 in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
@@ -125,9 +125,9 @@ The functions below are already implemented and carefully tested, every single o
 _ModuleEntryPoint, _iob, _setjmp, _snprintf, _vsnprintf, abs, asctime, atexit, atoi, atol, calloc, clearerr, clock, ctime, difftime, div, exit, 
 fclose, feof, ferror, fflush, fgetc, fgetpos, fgets, fopen, fprintf, fputc, fputs, fread, free, freopen, fscanf, fseek, fsetpos, ftell, fwrite, gets, 
 gmtime, isalnum, isalpha, iscntrl, isdigit, isgraph, islower, isprint, ispunct, isspace, isupper, isxdigit, labs, ldiv, localtime, longjmp, 
-main(argc, argv), malloc, memcmp, memcpy, memmove, memset, mktime, nprintf, perror, printf, putc, putchar, puts, rand, realloc, rewind, scanf, 
+main(argc, argv), malloc, memcmp, memcpy, memmove, memset, mktime, nprintf, perror, printf, putc, putchar, puts, rand, realloc, rewind, remove, scanf, 
 setbuf, setvbuf, snprintf, sprintf, srand, sscanf, strcat, strchr, strcmp, strcpy, strcspn, strefierror, strerror, strftime, strlen, strncat, 
-strncmp, strncpy, strpbrk, strspn, strstr, strtok, strtol, strtoul, swprintf, time, tolower, toupper, ungetc, vfprintf, vfscanf, vprintf, vscanf, 
+strncmp, strncpy, strpbrk, strspn, strstr, strtok, strtol, strtoul, swprintf, time, tmpfile, tmpnam, tolower, toupper, ungetc, vfprintf, vfscanf, vprintf, vscanf, 
 vsnprintf, vsprintf, vswprintf, wcscat, wcschr, wcscmp, wcscpy, wcscspn, wcslen, wcsncat, wcsncmp, wcsncpy, wcspbrk, wcsrchr, wcsspn, wcsstr, 
 wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 
@@ -139,13 +139,15 @@ wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 * scanf()-family's format specifiers [],p,a,e,f,g  not yet implemented
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
-* functions missing e.g. system(), rename(), delete(), settime(), various wide-functions introduced in C95.
+* functions missing e.g. system(), rename(), <del>remove()</del>, settime(), various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones. 
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
    have to be used instead.
 * <locale.h>: support still missing
 
 # Revision history
+### 20180130/R86
+* added getchar(), remove(), tmpfile(), tmpnam()
 ### 20180108/R85
 * fixed: strol() and stroul() dosn't support base 2..36 required by the Standard C Library
 * fixed: time() function N/A in Windows build
