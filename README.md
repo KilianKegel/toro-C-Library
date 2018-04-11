@@ -122,11 +122,12 @@ A non-EVALUATION-library will be provided for helpful supporters for free.
 
 The functions below are already implemented and carefully tested, every single one of them.
 
-_ModuleEntryPoint, _iob, _setjmp, _snprintf, _vsnprintf, abs, asctime, atexit, atoi, atol, calloc, clearerr, clock, ctime, difftime, div, exit, 
+_ModuleEntryPoint, _iob, _setjmp, _snprintf, _vsnprintf, abort, abs, asctime, atexit, atoi, atol, calloc, clearerr, clock, ctime, difftime, div, exit, 
 fclose, feof, ferror, fflush, fgetc, fgetpos, fgets, fopen, fprintf, fputc, fputs, fread, free, freopen, fscanf, fseek, fsetpos, ftell, fwrite, gets, 
 gmtime, isalnum, isalpha, iscntrl, isdigit, isgraph, islower, isprint, ispunct, isspace, isupper, isxdigit, labs, ldiv, localtime, longjmp, 
-main(argc, argv), malloc, memcmp, memcpy, memmove, memset, mktime, nprintf, perror, printf, putc, putchar, puts, rand, realloc, rewind, remove, scanf, 
-setbuf, setvbuf, snprintf, sprintf, srand, sscanf, strcat, strchr, strcmp, strcpy, strcspn, strefierror, strerror, strftime, strlen, strncat, 
+main(argc, argv), malloc, memcmp, memcpy, memmove, memset, mktime, nprintf, perror, printf, putc, putchar, puts, raise, 
+rand, realloc, rewind, remove, scanf, 
+setbuf, setvbuf, signal, snprintf, sprintf, srand, sscanf, strcat, strchr, strcmp, strcpy, strcspn, strefierror, strerror, strftime, strlen, strncat, 
 strncmp, strncpy, strpbrk, strspn, strstr, strtok, strtol, strtoul, swprintf, time, tmpfile, tmpnam, tolower, toupper, ungetc, vfprintf, vfscanf, vprintf, vscanf, 
 vsnprintf, vsprintf, vswprintf, wcscat, wcschr, wcscmp, wcscpy, wcscspn, wcslen, wcsncat, wcsncmp, wcsncpy, wcspbrk, wcsrchr, wcsspn, wcsstr, 
 wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
@@ -147,6 +148,10 @@ atof(),strtof(),strtod(),getenv(),bsearch(),qsort(),mblen(),mbtowc(),wctomb(),mb
 * <locale.h>: support still missing
 
 # Revision history
+### 20180411/R95
+* add signal(), raise() and abort() functions
+* fixed argc/argv handling according to
+  https://msdn.microsoft.com/en-us/library/a1y7w461.aspx
 ### 20180130/R86
 * added getchar(), remove(), tmpfile(), tmpnam()
 ### 20180108/R85
