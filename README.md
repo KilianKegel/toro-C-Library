@@ -103,9 +103,10 @@ int main(int argc, char **argv){
 }
 ```
 
-WELCOME.c can be translated in the VS2017 64Bit command line environment by running the build script below:
+WELCOME.c can be translated in the VS2017 64Bit command line environment by running the build.bat script below:
 
 ```bat
+rem ### build.bat ####################################
 cl /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
 link /NODEFAULTLIB /ENTRY:_MainEntryPointShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toritoC64R.lib
 ```
@@ -148,6 +149,9 @@ atof(),strtof(),strtod(),getenv(),bsearch(),qsort(),mblen(),mbtowc(),wctomb(),mb
 * <locale.h>: support still missing
 
 # Revision history
+### 20180508
+* added WELCOME.c sample
+* added BUILD.BAT sample
 ### 20180411/R95
 * add signal(), raise() and abort() functions
 * fixed argc/argv handling according to
