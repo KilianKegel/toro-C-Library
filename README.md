@@ -141,14 +141,17 @@ wcstok, wmemcmp, wmemcpy, wmemmove, wprintf.
 * scanf()-family's format specifiers [],p,a,e,f,g  not yet implemented
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
-* functions missing e.g. system(), rename(), <del>remove()</del>, settime(), vsscanf()
-atof(),strtof(),strtod(),getenv(),bsearch(),qsort(),mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
+* functions missing e.g. system(), rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
+atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones. 
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
    have to be used instead.
 * <locale.h>: support still missing
 
 # Revision history
+### 20180717/R101
+* add qsort(), vsscanf()
+* fixed calloc()
 ### 20180508
 * added WELCOME.c sample
 * added BUILD.BAT sample
