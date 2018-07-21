@@ -105,11 +105,11 @@ A non-EVALUATION-library will be provided for helpful supporters for free.
 
 The functions below are already implemented and carefully tested, every single one of them, except otherwise noted.
 
-## Diagnostics <assert.h>
-|  functtion  | annotation|
+#### Diagnostics <assert.h>
+|  function  | annotation|
 |--------|----------|
 |```void _assert (const char *,const char *,unsigned)```| C90, MSFT implementation for assert macro|
-## Character handling <ctype.h>
+#### Character handling <ctype.h>
 |function|annotation|
 |--------|----------|
 |```int isalnum(int)```|C90, function is implemented|
@@ -125,26 +125,26 @@ The functions below are already implemented and carefully tested, every single o
 |```int isxdigit(int)```|C90, function is implemented|
 |```int tolower(int)```|C90, function is implemented|
 |```int toupper(int)```|C90, function is implemented|
-## Errors <errno.h>
+#### Errors <errno.h>
 |function|annotation|
 |--------|----------|
 |```int *_errno(void)```|C90, MSFT implementation for errno macro
-## Localization <locale.h>
+#### Localization <locale.h>
 |function|annotation|
 |--------|----------|
 |```char *setlocale(int category, const char *locale);```|C90, function is not yetimplemented|
 |```struct lconv *localeconv(void)```|C90, function is not yet implemented|
-## Nonlocal jumps <setjmp.h>
+#### Nonlocal jumps <setjmp.h>
 |function|annotation|
 |--------|----------|
 |```int setjmp(jmp_buf env)```|C90,  \_setjmp function is implemented
 |```void longjmp(jmp_buf env, int val)```|C90, function is implemented|
-## Signal handling <signal.h>
+#### Signal handling <signal.h>
 |function|annotation|
 |--------|----------|
 |```void (*signal(int sig, void (*func)(int)))(int)```|C90, function is implemented|
 |```int raise(int sig)```|C90, function is implemented|
-## Input/output <stdio.h>
+#### Input/output <stdio.h>
 |  functtion  | annotation|
 |--------|----------|
 |```int remove(const char *filename)```|C90, function is implemented|
@@ -194,7 +194,7 @@ The functions below are already implemented and carefully tested, every single o
 |```int ferror(FILE *stream)```|C90, function is implemented|
 |```void perror(const char *s)```|C90, function is implemented|
 
-## General utilities <stdlib.h>
+#### General utilities <stdlib.h>
 |  functtion  | annotation|
 |--------|----------|
 |```double atof(const char *nptr)```|C90, function is not yet implemented|
@@ -227,7 +227,7 @@ The functions below are already implemented and carefully tested, every single o
 |```size_t wcstombs(char *  s,const wchar_t *  pwcs, size_t n)```|C90, function is not yet implemented|
 
 
-## String handling <string.h>
+#### String handling <string.h>
 |  functtion  | annotation|
 |--------|----------|
 |```void *memcpy(void *  s1,const void *  s2, size_t n)```|C90, function is implemented|
@@ -253,7 +253,7 @@ The functions below are already implemented and carefully tested, every single o
 |```char *strerror(int errnum)```|C90, function is implemented|
 |```size_t strlen(const char *s)```|C90, function is implemented|
 
-## Date and time <time.h>
+#### Date and time <time.h>
 |  functtion  | annotation|
 |--------|----------|
 |```clock_t clock(void)```|C90, function is implemented|
