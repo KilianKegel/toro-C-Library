@@ -134,7 +134,7 @@ atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),
 ### 20180130/R86
 * added getchar(), remove(), tmpfile(), tmpnam()
 ### 20180108/R85
-* fixed: strol() and stroul() dosn't support base 2..36 required by the Standard C Library
+* fixed: strol() and stroul() doesn't support base 2..36 required by the Standard C Library
 * fixed: time() function N/A in Windows build
 * fixed: time base in Windows build is QPC now, not TSC.
 * fixed: gets() functions fails with lines starting with '\n'
