@@ -41,7 +41,7 @@
 |  functtion  | annotation|
 |--------|----------|
 |```int remove(const char *filename)```|C90, function is implemented|
-|```int rename(const char *old, const char *new)```|C90, function is implemented|
+|```int rename(const char *old, const char *new)```|C90, function is not yet implemented|
 |```FILE *tmpfile(void)```|C90, function is implemented|
 |```char *tmpnam(char *s)```|C90, function is implemented|
 |```int fclose(FILE *stream)```|C90, function is implemented|
