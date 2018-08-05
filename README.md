@@ -111,6 +111,7 @@ The functions below are already implemented and carefully tested, every single o
 
 * printf()-family's format specifiers a,e,f,g not yet implemented
 * scanf()-family's format specifiers [],p,a,e,f,g  not yet implemented
+* file operations does not yet support drive mappings and path
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
 * functions missing e.g. system(), rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
