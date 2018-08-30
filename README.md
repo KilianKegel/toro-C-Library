@@ -4,12 +4,12 @@ The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2017.
 
 "torito C Library" is an implementation targeting the ANSI/ISO C Standard Library compatibility
-to create applications for different operating systems using 
+to create applications for different operating systems using
 design --and debug-- infrastructure provided by Microsoft Visual Studio 2017 VS2017.
 
-## Goal 
+## Goal
 
-The "torito C Library" is designed to enable the developer to create 
+The "torito C Library" is designed to enable the developer to create
 Standard C programs for UEFI Shell, Windows NT and Linux (in future releases)
 running in x86-64 mode. Standard C compliant source code shall be easily portable to operating systems
 supported by "torito C Library".
@@ -32,7 +32,7 @@ and choosing the OS-dependent /ENTRY:_ModuleEntryPoint.
 ## Approach
 
 The C-Standards mentioned above leave some freedom for a particular library implementation;
-this affects return values that provide flags beside beeing only 'nonzero' as specified 
+this affects return values that provide flags beside beeing only 'nonzero' as specified
 or different handling of text vs. binary mode for file operations.
 
 C-Library vendors usually describe their own specific details, but not the Standard C requirements.
@@ -52,7 +52,7 @@ The developer using "torito C Library" benefits from this approach because the e
 
 With the disappearance of MSDOS as a simple, single threaded, unprotected operating system with full hardware access to user programs on upcoming personal computer models the UEFI shell was intended to be the successor of MSDOS.
 
-But the lack of an established, well known programming interface (as is the Standard C library) 
+But the lack of an established, well known programming interface (as is the Standard C library)
 makes it cumbersome to get started on UEFI Shell programming.
 
 ## Reimplementing LIBCMT.LIB for WinNT
@@ -65,7 +65,7 @@ The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS20
 The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
 in "THE C PROGRAMMING LANGUAGE" ("White Book C") is adjusted to today´s need to honor
 the *appetite for destruction* introduced 31 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
-Despite the fact that *appetite for destruction* was sold 30 Million times, and so became the 
+Despite the fact that *appetite for destruction* was sold 30 Million times, and so became the
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
 in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
 
@@ -78,9 +78,9 @@ Check out out what they've witheld from us: ;-) https://www.youtube.com/watch?v=
 #include <stdio.h>
 
 int main(int argc, char **argv){
-    
+
     printf("WELCOME, to the jungle\n");
-    
+
     return 0;
 }
 ```
@@ -116,12 +116,15 @@ The functions below are already implemented and carefully tested, every single o
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
 * functions missing e.g. system(), rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
 atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
-* <time.h>: UTC-only support. No Daylightsaving, no timezones. 
+* <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
    have to be used instead.
 * <locale.h>: support still missing
 
 # Revision history
+### 20180830/R102
+* add system() library function
+* improved stability of memory management
 ### 20180717/R101
 * add qsort(), vsscanf()
 * fixed calloc()
