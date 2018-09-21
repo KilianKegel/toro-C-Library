@@ -120,7 +120,7 @@ The functions below are already implemented and carefully tested, every single o
 * file operations does not yet support drive mappings and path
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
-* functions missing e.g. system(), rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
+* functions missing e.g. <del>system()</del>, rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
 atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
