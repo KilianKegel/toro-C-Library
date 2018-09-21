@@ -23,8 +23,14 @@ The "torito C Library" shall provide full library compatibility with
 ### Forwards to the roots
 Extentions to these standards (ISO 9899:1999 etc.), "secure" functions xxxx_s or Microsoft specific add-ons will not be implemented into "torito C Library".
 
+Be aware, that functions like stricmp() (case sensitive string handling), itoa() (integer to string conversion)
+and fopen()-mode-strings like ``` "rt"```, ``` "wt"``` (textmode read/write, just use ``` "r"```, ``` "w"``` instead)
+are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
+
+https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf
+
 As long as the developer moves within these standards and does not use
- any OS-specific interface or platform dependent idiosyncrasy, the created
+any OS-specific interface or platform dependent idiosyncrasy, the created
 executable shall be producible merely by linking the object modules against "torito C Library"
 and choosing the OS-dependent /ENTRY:_ModuleEntryPoint.
 
@@ -39,7 +45,7 @@ C-Library vendors usually describe their own specific details, but not the Stand
 Using and relying on such implementation-specific details makes the source code non-portable
 to other C-Libraries, e.g. GLIBC.
 
-The "torito C Library" is intended to be identical in all aspects to functions specified in ANSI C,C90 and C95 provided in LIBCMT.LIB that comes with VS2017.
+The "torito C Library" is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2017.
 (It is assumed, that LIBCMT.LIB of VS2017 is compliant to aforementioned standards.)
 
 Doing so, the development of "torito C Library" itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
@@ -114,7 +120,7 @@ The functions below are already implemented and carefully tested, every single o
 * file operations does not yet support drive mappings and path
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
-* functions missing e.g. <del>system()</del>, rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
+* functions missing e.g. system(), rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
 atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
@@ -122,6 +128,8 @@ atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),
 * <locale.h>: support still missing
 
 # Revision history
+### 20180921/R107
+* add VS2017/15.8 support (Just My Code)
 ### 20180830/R102
 * add system() library function
 * improved stability of memory management
