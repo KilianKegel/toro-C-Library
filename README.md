@@ -115,8 +115,8 @@ The functions below are already implemented and carefully tested, every single o
 
 ## Known bugs
 
-* printf()-family's format specifiers a,e,f,g not yet implemented
-* scanf()-family's format specifiers [],p,a,e,f,g  not yet implemented
+* printf()-family's format specifiers e,f,g not yet implemented
+* scanf()-family's format specifiers <del>[]</del>,<del>p</del>,e,f,g,C,S not yet implemented
 * file operations does not yet support drive mappings and path
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
@@ -128,6 +128,10 @@ atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),
 * <locale.h>: support still missing
 
 # Revision history
+### 20181112/R110
+* add %[] scanset format specifier to scanf-family
+* add %p pointer format specifier to scanf-family
+* fixed token count bug in scanf-family
 ### 20180921/R107
 * add VS2017/15.8 support (Just My Code)
 ### 20180830/R102
