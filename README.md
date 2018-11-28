@@ -117,7 +117,7 @@ The functions below are already implemented and carefully tested, every single o
 
 * printf()-family's format specifiers e,f,g not yet implemented
 * scanf()-family's format specifiers <del>[]</del>,<del>p</del>,e,f,g,C,S not yet implemented
-* file operations does not yet support drive mappings and path
+* 20181129: <del>file operations does not yet support drive mappings and path</del>
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
 * functions missing e.g. <del>system()</del>, rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
@@ -128,6 +128,10 @@ atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),
 * <locale.h>: support still missing
 
 # Revision history
+### 20181129/R116
+* add _initterm support, methods called internally during the initialization of a C++ program, according to 
+  https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/initterm-initterm-e?view=vs-2017
+* add drive and path support to fopen()
 ### 20181112/R110
 * add %[] scanset format specifier to scanf-family
 * add %p pointer format specifier to scanf-family
