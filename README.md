@@ -128,6 +128,13 @@ atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),
 * <locale.h>: support still missing
 
 # Revision history
+### 20181216/R119
+* add missing memchr() from string.h
+* add wctype.h related functions:
+    iswalnum(), iswalpha(), iswblank(), iswcntrl(), iswctype(), 
+    iswdigit(), iswgraph(), iswlower(), iswprint(), iswpunct(), 
+    iswspace(), iswupper(), iswxdigit(), towctrans(), towlower(),
+    towupper(), wctrans(), wctype()
 ### 20181129/R116
 * add _initterm support, methods called internally during the initialization of a C++ program, according to 
   https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/initterm-initterm-e?view=vs-2017

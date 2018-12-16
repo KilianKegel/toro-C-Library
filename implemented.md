@@ -134,7 +134,7 @@
 |```int strcoll(const char *s1, const char *s2)```|C90, function is not yet implemented|
 |```int strncmp(const char *s1, const char *s2, size_t n)```|C90, function is implemented|
 |```size_t strxfrm(char *  s1,const char *  s2, size_t n)```|C90, function is not yet implemented|
-|```void *memchr(const void *s, int c, size_t n)```|C90, function is not yet implemented|
+|```void *memchr(const void *s, int c, size_t n)```|C90, function is implemented|
 |```char *strchr(const char *s, int c)```|C90, function is implemented|
 |```size_t strcspn(const char *s1, const char *s2)```|C90, function is implemented|
 |```char *strpbrk(const char *s1, const char *s2)```|C90, function is implemented|
@@ -214,3 +214,26 @@
 |```size_t wcrtomb(char *  s, wchar_t wc,mbstate_t *  ps)```|C95, function is not yet implemented|
 |```size_t mbsrtowcs(wchar_t *  dst,const char **  src, size_t len,mbstate_t *  ps)```|C95, function is not yet implemented|
 |```size_t wcsrtombs(char *  dst,const wchar_t **  src, size_t len,mbstate_t *  ps)```|C95, function is not yet implemented|
+
+#### Wide character classification and mapping utilities <wctype.h>
+|  functtion  | annotation|
+|--------|----------|
+|```int iswalnum(wint_t wc)```|C95, function is implemented|
+|```int iswalpha(wint_t wc)```|C95, function is implemented|
+|```int iswblank(wint_t wc)```|C99, function is implemented|
+|```int iswcntrl(wint_t wc)```|C95, function is implemented|
+|```int iswdigit(wint_t wc)```|C95, function is implemented|
+|```int iswgraph(wint_t wc)```|C95, function is implemented|
+|```int iswlower(wint_t wc)```|C95, function is implemented|
+|```int iswprint(wint_t wc)```|C95, function is implemented|
+|```int iswpunct(wint_t wc)```|C95, function is implemented|
+|```int iswspace(wint_t wc)```|C95, function is implemented|
+|```int iswupper(wint_t wc)```|C95, function is implemented|
+|```int iswxdigit(wint_t wc)```|C95, function is implemented|
+|```int iswctype(wint_t wc, wctype_t desc)```|C95, function is implemented|
+|```wctype_t wctype(const char *property)```|C95, function is implemented|
+|```wint_t towlower(wint_t wc)```|C95, function is implemented|
+|```wint_t towupper(wint_t wc)```|C95, function is implemented|
+|```wint_t towctrans(wint_t wc, wctrans_t desc)```|C95, function is implemented|
+|```wctrans_t wctrans(const char *property)```|C95, function is implemented|
+
