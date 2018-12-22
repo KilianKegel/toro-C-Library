@@ -125,12 +125,14 @@ atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
    have to be used instead.
-* <locale.h>: support still missing
+* <locale.h>: support for C-locale
 
 # Revision history
+### 20181221/R122
+* add <locale.h> related: setlocale(), localeconv() - supporting C-locale only
 ### 20181216/R119
 * add missing memchr() from string.h
-* add wctype.h related functions:
+* add <wctype.h> related functions:
     iswalnum(), iswalpha(), iswblank(), iswcntrl(), iswctype(), 
     iswdigit(), iswgraph(), iswlower(), iswprint(), iswpunct(), 
     iswspace(), iswupper(), iswxdigit(), towctrans(), towlower(),
