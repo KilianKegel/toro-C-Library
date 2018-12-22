@@ -25,8 +25,8 @@
 #### Localization <locale.h>
 |function|annotation|
 |--------|----------|
-|```char *setlocale(int category, const char *locale);```|C90, function is not yet implemented|
-|```struct lconv *localeconv(void)```|C90, function is not yet implemented|
+|```char *setlocale(int category, const char *locale);```|C90, function is implemented (C-locale)|
+|```struct lconv *localeconv(void)```|C90, function is implemented (C-locale)|
 #### Nonlocal jumps <setjmp.h>
 |function|annotation|
 |--------|----------|
@@ -38,7 +38,7 @@
 |```void (*signal(int sig, void (*func)(int)))(int)```|C90, function is implemented|
 |```int raise(int sig)```|C90, function is implemented|
 #### Input/output <stdio.h>
-|  functtion  | annotation|
+|  function  | annotation|
 |--------|----------|
 |```int remove(const char *filename)```|C90, function is implemented|
 |```int rename(const char *old, const char *new)```|C90, function is not yet implemented|
