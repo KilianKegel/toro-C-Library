@@ -70,7 +70,7 @@ The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS20
 
 The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
 in "THE C PROGRAMMING LANGUAGE" ("White Book C") is adjusted to today´s need to honor
-the *appetite for destruction* introduced 31 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
+the *appetite for destruction* introduced 32 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
 Despite the fact that *appetite for destruction* was sold 30 Million times, and so became the
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
 in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
@@ -116,18 +116,20 @@ The functions below are already implemented and carefully tested, every single o
 ## Known bugs
 
 * printf()-family's format specifiers e,f,g not yet implemented
-* scanf()-family's format specifiers <del>[]</del>,<del>p</del>,e,f,g,C,S not yet implemented
+* scanf()-family's format specifiers <del>[],p</del>,e,f,g,C,S not yet implemented
 * 20181129: <del>file operations does not yet support drive mappings and path</del>
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
 * functions missing e.g. <del>system()</del>, rename(), <del>remove()</del>, settime(), <del>vsscanf()</del>
 atof(),strtof(),strtod(),getenv(),bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
-* <math.h> related functions will not be implemented, the original Microsoft .OBJ modules
-   have to be used instead.
-* <locale.h>: support for C-locale
+* <math.h> not yet implemented
+* <locale.h>: C-locale-only support
 
 # Revision history
+### 20190109/R123
+* add getenv()
+* add rename()
 ### 20181221/R122
 * add <locale.h> related: setlocale(), localeconv() - supporting C-locale only
 ### 20181216/R119

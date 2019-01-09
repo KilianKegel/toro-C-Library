@@ -41,7 +41,7 @@
 |  function  | annotation|
 |--------|----------|
 |```int remove(const char *filename)```|C90, function is implemented|
-|```int rename(const char *old, const char *new)```|C90, function is not yet implemented|
+|```int rename(const char *old, const char *new)```|C90, function is implemented|
 |```FILE *tmpfile(void)```|C90, function is implemented|
 |```char *tmpnam(char *s)```|C90, function is implemented|
 |```int fclose(FILE *stream)```|C90, function is implemented|
@@ -105,7 +105,7 @@
 |```void abort(void)```|C90, function is implemented|
 |```int atexit(void (*func)(void))```|C90, function is implemented|
 |```void exit(int status)```|C90, function is implemented|
-|```char *getenv(const char *name)```|C90, function is not yet implemented|
+|```char *getenv(const char *name)```|C90, function is implemented|
 |```int system(const char *string)```|C90, function is implemented|
 |```void *bsearch(const void *key, const void *base,size_t nmemb, size_t size,int (*compar)(const void *, const void *))```|C90, function is not yet implemented|
 |```void qsort(void *base, size_t nmemb, size_t size,int (*compar)(const void *, const void *))```|C90, function is implemented|
