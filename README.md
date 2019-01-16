@@ -127,6 +127,11 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * <locale.h>: C-locale-only support
 
 # Revision history
+### 20190116/R124
+* fixed single '\r', ASCII 0x0D, carriage return, that appears w/o '\n', ASCII 0x0A, line feed
+  in a file, opened in text mode, is handled wrongly.
+  NOTE: ftell(), fgetpos(), fsetpos() in textmode is implemented differently.
+        Unable to reimplement massive LIBCMT.lib bugs, when '\n' or Ctrl-Z are present in the test file
 ### 20190109/R123
 * add getenv()
 * add rename()
