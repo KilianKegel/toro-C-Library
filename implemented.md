@@ -2,6 +2,7 @@
 |  function  | annotation|
 |--------|----------|
 |```void _assert (const char *,const char *,unsigned)```| C90, MSFT implementation for assert macro|
+|```void _wassert (const wchar_t *,const wchar_t *,unsigned)```| C90, MSFT implementation for assert macro|
 #### Character handling <ctype.h>
 |function|annotation|
 |--------|----------|

@@ -127,13 +127,17 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * <locale.h>: C-locale-only support
 
 # Revision history
+### 20190410/R126
+* fixed: scanf() related functions fails to terminate tokens, e.g. sscanf("123:456","%d:%d",&n1,&n2)
+* fixed: qsort() fails if number of elements (nmemb) is 0
+* add _wassert() required by newer assert-macro implementations
 ### 20190116/R124
 * fixed single '\r', ASCII 0x0D, carriage return, that appears w/o '\n', ASCII 0x0A, line feed
   in a file, opened in text mode, is handled wrongly.
   
   NOTE: ftell(), fgetpos(), fsetpos() in textmode is implemented differently.
   
-        Unable to reimplement massive LIBCMT.lib bugs, when '\n' or Ctrl-Z is present in the text file
+        Unable to reimplement LIBCMT.lib bugs, when '\n' or Ctrl-Z is present in the text file
 ### 20190109/R123
 * add getenv()
 * add rename()
