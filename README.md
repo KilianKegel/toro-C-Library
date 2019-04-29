@@ -27,7 +27,7 @@ Be aware, that functions like stricmp() (case sensitive string handling), itoa()
 and fopen()-mode-strings like ``` "rt"```, ``` "wt"``` (textmode read/write, just use ``` "r"```, ``` "w"``` instead)
 are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
 
-https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf
+[ANSI C Specification](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf)
 
 As long as the developer moves within these standards and does not use
 any OS-specific interface or platform dependent idiosyncrasy, the created
@@ -47,6 +47,8 @@ to other C-Libraries, e.g. GLIBC.
 
 The "torito C Library" is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2017.
 (It is assumed, that LIBCMT.LIB of VS2017 is compliant to aforementioned standards.)
+
+[Microsoft C Language Reference](https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference?view=vs-2019)
 
 Doing so, the development of "torito C Library" itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
 with VS2017 are utilized instead.
