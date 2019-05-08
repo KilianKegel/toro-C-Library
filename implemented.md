@@ -26,7 +26,7 @@
 #### Localization <locale.h>
 |function|annotation|
 |--------|----------|
-|```char *setlocale(int category, const char *locale);```|C90, function is implemented (C-locale)|
+|```char *setlocale(int category, const char *locale)```|C90, function is implemented (C-locale)|
 |```struct lconv *localeconv(void)```|C90, function is implemented (C-locale)|
 #### Nonlocal jumps <setjmp.h>
 |function|annotation|
