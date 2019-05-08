@@ -89,7 +89,7 @@
 |```void perror(const char *s)```|C90, function is implemented|
 
 #### General utilities <stdlib.h>
-|  functtion  | annotation|
+|  function  | annotation|
 |--------|----------|
 |```double atof(const char *nptr)```|C90, function is not yet implemented|
 |```int atoi(const char *nptr)```|C90, function is implemented|
@@ -122,7 +122,7 @@
 
 
 #### String handling <string.h>
-|  functtion  | annotation|
+|  function  | annotation|
 |--------|----------|
 |```void *memcpy(void *  s1,const void *  s2, size_t n)```|C90, function is implemented|
 |```void *memmove(void *s1, const void *s2, size_t n)```|C90, function is implemented|
@@ -148,7 +148,7 @@
 |```size_t strlen(const char *s)```|C90, function is implemented|
 
 #### Date and time <time.h>
-|  functtion  | annotation|
+|  function  | annotation|
 |--------|----------|
 |```clock_t clock(void)```|C90, function is implemented|
 |```double difftime(time_t time1, time_t time0)```|C90, function is implemented|
@@ -161,7 +161,7 @@
 |```size_t strftime(char *  s,size_t maxsize,const char *  format,const struct tm *  timeptr)```|C90, function is implemented|
 
 #### Extended multibyte/wide character utilities <wchar.h>
-|  functtion  | annotation|
+|  function  | annotation|
 |--------|----------|
 |```int fwprintf(FILE *  stream,const wchar_t *  format, ...)```|C95, function is not yet implemented|
 |```int fwscanf(FILE *  stream,const wchar_t *  format, ...)```|C95, function is not yet implemented|
@@ -217,7 +217,7 @@
 |```size_t wcsrtombs(char *  dst,const wchar_t **  src, size_t len,mbstate_t *  ps)```|C95, function is not yet implemented|
 
 #### Wide character classification and mapping utilities <wctype.h>
-|  functtion  | annotation|
+|  function  | annotation|
 |--------|----------|
 |```int iswalnum(wint_t wc)```|C95, function is implemented|
 |```int iswalpha(wint_t wc)```|C95, function is implemented|
