@@ -129,6 +129,8 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * <locale.h>: C-locale-only support
 
 # Revision history
+### 20190621/R133
+* add VS2019 compatibility, remove library dependancy from compiler version
 ### 20190410/R126
 * fixed: scanf() related functions fails to terminate tokens, e.g. sscanf("123:456","%d:%d",&n1,&n2)
 * fixed: qsort() fails if number of elements (nmemb) is 0
