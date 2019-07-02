@@ -71,7 +71,7 @@ The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS20
 ## HELLO is now WELCOME / *appetite for destruction*
 
 The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
-in "THE C PROGRAMMING LANGUAGE" ("White Book C") is adjusted to today´s need to honor
+in "THE C PROGRAMMING LANGUAGE" ("White Book") is adjusted to today´s need to honor
 the [*appetite for destruction*](https://en.wikipedia.org/wiki/Appetite_for_Destruction "") introduced 32 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
 Despite the fact that *appetite for destruction* was sold 30 Million times, and so became the
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
