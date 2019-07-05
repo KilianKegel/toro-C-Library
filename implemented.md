@@ -3,7 +3,7 @@
             <tr><td>void _assert (const char *,const char *,unsigned)</td><td>C90, MSFT implementation for assert macro</td></tr>
             <tr><td>void _wassert (const wchar_t *,const wchar_t *,unsigned)</td><td>C90, MSFT implementation for assert macro</td></tr>
             <tr> <th colspan="2">Character handling < ctype.h ></th></tr>
-            <tr><td>int isalnum(int)</td><td>C90, is implemented</td>   </tr>
+            <tr><td>int [isalnum(int)](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019)</td><td>C90, is implemented</td>   </tr>
             <tr><td>int isalpha(int)</td><td>C90, is implemented</td>   </tr>
             <tr><td>int iscntrl(int)</td><td>C90, is implemented</td>   </tr>
             <tr><td>int isdigit(int)</td><td>C90, is implemented</td>   </tr>
