@@ -126,9 +126,10 @@ The functions below are already implemented and carefully tested, every single o
 * functions missing e.g. <del>system(), rename(), remove()</del>, settime(), <del>vsscanf()</del>
 atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
+* <locale.h>: C-locale-only support
 * <math.h> not yet implemented
 * CTRL-C interception not yet implemented
-* <locale.h>: C-locale-only support
+
 
 # Revision history
 ### 20190621/R133
