@@ -66,7 +66,7 @@ makes it cumbersome to get started on UEFI Shell programming.
 
 ## Reimplementing LIBCMT.LIB for WinNT
 
-The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS2017 when the RELEASE target is UEFI shell (or Linux -- in future releases)
+The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS2017 when the RELEASE target is UEFI shell (or Linux -- in future releases).
 
 
 ## HELLO is now WELCOME / *appetite for destruction*
