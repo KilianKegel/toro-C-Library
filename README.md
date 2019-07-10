@@ -191,6 +191,5 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 ### 20171105/R78
 * initial revision
 
-### Footnotes
-#### 1
+#### footnote 1
 Console access is _not specified at all_ by Standard C, instead _streams_ are used, that are `stdin`, `stdout`, `stderr` and files.
