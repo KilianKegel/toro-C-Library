@@ -141,7 +141,6 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
   in a file, opened in text mode, is handled wrongly.
   
   NOTE: ftell(), fgetpos(), fsetpos() in textmode is implemented differently.
-  
         Unable to reimplement LIBCMT.lib bugs, when '\n' or Ctrl-Z is present in the text file
 ### 20190109/R123
 * add getenv()
