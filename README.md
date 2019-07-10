@@ -24,9 +24,7 @@ The "torito C Library" shall provide full library compatibility with
 Extentions to these standards (ISO 9899:1999 etc.), "secure" functions xxxx_s or Microsoft specific add-ons will not be implemented into "torito C Library".
 
 Be aware, that functions like `stricmp()` (case sensitive string handling), `itoa()` (integer to string conversion),
-a very famous `kbhit()` (check for keystroke at console[<sup>1</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-1.md)
-(textmode read/write, just use `"r"`, `"w"` instead)
-are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
+a very famous `kbhit()` (check for keystroke at console[<sup>1</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-1.md)) and fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead) are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
 
 [ANSI C Specification](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf)
 
