@@ -129,6 +129,7 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * <locale.h>: C-locale-only support
 * <math.h> not yet implemented
 * CTRL-C interception not yet implemented
+* floating point is not yet implemented at all, neighter in `printf()`/`scanf()` formatspecifiers nor in math.h - functions
 
 
 # Revision history
