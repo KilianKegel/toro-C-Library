@@ -175,7 +175,7 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * added WELCOME.c sample
 * added BUILD.BAT sample
 ### 20180411/R95
-* add signal(), raise() and abort() functions
+* add signal(), raise() and abort() functions[<sup>3</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-3.md)
 * fixed argc/argv handling according to
   https://msdn.microsoft.com/en-us/library/a1y7w461.aspx
 ### 20180130/R86
