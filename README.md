@@ -116,8 +116,8 @@ The functions below are already implemented and carefully tested, every single o
 
 ## Known bugs
 
-* printf()-family's format specifiers e,f,g not yet implemented
-* scanf()-family's format specifiers <del>[],p</del>,e,f,g,C,S not yet implemented
+* printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
+* scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
 * 20181129: <del>file operations does not yet support drive mappings and path</del>
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
@@ -125,9 +125,8 @@ The functions below are already implemented and carefully tested, every single o
 atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <locale.h>: C-locale-only support
-* <math.h> not yet implemented
+* <math.h> not yet implemented[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md)
 * CTRL-C interception not yet implemented
-* floating point support is not yet implemented at all, neighter in `printf()`/`scanf()` formatspecifiers nor in math.h - functions
 
 
 # Revision history
