@@ -24,9 +24,8 @@ The "torito C Library" shall provide full library compatibility with
 Extentions to these standards (ISO 9899:1999 etc.), "secure" functions xxxx_s or Microsoft specific add-ons will not be implemented into "torito C Library".
 
 Be aware, that functions like `stricmp()` (case sensitive string handling), `itoa()` (integer to string conversion),
-a very famous `kbhit()` (check for keystroke at console, console access is _not specified at all_ by Standard C,
-instead _streams_ are used, that are `stdin`, `stdout`, `stderr` and files).
-and fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead)
+a very famous `kbhit()` (check for keystroke at console <sup>1</sup> ) and fopen()-mode-strings like `"rt"`, `"wt"`
+(textmode read/write, just use `"r"`, `"w"` instead)
 are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
 
 [ANSI C Specification](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf)
@@ -192,3 +191,5 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 ### 20171105/R78
 * initial revision
 
+#### Footnotes
+<sup>1</sup>: Console access is _not specified at all_ by Standard C, instead _streams_ are used, that are `stdin`, `stdout`, `stderr` and files.
