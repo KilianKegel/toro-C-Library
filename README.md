@@ -127,6 +127,10 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * <locale.h>: C-locale-only support
 * <math.h> not yet implemented[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md)
 * CTRL-C interception not yet implemented
+* **Torito C Library based progams use ASCII console interface only, not UCS-2!**
+    - ASCII is written to `stdout`and `stderr`
+    - ASCII is read from `stdin`
+    pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators
 
 
 # Revision history
