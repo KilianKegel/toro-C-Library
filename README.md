@@ -54,7 +54,6 @@ with VS2017 are utilized instead.
 
 The developer using "torito C Library" benefits from this approach because the experience remains unchanged using the VS2017 environment.
 
-
 ## Riding the UEFI shell / enabling the platform for developers
 
 With the disappearance of MSDOS as a simple, single threaded, unprotected operating system with full hardware access to user programs on upcoming personal computer models the UEFI shell was intended to be the successor of MSDOS.
@@ -65,9 +64,10 @@ makes it cumbersome to get started on UEFI Shell programming.
 ## Reimplementing LIBCMT.LIB for WinNT
 
 The sole purpose of "torito C Library" for WinNT is to validate the C library compatibility
-on a Windows-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
-and then against "torito C Library" for WinNT to be able to compare program behavior in Windows.
-Most of all pitfalls can be found quickly.
+on a Windows-x64-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
+and then against "torito C Library" for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-4.md)
+Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
+build and debug environment of Visual Studio.
 
 ## HELLO is now WELCOME / *appetite for destruction*
 
