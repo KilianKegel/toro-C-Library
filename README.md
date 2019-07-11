@@ -64,8 +64,10 @@ makes it cumbersome to get started on UEFI Shell programming.
 
 ## Reimplementing LIBCMT.LIB for WinNT
 
-The sole purpose of "torito C Library" for WinNT is to enable DEBUG mode in VS2017 when the RELEASE target is UEFI shell (or Linux -- in future releases).
-
+The sole purpose of "torito C Library" for WinNT is to validate the C library compatibility
+on a Windows-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
+and then against "torito C Library" for WinNT to be able to compare program behavior in Windows.
+Most of all pitfalls can be found quickly.
 
 ## HELLO is now WELCOME / *appetite for destruction*
 
