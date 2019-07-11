@@ -4,7 +4,7 @@ In case of formated I/O and string processing functions this is mostly a dump of
 around the destination address, to verify, that 8-, 16-, 32- and 64-Bit accesses 
 (hh, h,  (none), l and ll prefixes) does not accidentally overwrite wrong memory locations.
 
-Furthermore, for number conversation octal, decimal, hexadecimal and 2..26 based (`strtol()`)
+Furthermore, for number conversation octal, decimal, hexadecimal and 2..36 based ([`strtol()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l?view=vs-2019))
 processing brute force strategies are used to test critical bit pattern 
 
 In case of file access and memory allocation functions elaborated tests are created
