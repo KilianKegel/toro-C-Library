@@ -69,7 +69,7 @@ and then against "torito C Library" for WinNT to be able to compare program beha
 Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
 build and debug environment of Visual Studio.
 
-## HELLO is now WELCOME / *appetite for destruction*
+## HELLO is now WELCOME / *appetite for destruction*[<sup>5</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-5.md)
 
 The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
 in "THE C PROGRAMMING LANGUAGE" ("White Book") is adjusted to today´s need to honor
