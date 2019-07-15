@@ -26,6 +26,9 @@ Extentions to these standards (ISO 9899:1999 etc.), *secure* / *bounds checking 
 Be aware, that functions like [`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion),
 a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>1</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-1.md)) and fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead) are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
 
+These functions are part of the C90/C95 standard:
+https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/implemented.md
+
 [ANSI C Specification](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf)
 
 As long as the developer moves within these standards and does not use
