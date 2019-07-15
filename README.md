@@ -21,7 +21,7 @@ The "torito C Library" shall provide full library compatibility with
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
 ### Forwards to the roots
-Extentions to these standards (ISO 9899:1999 etc.), *secure* / *bounds checking interface* functions xxxx_s from [C11, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will not be implemented into "torito C Library".
+Extentions to these standards (ISO 9899:1999 etc.), *secure* / *bounds checking interface* functions `xyz*_s*()` from [C11, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will not be implemented into "torito C Library".
 
 Be aware, that functions like [`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion),
 a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>1</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-1.md)) and fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead) are provided in various C-Library-implementations, but not specified by ANSI/ISO/IEC 9899:199x, and there for _not_ available in the "torito C Library".
