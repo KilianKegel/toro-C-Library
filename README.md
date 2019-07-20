@@ -26,7 +26,7 @@ Extentions to these standards (ISO 9899:1999 etc.), [*secure*](https://docs.micr
 Be aware, that functions like [`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion),
 a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>1</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-1.md)), fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead) and [`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and there for _not_ available in the "torito C Library".
 
-These functions are part of the C90/C95 standard:<br>
+These functions are required to be ANSI C/C90/C95 standard compatible when the Microsoft C compiler:<br>
 https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/implemented.md
 
 [ANSI C Specification](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf)
