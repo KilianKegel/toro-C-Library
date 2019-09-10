@@ -1,4 +1,5 @@
 # Torito C Library
+![C](https://github.com/JoaquinConoBolillo/CdePkg/blob/master/C.png)
 
 The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2017.
