@@ -2,11 +2,11 @@
 ![C](https://github.com/JoaquinConoBolillo/CdePkg/blob/master/C.png)
 
 The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
-for Microsoft Visual Studio 2017.
+for Microsoft Visual Studio 2019.
 
 "torito C Library" is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
-design --and debug-- infrastructure provided by Microsoft Visual Studio 2017 VS2017.
+design --and debug-- infrastructure provided by Microsoft Visual Studio 2019 VS2019.
 
 ## Goal
 
@@ -48,15 +48,15 @@ C-Library vendors usually describe their own specific details, but not the Stand
 Using and relying on such implementation-specific details makes the source code non-portable
 to other C-Libraries, e.g. GLIBC.
 
-The "torito C Library" is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2017.
-(It is assumed, that LIBCMT.LIB of VS2017 is compliant to aforementioned standards.)
+The "torito C Library" is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2019.
+(It is assumed, that LIBCMT.LIB of VS2019 is compliant to aforementioned standards.)
 
 [Microsoft C Language Reference](https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference?view=vs-2019)
 
 Doing so, the development of "torito C Library" itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
-with VS2017 are utilized instead.
+with VS2019 are utilized instead.
 
-The developer using "torito C Library" benefits from this approach because the experience remains unchanged using the VS2017 environment.
+The developer using "torito C Library" benefits from this approach because the experience remains unchanged using the VS2019 environment.
 
 ## Riding the UEFI shell / enabling the platform for developers
 
@@ -98,7 +98,7 @@ int main(int argc, char **argv){
 }
 ```
 
-WELCOME.c can be translated in the VS2017 64Bit command line environment by running the build.bat script below:
+WELCOME.c can be translated in the VS2019 64Bit command line environment by running the build.bat script below:
 
 ```bat
 rem ### build.bat ####################################
