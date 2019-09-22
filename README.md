@@ -140,9 +140,10 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 
 
 # Revision history
+### 20190621/R138
+* autodetect I/O redirection UTF16 vs. ASCII
 ### 20190918/R137
 * update copyright
-
 ### 20190621/R133
 * add VS2019 compatibility, remove library dependancy from compiler version
 ### 20190410/R126
