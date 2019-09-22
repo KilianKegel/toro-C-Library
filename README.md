@@ -1,4 +1,13 @@
 # Torito C Library
+[Torito C Library](https://github.com/JoaquinConoBolillo/torito-C-Library#torito-c-library)<br>
+[Goal](https://github.com/JoaquinConoBolillo/torito-C-Library#goal)<br>
+[Approach](https://github.com/JoaquinConoBolillo/torito-C-Library#approach)<br>
+[Riding the UEFI Shell](https://github.com/JoaquinConoBolillo/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
+[HELLO is now WELCOME / humor and music for BIOS development](https://github.com/JoaquinConoBolillo/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
+[Status](https://github.com/JoaquinConoBolillo/torito-C-Library#status)<br>
+[Known bugs](https://github.com/JoaquinConoBolillo/torito-C-Library#known-bugs)<br>
+[Revision history](https://github.com/JoaquinConoBolillo/torito-C-Library#revision-history)<br>
+
 ![C](https://github.com/JoaquinConoBolillo/CdePkg/blob/master/C.png)
 
 The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
@@ -17,7 +26,7 @@ supported by "torito C Library".
 
 The "torito C Library" shall provide full library compatibility with
 
-* ANSI X3.159-1989 ("ANSI C")
+* (ANSI X3.159-1989 ("ANSI C"))[https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf]
 * ISO/IEC 9899 First edition 1990-12-15 ("C90")
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
@@ -139,7 +148,7 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
     pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators
 
 
-# Revision history
+## Revision history
 ### 20190621/R138
 * autodetect I/O redirection UTF16 vs. ASCII
 ### 20190918/R137
