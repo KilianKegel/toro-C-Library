@@ -26,7 +26,7 @@ supported by "torito C Library".
 
 The "torito C Library" shall provide full library compatibility with
 
-* (ANSI X3.159-1989 ("ANSI C"))[https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf]
+* [ANSI X3.159-1989 ("ANSI C")][https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf]
 * ISO/IEC 9899 First edition 1990-12-15 ("C90")
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
