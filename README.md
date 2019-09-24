@@ -3,7 +3,7 @@
 [Goal](https://github.com/JoaquinConoBolillo/torito-C-Library#goal)<br>
 [Approach](https://github.com/JoaquinConoBolillo/torito-C-Library#approach)<br>
 [Riding the UEFI Shell](https://github.com/JoaquinConoBolillo/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-[HELLO is now WELCOME / humor and music for BIOS development](https://github.com/JoaquinConoBolillo/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
+[HELLO is now WELCOME](https://github.com/JoaquinConoBolillo/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
 [Status](https://github.com/JoaquinConoBolillo/torito-C-Library#status)<br>
 [Known bugs](https://github.com/JoaquinConoBolillo/torito-C-Library#known-bugs)<br>
 [Revision history](https://github.com/JoaquinConoBolillo/torito-C-Library#revision-history)<br>
