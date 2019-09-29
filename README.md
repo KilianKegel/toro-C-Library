@@ -1,14 +1,14 @@
 # Torito C Library
-[Torito C Library](https://github.com/JoaquinConoBolillo/torito-C-Library#torito-c-library)<br>
-[Goal](https://github.com/JoaquinConoBolillo/torito-C-Library#goal)<br>
-[Approach](https://github.com/JoaquinConoBolillo/torito-C-Library#approach)<br>
-[Riding the UEFI Shell](https://github.com/JoaquinConoBolillo/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-[HELLO is now WELCOME](https://github.com/JoaquinConoBolillo/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
-[Status](https://github.com/JoaquinConoBolillo/torito-C-Library#status)<br>
-[Known bugs](https://github.com/JoaquinConoBolillo/torito-C-Library#known-bugs)<br>
-[Revision history](https://github.com/JoaquinConoBolillo/torito-C-Library#revision-history)<br>
+[Torito C Library](https://github.com/KilianKegel/torito-C-Library#torito-c-library)<br>
+[Goal](https://github.com/KilianKegel/torito-C-Library#goal)<br>
+[Approach](https://github.com/KilianKegel/torito-C-Library#approach)<br>
+[Riding the UEFI Shell](https://github.com/KilianKegel/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
+[HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
+[Status](https://github.com/KilianKegel/torito-C-Library#status)<br>
+[Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
+[Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
 
-![C](https://github.com/JoaquinConoBolillo/CdePkg/blob/master/C.png)
+![C](https://github.com/KilianKegel/CdePkg/blob/master/C.png)
 
 The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2019.
@@ -34,10 +34,10 @@ The "torito C Library" shall provide full library compatibility with
 Extentions to these standards (ISO 9899:1999 etc.), [*secure*](https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019) / *bounds checking interface* functions `xyz_s()` from [ISO 9899:2011, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will _not_ be implemented into "torito C Library".
 
 Be aware, that functions like [`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion),
-a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>1</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-1.md)), fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead) and [`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and there for _not_ available in the "torito C Library".
+a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>1</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-1.md)), fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead) and [`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and there for _not_ available in the "torito C Library".
 
 These functions are required to be ANSI C/C90/C95 standard compatible when the Microsoft C compiler:<br>
-https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/implemented.md
+https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md
 
 [ANSI C Specification](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf)
 
@@ -78,11 +78,11 @@ makes it cumbersome to get started on UEFI Shell programming.
 
 The sole purpose of "torito C Library" for WinNT is to validate the C library compatibility
 on a Windows-x64-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
-and then against "torito C Library" for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-4.md)
+and then against "torito C Library" for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
 Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
 build and debug environment of Visual Studio.
 
-## HELLO is now WELCOME / *appetite for destruction*[<sup>5</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-5.md)
+## HELLO is now WELCOME / *appetite for destruction*[<sup>5</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-5.md)
 
 The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
 in "THE C PROGRAMMING LANGUAGE" ("White Book") is adjusted to today´s need to honor
@@ -127,12 +127,12 @@ A non-EVALUATION-library will be provided for helpful supporters for free.
 
 The functions below are already implemented and carefully tested, every single one of them, except otherwise noted.
 
-<https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/implemented.md>
+<https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md>
 
 ## Known bugs
 
-* printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
-* scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
+* printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
+* scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
 * 20181129: <del>file operations does not yet support drive mappings and path</del>
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
@@ -140,7 +140,7 @@ The functions below are already implemented and carefully tested, every single o
 atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs(),strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <locale.h>: C-locale-only support
-* <math.h> not yet implemented[<sup>2</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-2.md)
+* <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
 * CTRL-C interception not yet implemented
 * **Torito C Library based progams use ASCII console interface only, not UCS-2!**
     - ASCII is written to `stdout`and `stderr`
@@ -197,7 +197,7 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * added WELCOME.c sample
 * added BUILD.BAT sample
 ### 20180411/R95
-* add signal(), raise() and abort() functions[<sup>3</sup>](https://github.com/JoaquinConoBolillo/torito-C-Library/blob/master/footnotes/footnote-3.md)
+* add signal(), raise() and abort() functions[<sup>3</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-3.md)
 * fixed argc/argv handling according to
   https://msdn.microsoft.com/en-us/library/a1y7w461.aspx
 ### 20180130/R86
