@@ -8,7 +8,7 @@
 * [Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
 * [Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
 
-![C](https://github.com/KilianKegel/CdePkg/blob/master/C.png)
+![C](https://github.com/KilianKegel/pictures/blob/master/C.png)
 
 The "torito C Library" is a Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2019.
