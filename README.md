@@ -1,12 +1,12 @@
 # Torito C Library
-[Torito C Library](https://github.com/KilianKegel/torito-C-Library#torito-c-library)<br>
-[Goal](https://github.com/KilianKegel/torito-C-Library#goal)<br>
-[Approach](https://github.com/KilianKegel/torito-C-Library#approach)<br>
-[Riding the UEFI Shell](https://github.com/KilianKegel/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-[HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
-[Status](https://github.com/KilianKegel/torito-C-Library#status)<br>
-[Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
-[Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
+* [Torito C Library](https://github.com/KilianKegel/torito-C-Library#torito-c-library)<br>
+* [Goal](https://github.com/KilianKegel/torito-C-Library#goal)<br>
+* [Approach](https://github.com/KilianKegel/torito-C-Library#approach)<br>
+* [Riding the UEFI Shell](https://github.com/KilianKegel/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
+* [HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
+* [Status](https://github.com/KilianKegel/torito-C-Library#status)<br>
+* [Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
+* [Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
 
 ![C](https://github.com/KilianKegel/CdePkg/blob/master/C.png)
 
