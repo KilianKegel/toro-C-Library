@@ -3,7 +3,7 @@
 * [Goal](https://github.com/KilianKegel/torito-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/torito-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-* [HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome--appetite-for-destruction5)<br>
+* [HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome)<br>
 * [Status](https://github.com/KilianKegel/torito-C-Library#status)<br>
 * [Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
 * [Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
@@ -82,16 +82,7 @@ and then against "torito C Library" for WinNT to be able to compare program beha
 Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
 build and debug environment of Visual Studio.
 
-## HELLO is now WELCOME / *appetite for destruction*[<sup>5</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-5.md)
-
-The C beginner's sample program `hello.c` introduced by Brian W. Kernighan and Dennis M. Ritchie
-in "THE C PROGRAMMING LANGUAGE" ("White Book") is renamed to `welcome.c` to honor
-the [*appetite for destruction*](https://en.wikipedia.org/wiki/Appetite_for_Destruction "") introduced 32 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
-Despite the fact that *appetite for destruction* was sold 30 Million times, and so became the
-most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
-in the Standard C specification, but ```"Welcome, to the jungle"``` is not.
-
-Check out out what they've withheld from us: 😉 https://www.youtube.com/watch?v=o1tj2zJ2Wvg
+## HELLO is now WELCOME
 
 ```c
 //
