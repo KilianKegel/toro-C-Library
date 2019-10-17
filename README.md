@@ -84,8 +84,8 @@ build and debug environment of Visual Studio.
 
 ## HELLO is now WELCOME / *appetite for destruction*[<sup>5</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-5.md)
 
-The C beginner's sample program introduced by Brian W. Kernighan and Dennis M. Ritchie
-in "THE C PROGRAMMING LANGUAGE" ("White Book") is adjusted to today´s need to honor
+The C beginner's sample program `hello.c` introduced by Brian W. Kernighan and Dennis M. Ritchie
+in "THE C PROGRAMMING LANGUAGE" ("White Book") is renamed to `welcome.c` to honor
 the [*appetite for destruction*](https://en.wikipedia.org/wiki/Appetite_for_Destruction "") introduced 32 years ago in 1987, 2 years prior to the completion of ANSI C Standard.
 Despite the fact that *appetite for destruction* was sold 30 Million times, and so became the
 most successful debut album of all times, the X3J11 comittee was obviously not influenced by it, since ``` "hello, world"``` is referenced
