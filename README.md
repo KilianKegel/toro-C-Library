@@ -148,7 +148,6 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
   to display the drive mappings, when multipartition ("BLK10") mass storage device is attached
 * implement UEFI Shell compatibility mode for STDOUT and STDERR to allow I/O redirection `>a` for ASCII and `>` for UCS-2/UTF16
 * add build switch `char _gSTDOUTMode;   /* 0 == UEFI Shell default, 1 == ASCII only */` to force TORITO C backward compatibility ( ASCII mode only )
-### 20190621/R138
 * autodetect I/O redirection UTF16 vs. ASCII
 ### 20190918/R137
 * update copyright
