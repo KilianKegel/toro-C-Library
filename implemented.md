@@ -1,7 +1,7 @@
 <table>
         <tr> <th colspan="2">Diagnostics < assert.h ></th></tr>
-            <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert?view=vs-2019">void _assert (const char *,const char *,unsigned)</a></td><td>C90, MSFT implementation for assert macro</td></tr>
-            <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert?view=vs-2019">void _wassert (const wchar_t *,const wchar_t *,unsigned)</a></td><td>C90, MSFT implementation for assert macro</td></tr>
+            <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert?view=vs-2019">void _assert (const char *,const char *,unsigned)</a></td><td>C90, MSFT implementation for assert macro, is implemented</td></tr>
+            <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert?view=vs-2019">void _wassert (const wchar_t *,const wchar_t *,unsigned)</a></td><td>C90, MSFT implementation for assert macro, is implemented</td></tr>
             <tr> <th colspan="2">Character handling < ctype.h ></th></tr>
             <tr><td><a href=""><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019"> int isalnum(int)</a></td><td>C90, is implemented</td>   </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l?view=vs-2019">int isalpha(int)</a></td><td>C90, is implemented</td>   </tr>
@@ -17,7 +17,7 @@
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l?view=vs-2019">int tolower(int)</a></td><td>C90, is implemented</td>   </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l?view=vs-2019">int toupper(int)</a></td><td>C90, is implemented</td>   </tr>
         <tr> <th colspan="2">Errors < errno.h ></th></tr>
-            <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr?view=vs-2019">int *_errno(void)</a></td><td>C90, MSFT implementation for errno macro</td>   </tr>
+            <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr?view=vs-2019">int *_errno(void)</a></td><td>C90, MSFT implementation for errno macro, is implemented</td>   </tr>
         <tr> <th colspan="2">Localization < locale.h ></th></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/localeconv?view=vs-2019">struct lconv *localeconv(void)                      </a></td><td>C90, is implemented (C-locale)</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=vs-2019">char *setlocale(int category, const char *locale)   </a></td><td>C90, is implemented (C-locale)</td></tr>
