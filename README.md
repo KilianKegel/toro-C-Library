@@ -140,6 +140,9 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 
 
 ## Revision history
+### 20191111/R146
+* add missing intrinsic functions _difftime64() and _gmtime64() required by Microsoft Compiler
+* fixed mktime() to crash with invalid time/date before 01/01/1970 00:00:00
 ### 20191017/R141
 * add CTRL-C support<br>
   NOTE: CTRL-C is implemented on Signal handling `<signal.h>` interface and can be catched and supressed
