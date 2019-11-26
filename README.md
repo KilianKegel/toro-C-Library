@@ -141,7 +141,7 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 
 ## Revision history
 ### 20191126/R149
-* fixed Torito C library CRT0 for Windows NT data overwrite may crash the application
+* fixed Torito C library CRT0 for Windows NT data corruption may crash the application
 * fixed functions snprintf() and vsnprintf() return value: ```number of characters that would have been written had n been sufficiently large```
 ### 20191111/R146
 * add missing intrinsic functions _difftime64() and _gmtime64() required by Microsoft Compiler
