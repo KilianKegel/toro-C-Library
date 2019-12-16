@@ -143,8 +143,8 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 ### 20191216/R152
 * improve C++ global object initialization (introduced in 20181129/R116) to have full
   ANSI C library function set available during invocation of global constructors before main()
-  https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/initterm-initterm-e?view=vs-2017
-  https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell/blob/master/welcome10/welcome10.c
+  https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/initterm-initterm-e?view=vs-2017<br>
+  https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell/blob/master/welcome10/welcome10.cpp
 * increase number of possible ATEXIT() registrations to 32 + 4 to allow 4 additional C++ destructor registrations
 ### 20191126/R149
 * fixed Torito C library CRT0 for Windows NT data corruption may crash the application
