@@ -98,7 +98,7 @@ int main(int argc, char **argv){
 }
 ```
 
-WELCOME.c can be translated in the VS2019 64Bit command line environment by running the build.bat script below:
+WELCOME.c can be translated in the VS2019 64Bit command line environment by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
 
 ```bat
 rem ### build.bat ####################################
@@ -140,6 +140,9 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 
 
 ## Revision history
+### 20200204/R154
+* add VS2019/16.4.4 support
+* update copyright
 ### 20191216/R152
 * improve C++ global object initialization (introduced in 20181129/R116) to have full
   ANSI C library function set available during invocation of global constructors before main()

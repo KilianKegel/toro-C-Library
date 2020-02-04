@@ -190,7 +190,7 @@
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbsrtowcs?view=vs-2019">size_t mbsrtowcs(wchar_t *  dst,const char **  src, size_t len,mbstate_t *  ps)</a></td><td>C95, is not yet implemented</td></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcsrtombs?view=vs-2019">size_t wcsrtombs(char *  dst,const wchar_t **  src, size_t len,mbstate_t *  ps)</a></td><td>C95, is not yet implemented</td></tr>
     <tr> <th colspan="2">Wide character classification and mapping utilities < wctype.h ></th></tr>
-		<tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019">int iswalnum(wint_t wc)</a></td><td>C95, is implemented</td></tr>
+    <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019">int iswalnum(wint_t wc)</a></td><td>C95, is implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l?view=vs-2019">int iswalpha(wint_t wc)</a></td><td>C95, is implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l?view=vs-2019">int iswblank(wint_t wc)</a></td><td>C99, is implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l?view=vs-2019">int iswcntrl(wint_t wc)</a></td><td>C95, is implemented</td></tr>
@@ -208,4 +208,27 @@
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l?view=vs-2019">wint_t towupper(wint_t wc)</a></td><td>C95, is implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/towctrans?view=vs-2019">wint_t towctrans(wint_t wc, wctrans_t desc)</a></td><td>C95, is implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctrans?view=vs-2019">wctrans_t wctrans(const char *property)</a></td><td>C95, is implemented</td></tr>
+    <tr> <th colspan="2">mathematical functions< math.h ></th></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl?view=vs-2019">double acos(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/asin-asinf-asinl?view=vs-2019">double asin(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atanh-atanhf-atanhl?view=vs-2019">double atan(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atanh-atanhf-atanhl?view=vs-2019">double atan2(double x, double y)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl?view=vs-2019">double cos(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sin-sinf-sinl?view=vs-2019">double sin(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tan-tanf-tanl?view=vs-2019">double tan(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/cosh-coshf-coshl?view=vs-2019">double cosh(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sinh-sinhf-sinhl?view=vs-2019">double sinh(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tanh-tanhf-tanhl?view=vs-2019">double tan(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/exp-expf?view=vs-2019">double exp(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/frexp?view=vs-2019">double frexp(double value, int *exp)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ldexp?view=vs-2019">double ldexp(double value, int exp)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/log-logf-log10-log10f?view=vs-2019">double log(double value)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/log-logf-log10-log10f?view=vs-2019">double log10(double value)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/modf-modff-modfl?view=vs-2019">double modf(double value, double *iptr)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/pow-powf-powl?view=vs-2019">double pow(double x, double y)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sqrt-sqrtf-sqrtl?view=vs-2019">double sqrt(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=vs-2019">double ceil(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fabs-fabsf-fabsl?view=vs-2019">double fabs(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=vs-2019">double floor(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fmod-fmodf?view=vs-2019">double fmod(double x, double y)</a></td><td>C90, is not yet implemented</td></tr>
 </table>
