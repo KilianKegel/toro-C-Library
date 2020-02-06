@@ -1,7 +1,7 @@
-Torito C Library for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,
-C Development Environment for UEFI
-Copyright (c) 2020, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/KilianKegel/torito-C-Library
-
+Torito C Library for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,<br>
+C Development Environment for UEFI<br>
+Copyright (c) 2020, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/KilianKegel/torito-C-Library<br>
+<br>
 Permission to use Torito C Library for the sole purpose of creating
 UEFI Shell applications, which may be
 distributed with or without fee, is hereby granted, provided that the above
