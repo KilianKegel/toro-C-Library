@@ -177,7 +177,8 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
   in a file, opened in text mode, is handled wrongly.
   
   NOTE: ftell(), fgetpos(), fsetpos() in textmode is implemented differently.
-        Unable to reimplement LIBCMT.lib bugs, when '\n' or Ctrl-Z is present in the text file
+        Unable to reimplement LIBCMT.lib bugs, when '\n' or Ctrl-Z is present in the text file<br>
+        [fposbug.c](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/fposbug.c)
 ### 20190109/R123
 * add getenv()
 * add rename()
