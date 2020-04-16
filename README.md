@@ -140,6 +140,12 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 
 
 ## Revision history
+### 20200416/R159
+* fixed "" at end of commandline not detected by command line parser
+* fixed improved stability of TSC based TIME.H functions, improved TSC calibration
+* force minimum ShellProtocol version to v2.2
+* fixed Torito C Library for NT redirects STDOUT to file always beginning to file begin, instead of file end
+  That overwrites a logfile used for multiple redirected traces
 ### 20200204/R154
 * add VS2019/16.4.4 support
 * update copyright
