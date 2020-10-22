@@ -211,8 +211,8 @@
     <tr> <th colspan="2">mathematical functions< math.h ></th></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl?view=vs-2019">double acos(double x)</a></td><td>C90, is not yet implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/asin-asinf-asinl?view=vs-2019">double asin(double x)</a></td><td>C90, is not yet implemented</td></tr>
-        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atanh-atanhf-atanhl?view=vs-2019">double atan(double x)</a></td><td>C90, is not yet implemented</td></tr>
-        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atanh-atanhf-atanhl?view=vs-2019">double atan2(double x, double y)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l?view=vs-2019">double atan(double x)</a></td><td>C90, is not yet implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l?view=vs-2019">double atan2(double x, double y)</a></td><td>C90, is not yet implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl?view=vs-2019">double cos(double x)</a></td><td>C90, is not yet implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sin-sinf-sinl?view=vs-2019">double sin(double x)</a></td><td>C90, is not yet implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tan-tanf-tanl?view=vs-2019">double tan(double x)</a></td><td>C90, is not yet implemented</td></tr>
