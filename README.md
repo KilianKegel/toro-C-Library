@@ -6,6 +6,7 @@
 * [HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome)<br>
 * [Status](https://github.com/KilianKegel/torito-C-Library#status)<br>
 * [Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
+    * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
 * [Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
 
 ![C](https://github.com/KilianKegel/pictures/blob/master/C.png)
