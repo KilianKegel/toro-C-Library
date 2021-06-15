@@ -27,7 +27,7 @@ supported by "torito C Library".
 
 The "torito C Library" shall provide full library compatibility with
 
-* [ANSI X3.159-1989 ("ANSI C")](https://www.pdf-archive.com/2021/01/04/ansiiso9899-1990/ansiiso9899-1990.pdf)
+* [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
 * ISO/IEC 9899 First edition 1990-12-15 ("C90")
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
@@ -40,7 +40,7 @@ a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library
 These functions are required to be ANSI C/C90/C95 standard compatible when the Microsoft C compiler:<br>
 https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md
 
-[ANSI C Specification](https://www.pdf-archive.com/2021/01/04/ansiiso9899-1990/ansiiso9899-1990.pdf)
+[ANSI C Specification](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
 
 As long as the developer moves within these standards and does not use
 any OS-specific interface or platform dependent idiosyncrasy, the created
