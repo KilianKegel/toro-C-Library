@@ -145,6 +145,11 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * [`_findfirst()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions), [`_findnext()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions), [`_findclose()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose)
 
 ## Revision history
+### 20210808/R164
+* fixed bugs related to length modifiers for string format specifiers
+    - `wprintf()` with `%ls`,  `%hs` and Microsoft specific  `%S`
+    - `printf()` with `%ls`,  `%hs` and Microsoft specific  `%S`
+    - the string `(null)` was reported wrongly in wide format on `NULL` pointer (e.g. `wprintf()`or `%ls` modifier)
 ### 20200416/R159
 * fixed "" at end of commandline not detected by command line parser
 * fixed improved stability of TSC based TIME.H functions, improved TSC calibration
