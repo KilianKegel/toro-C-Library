@@ -145,6 +145,11 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * [`_findfirst()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions), [`_findnext()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions), [`_findclose()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose)
 
 ## Revision history
+### 20210815/R165
+* fixed time calibration issue on AMD (Ryzen7, A6)
+  - on AMD systems the RTC device sporadically loses the PF (periodic interrupt)
+    flag from RTC register 0x0C
+  - instead PIT 8254 timer seems to be reliable on AMD and Intel platforms
 ### 20210808/R164
 * fixed bugs related to length modifiers for string format specifiers
     - `wprintf()` with `%ls`,  `%hs` and Microsoft specific  `%S`
