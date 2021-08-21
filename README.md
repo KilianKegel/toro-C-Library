@@ -145,6 +145,16 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort()</del>,mblen(
 * [`_findfirst()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions), [`_findnext()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions), [`_findclose()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose)
 
 ## Revision history
+### 20210820/R166
+* add Standard C Library functions 
+  - mblen()
+  - mbstowcs()
+  - mbtowc()
+  - wcstombs()
+  - wctomb()
+  - wctob()
+  - wmemchr()
+  - vfwprintf()
 ### 20210815/R165
 * fixed time calibration issue on AMD (Ryzen7, A6)
   - on AMD systems the RTC device sporadically loses the PF (periodic interrupt)
