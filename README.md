@@ -148,11 +148,10 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort(),mblen(),mbto
 ### non-Standard C90/C95 functions that will be implemented _on demand_
 * [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit)
 * [`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)
-* [`_findfirst()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions), [`_findnext()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions), [`_findclose()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose)
 
 ## Revision history
 ### 20210912
-* initial version of *TORO C LIBRARY*
+* initial version of **TORO C LIBRARY**
 * *TORITO C LIBRARY* is _discontinued_ from now on
 * add Microsoft C Library functions
   - `_findfirst()`
