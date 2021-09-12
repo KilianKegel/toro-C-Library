@@ -1,15 +1,15 @@
-Torito C Library for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,<br>
+Toro C Library for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,<br>
 C Development Environment for UEFI<br>
 Copyright (c) 2020, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/KilianKegel/torito-C-Library<br>
 <br>
-Permission to use Torito C Library for the sole purpose of creating
+Permission to use Toro C Library for the sole purpose of creating
 UEFI Shell applications, which may be
 distributed with or without fee, is hereby granted, provided that the above
 copyright notice and this permission notice appear in all binary copies
 and during startup of the application itself when invoked with dedicated
 command line arguments (/h and /?).
 
-It is not allowed to sell Torito C Library as a stand alone product or
+It is not allowed to sell Toro C Library as a stand alone product or
 to modify it's content in any way.
 
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH

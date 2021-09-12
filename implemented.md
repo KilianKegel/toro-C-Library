@@ -231,4 +231,9 @@
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fabs-fabsf-fabsl?view=vs-2019">double fabs(double x)</a></td><td>C90, is not yet implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=vs-2019">double floor(double x)</a></td><td>C90, is not yet implemented</td></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fmod-fmodf?view=vs-2019">double fmod(double x, double y)</a></td><td>C90, is not yet implemented</td></tr>
+
+    <tr> <th colspan="2">non-C-Standard and Microsoft specific file functions< io.h ></th></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions?view=msvc-160">intptr_t _findfirst(const char *filespec, struct _finddata_t *fileinfo)</a></td><td>Microsoft specific, is implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions?view=msvc-160">int _findnext(intptr_t handle,struct _finddata_t *fileinfo)</a></td><td>Microsoft specific, is implemented</td></tr>
+        <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose?view=msvc-160">int _findclose(intptr_t handle)</a></td><td>Microsoft specific, is implemented</td></tr>
 </table>

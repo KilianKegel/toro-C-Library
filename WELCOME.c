@@ -5,7 +5,7 @@
 
 int main(int argc, char **argv){
     
-    printf("WELCOME, to the jungle\n");
+    printf("WELCOME, to ANSI C\n");
     
     return 0;
 }
