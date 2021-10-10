@@ -150,10 +150,19 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort(),mblen(),mbto
 * [`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)
 
 ## Revision history
+### 20211010
+* add Microsoft C Library functions for UEFIShell 64Bit applications only
+  - `_mkdir()`
+  - `_stat64i32()` that is the Microsoft version of POSIX `stat()`
+
+  add POSIX C Library functions
+  - `strnlen()`, `wcsnlen()`
+
 ### 20210912
-* initial version of **TORO C LIBRARY**
+* initial version of *TORO C LIBRARY* (`toroC64.lib` and `toroC32.lib`)
 * *TORITO C LIBRARY* is _discontinued_ from now on
-* add Microsoft C Library functions
+* add Microsoft C Library functions for UEFIShell applications only
+  - `getc()`
   - `_findfirst()`
   - `_findnext()`
   - `_findclose()`
