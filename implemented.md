@@ -239,7 +239,6 @@ NOTE:
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions?view=msvc-160">intptr_t _findfirst(const char *filespec, struct _finddata_t *fileinfo)</a></td><td>Microsoft specific, is implemented</td>    <td>a</td><TD> </TD><TD> </TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions?view=msvc-160">int _findnext(intptr_t handle,struct _finddata_t *fileinfo)</a></td><td>Microsoft specific, is implemented</td>                 <td>a</td><TD> </TD><TD> </TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose?view=msvc-160">int _findclose(intptr_t handle)</a></td><td>Microsoft specific, is implemented</td>                                                      <td>a</td><TD> </TD><TD> </TD></tr>
-
     <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mkdir-wmkdir?view=msvc-160">int _mkdir(const char *dirname)</a></td><td>Microsoft specific, is implemented</td>    <td>a</td><TD> </TD><TD> </TD></tr>
     <tr> <th colspan="2">non-C-Standard and Microsoft specific / POSIX functions< sys/stat.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
