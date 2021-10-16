@@ -51,7 +51,7 @@ https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md
 As long as the developer moves within these standards and does not use
 any OS-specific interface or platform dependent idiosyncrasy, the created
 executable shall be producible merely by linking the object modules against "toro C Library"
-and choosing the OS-dependent /ENTRY:_ModuleEntryPoint.
+and choosing the OS-dependent /ENTRY:_cdeCRT0```OSNAME```.
 
 
 ## Approach
@@ -110,7 +110,7 @@ WELCOME.c can be translated in the VS2022 64Bit command line environment by runn
 ```bat
 rem ### build.bat ####################################
 cl /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
-link /NODEFAULTLIB /ENTRY:_MainEntryPointShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
+link /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION /IGNORE:4078 WELCOME.obj toroC64.lib
 ```
 
 
@@ -134,8 +134,6 @@ The functions below are already implemented and carefully tested, every single o
 * 20181129: <del>file operations does not yet support drive mappings and path</del>
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters a–z or A–Z representing digits in the range [10, 36] are not (yet) supported.</del>
-* functions missing e.g. <del>system(), rename(), remove()</del>, settime(), <del>vsscanf()</del>
-atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort(),mblen(),mbtowc(),wctomb(),mbstowcs(),wcstombs()</del>,strxfrm(),strcoll() various wide-functions introduced in C95.
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <locale.h>: C-locale-only support
 * <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
@@ -147,7 +145,7 @@ atof(),strtof(),strtod(),<del>getenv()</del>,bsearch(),<del>qsort(),mblen(),mbto
 
 ### non-Standard C90/C95 functions that will be implemented _on demand_
 * [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit)
-* [`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)
+* <del>[`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)</del>
 
 ## Revision history
 ### 20211010
