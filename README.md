@@ -148,6 +148,13 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)</del>
 
 ## Revision history
+### 20211031
+* add Microsoft C Library specific mode string modifier `t` for text mode
+
+    NOTE: `t` modifier is not defined by ANSI/ISO C
+
+* fix `fclose()` bug in UEFI shell returns an error, when closing a read only file
+
 ### 20211010
 * add Microsoft C Library functions for UEFIShell 64Bit applications only
   - `_mkdir()`
