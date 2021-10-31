@@ -149,10 +149,8 @@ The functions below are already implemented and carefully tested, every single o
 
 ## Revision history
 ### 20211031
-* add Microsoft C Library specific mode string modifier `t` for text mode
-
-    NOTE: `t` modifier is not defined by ANSI/ISO C
-
+* add Microsoft specific `fopen()` mode string modifier `"t"` for text mode
+   * NOTE: `"t"` modifier is not defined by ANSI/ISO C, because binary/text mode differentiation is done by `"w"` modifier only. 
 * fix `fclose()` bug in UEFI shell returns an error, when closing a read only file
 
 ### 20211010
