@@ -4,10 +4,7 @@ Copyright (c) 2020, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/
 <br>
 Permission to use Toro C Library for the sole purpose of creating
 UEFI Shell applications, which may be
-distributed with or without fee, is hereby granted, provided that the above
-copyright notice and this permission notice appear in all binary copies
-and during startup of the application itself when invoked with dedicated
-command line arguments (/h and /?).
+distributed with or without fee, is hereby granted.
 
 It is not allowed to sell Toro C Library as a stand alone product or
 to modify it's content in any way.
