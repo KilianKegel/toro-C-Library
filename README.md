@@ -18,7 +18,7 @@ for Microsoft Visual Studio 2022.
 The main difference is, that **toro C Library** is build using the Visual Studio 2022 build environment, while "torito C Library"
 uses an UEFI EDK2 2016 build environment. 
 
-Additions of a C Library function set won't be done for "torito C Library" but for its adult version **toro C Library** only.
+Additions of a C Library function set won't be done for "torito C Library" but for its grownup version **toro C Library** only.
 
 **toro C Library** is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
