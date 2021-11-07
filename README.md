@@ -155,7 +155,7 @@ The functions below are already implemented and carefully tested, every single o
 
 ## Revision history
 ### 20211107
-* add `wmain()` support
+* add `wmain()` support<br>
     ATTENTION: The presence of `main()` is not detected at build time anymore, but at runtime.
 
 ### 20211031
