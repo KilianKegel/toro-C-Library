@@ -133,7 +133,9 @@ The functions below are already implemented and carefully tested, every single o
 <https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md>
 
 ## Known bugs
-
+* *LINK : fatal error LNK1000: Internal error during LIB::Search* with VS2019 tool chain.<br>
+  Please use only VS2022 build environment
+  
 * printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
 * scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
 * 20181129: <del>file operations does not yet support drive mappings and path</del>
