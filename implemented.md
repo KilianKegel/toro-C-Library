@@ -1,5 +1,5 @@
 NOTE: 
-* "TCL" is the [torito-C-Library](https://github.com/KilianKegel/torito-C-Library)
+* "TCL" is the [toro-C-Library](https://github.com/KilianKegel/torito-C-Library)
 * "a" -> approved
 * "n/a" -> not approved
 ## Validation Status

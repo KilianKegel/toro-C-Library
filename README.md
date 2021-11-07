@@ -11,48 +11,48 @@
 
 ![C](https://github.com/KilianKegel/pictures/blob/master/C.png)
 
-The "toro C Library" is a Standard C Library for UEFI x86-64 target platform
+The **toro C Library** is a *monolithic* Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2022.
 
-"toro C Library" is the successor of "torito C Library". "torito C Library" is discontinued with version 20210820/R166. 
-The main difference is, that "toro C Library" is build using the Visual Studio 2022 build environment, while "torito C Library"
+**toro C Library** is the successor of "torito C Library". "torito C Library" is discontinued with version 20210820/R166. 
+The main difference is, that **toro C Library** is build using the Visual Studio 2022 build environment, while "torito C Library"
 uses an UEFI EDK2 2016 build environment. 
 
-Additions of a C Library function set won't be done for "torito C Library" but for its adult version only.
+Additions of a C Library function set won't be done for "torito C Library" but for its adult version **toro C Library** only.
 
-"toro C Library" is an implementation targeting the ANSI/ISO C Standard Library compatibility
+**toro C Library** is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
 design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2022.
 
 ## Goal
 
-The "toro C Library" is designed to enable the developer to create
+The **toro C Library** is designed to enable the developer to create
 Standard C programs for UEFI Shell, Windows NT and Linux (in future releases)
 running in x86-64 mode. Standard C compliant source code shall be easily portable to operating systems
-supported by "toro C Library".
+supported by **toro C Library**.
 
-The "toro C Library" shall provide full library compatibility with
+The **toro C Library** shall provide full library compatibility with
 
 * [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
 * ISO/IEC 9899 First edition 1990-12-15 ("C90")
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
 ### Forwards to the roots
-Extentions to these standards (ISO 9899:1999 etc.), [*secure*](https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019) / *bounds checking interface* functions `xyz_s()` from [ISO 9899:2011, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf#page=600), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand) into "toro C Library".
+Extentions to these standards (ISO 9899:1999 etc.), [*secure*](https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019) / *bounds checking interface* functions `xyz_s()` from [ISO 9899:2011, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf#page=600), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand) into **toro C Library**.
 
 Be aware, that functions like [`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion),
-a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>1</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-1.md)), 
-<del>fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead)</del> and [`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and therefore _currently not_ available in the "toro C Library", but will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand).
+a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>0</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-1.md)), 
+<del>fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead)</del> and [`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and therefore _currently not_ available in the **toro C Library**, but will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand).
 
-These functions are required to be ANSI C/C90/C95 standard compatible when the Microsoft C compiler:<br>
+These functions are required to fulfill be ANSI C/C90/C95 standard:<br>
 https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md
 
 [ANSI C Specification](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
 
-As long as the developer moves within these standards and does not use
+As long as the developer moves within these standards[<sup>1</sup>](http://www.torek.net/torek/c/index.html) and does not use
 any OS-specific interface or platform dependent idiosyncrasy, the created
-executable shall be producible merely by linking the object modules against "toro C Library"
-and choosing the OS-dependent /ENTRY:_cdeCRT0```OSNAME```.
+executable shall be producible merely by linking the object modules against **toro C Library**
+and choosing the OS-dependent /ENTRY:_cdeCRT0`OSNAME`, e.g. `_cdeCRT0UefiShell` or `_cdeCRT0WinNT`.
 
 
 ## Approach
@@ -65,15 +65,15 @@ C-Library vendors usually describe their own specific details, but not the Stand
 Using and relying on such implementation-specific details makes the source code non-portable
 to other C-Libraries, e.g. GLIBC.
 
-The "toro C Library" is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2022.
+The **toro C Library** is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2022.
 (It is assumed, that LIBCMT.LIB of VS2022 is compliant to aforementioned standards.)
 
 [Microsoft C Language Reference](https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference?view=vs-2019)
 
-Doing so, the development of "toro C Library" itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
+Doing so, the development of **toro C Library** itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
 with VS2022 are utilized instead.
 
-The developer using "toro C Library" benefits from this approach because the experience remains unchanged using the VS2022 environment.
+The developer using **toro C Library** benefits from this approach because the experience remains unchanged using the VS2022 environment.
 
 ## Riding the UEFI shell / enabling the platform for developers
 
@@ -84,11 +84,16 @@ makes it cumbersome to get started on UEFI Shell programming.
 
 ## Reimplementing LIBCMT.LIB for WinNT
 
-The sole purpose of "toro C Library" for WinNT is to validate the C library compatibility
+The sole purpose of **toro C Library** for WinNT is to validate the C library compatibility
 on a Windows-x64-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
-and then against "toro C Library" for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
+and then against **toro C Library** for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
 Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
 build and debug environment of Visual Studio.
+
+**It is considered the only effective way to reach the ANSI C compatibility and strive for a *faultless implemenation*
+within a reasonable amount of time, because by far most parts of each single function test can be run through, 
+debugged and tested natively on the (Windows) development machine. Only final tests need to be run on the UEFI Shell target.**
+This proceeding can be reached only by the [OSIF](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (Operating System Interface) architecture of the library.
 
 ## HELLO is now WELCOME
 
@@ -109,20 +114,19 @@ int main(int argc, char **argv){
 WELCOME.c can be translated in the VS2022 64Bit command line environment by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
 
 ```bat
-rem ### build.bat ####################################
+
 cl /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
-link /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION /IGNORE:4078 WELCOME.obj toroC64.lib
+
+link /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
 ```
 
 
 ## Status
-The "toro C Library" is still in state of EVALUATION
+The **toro C Library** is still in state of EVALUATION
 
 Field tests are urgently required.
 
 Feedback is very WELCOME.
-
-A non-EVALUATION-library will be provided for helpful supporters for free.
 
 The functions below are already implemented and carefully tested, every single one of them, except otherwise noted.
 
@@ -147,8 +151,13 @@ The functions below are already implemented and carefully tested, every single o
 ### non-Standard C90/C95 functions that will be implemented _on demand_
 * [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit)
 * <del>[`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)</del>
+* <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20211107
+* add `wmain()` support
+    ATTENTION: The presence of `main()` is not detected at build time anymore, but at runtime.
+
 ### 20211031
 * add Microsoft specific `fopen()` mode string modifier `"t"` for text mode
    * NOTE: `"t"` modifier is not defined by ANSI/ISO C, because binary/text mode differentiation is done by `"w"` modifier only. 
