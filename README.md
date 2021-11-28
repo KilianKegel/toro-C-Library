@@ -145,10 +145,10 @@ The functions below are already implemented and carefully tested, every single o
 * <locale.h>: C-locale-only support
 * <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
 * 20191017: <del>CTRL-C interception not yet implemented</del>
-* 20191017: <del>**toro C Library based progams use ASCII console interface only, not UCS-2!**
-    - ASCII is written to `stdout`and `stderr`
-    - ASCII is read from `stdin`
-    pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators</del>
+* 20191017: <del>**toro C Library based progams use ASCII console interface only, not UCS-2!**</del>
+    - <del>ASCII is written to `stdout`and `stderr`</del>
+    - <del>ASCII is read from `stdin`</del>
+    <del>pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators</del>
 
 ### non-Standard C90/C95 functions that will be implemented _on demand_
 * [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit)
