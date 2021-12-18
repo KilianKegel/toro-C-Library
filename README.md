@@ -133,8 +133,9 @@ The functions below are already implemented and carefully tested, every single o
 <https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md>
 
 ## Known bugs
-* *LINK : fatal error LNK1000: Internal error during LIB::Search* with VS2019 tool chain.<br>
-  Please use only VS2022 build environment
+* 20211211: header files missing for EDK2 builts only: `errno.h ` and `assert.h`
+* 20211107: *LINK : fatal error LNK1000: Internal error during LIB::Search* with VS2019 tool chain.<br>
+  The reason is still unknown. Please use only VS2022 build environment in case it appears using VS2019.
   
 * printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
 * scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
@@ -156,6 +157,13 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20211218
+* introduce `CDETRACE()` debug/trace macro that is parameter checked at build time
+* improve `wmain()` support; now selected at build time by choosing the CRT0 entry point name
+    * `_cdeCRT0UefiShellW()`
+    * `_cdeCRT0WinNTW()`
+    NOTE: The `*env` pointer is not passed to `wmain()`
+
 ### 20211128
 * fixed: UEFI Shell overwrites the last line of text of a previously terminated application with its prompt
 * add: fgetws()
