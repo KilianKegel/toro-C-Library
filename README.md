@@ -133,7 +133,6 @@ The functions below are already implemented and carefully tested, every single o
 <https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md>
 
 ## Known bugs
-* 20211211: header files missing for EDK2 builts only: `errno.h ` and `assert.h`
 * 20211107: *LINK : fatal error LNK1000: Internal error during LIB::Search* with VS2019 tool chain.<br>
   The reason is still unknown. Please use only VS2022 build environment in case it appears using VS2019.
   
