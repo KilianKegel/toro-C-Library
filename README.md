@@ -156,6 +156,14 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20220109
+* add Standard C Library functions: strcoll(), strxfrm(), fgetwc(), fputwc, fputws(), fwide(), fwprintf()
+  fwscanf(), getwc, getwchar(), putwc(), putwchar(), swscanf(), ungetwc(), vfwscanf(), vswscanf(), wcscoll()
+  wcsxfrm(), btowc()
+* fix "BINARY MODE" for wide printf()/scanf() family functions
+* imitate funny Microsoft behaviour when replacing and pushing back  -ungetc()- a character by CTRL-Z to a stream (in that case the stream *is not terminated*)
+* fix fscanf() family return value for "event of an early matching failure" http://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=299
+
 ### 20211218
 * introduce `CDETRACE()` debug/trace macro that is parameter checked at build time
 * improve `wmain()` support; now selected at build time by choosing the CRT0 entry point name
