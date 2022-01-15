@@ -1,12 +1,11 @@
 NOTE: 
-* "TCL" is the [toro-C-Library](https://github.com/KilianKegel/torito-C-Library)
 * "a" -> approved
 * "n/a" -> not approved
 ## Validation Status
 <table>
-        <tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                                              <th>TCL</th>    <th>DXE</th>         <th>PEI</th> </tr>
+        <tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                                              <th>Shell</th>    <th>DXE</th>         <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert?view=vs-2019">void _wassert (const wchar_t *,const wchar_t *,unsigned)</a></td><td>C90, MSFT implementation for assert macro</td><td>a</td><TD>a</TD><TD>a</TD></tr>
-        <tr> <th colspan="2">Character handling < ctype.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Character handling < ctype.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019">int isalnum(int)</a></td>             <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l?view=vs-2019">int isalpha(int)</a></td>         <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l?view=vs-2019">int iscntrl(int)</a></td>         <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -20,18 +19,18 @@ NOTE:
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l?view=vs-2019">int isxdigit(int)</a></td>    <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l?view=vs-2019">int tolower(int)</a></td> <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l?view=vs-2019">int toupper(int)</a></td> <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
-        <tr> <th colspan="2">Errors < errno.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Errors < errno.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr?view=vs-2019">int *_errno(void)</a></td><td>C90, MSFT implementation for errno macro</td>           <td>a</td><TD> </TD><TD> </TD></tr>
-        <tr> <th colspan="2">Localization < locale.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Localization < locale.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/localeconv?view=vs-2019">struct lconv *localeconv(void)                      </a></td><td>C90, is implemented (C-locale)</td>     <td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=vs-2019">char *setlocale(int category, const char *locale)   </a></td><td>C90, is implemented (C-locale)</td><td>a</td><TD>a</TD><TD>a</TD></tr>
-        <tr> <th colspan="2">Nonlocal jumps < setjmp.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Nonlocal jumps < setjmp.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setjmp?view=vs-2019">int setjmp(jmp_buf env)             </a></td><td>C90, _setjmp is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/longjmp?view=vs-2019">void longjmp(jmp_buf env, int val)  </a></td><td>C90, is implemented        </td><td>a</td><TD>a</TD><TD>a</TD></tr>
-        <tr> <th colspan="2">Signal handling < signal.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Signal handling < signal.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/signal?view=vs-2019">void (*signal(int sig, void (*func)(int)))(int)      </a></td><td>C90, is implemented</td>                   <td>a</td><TD> </TD><TD> </TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/raise?view=vs-2019">int raise(int sig)                                    </a></td><td>C90, is implemented</td>                   <td>a</td><TD> </TD><TD> </TD></tr>
-        <tr> <th colspan="2">Input/output < stdio.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Input/output < stdio.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/remove-wremove?view=vs-2019">int remove(const char *filename)             </a></td>   <td>C90, is implemented</td>                <td>a</td><TD> </TD><TD> </TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/rename-wrename?view=vs-2019">int rename(const char *old, const char *new) </a></td>   <td>C90, is implemented</td>                <td>a</td><TD> </TD><TD> </TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tmpfile?view=vs-2019">FILE *tmpfile(void)                                 </a></td>   <td>C90, is implemented</td>                <td>a</td><TD> </TD><TD> </TD></tr>
@@ -78,7 +77,7 @@ NOTE:
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/feof?view=vs-2019">int feof(FILE *stream)                                                  </a></td><td>C90, is implemented</td><td>a</td><TD> </TD><TD> </TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ferror?view=vs-2019">int ferror(FILE *stream)                                                </a></td><td>C90, is implemented</td><td>a</td><TD> </TD><TD> </TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/perror-wperror?view=vs-2019">void perror(const char *s)                                              </a></td><td>C90, is implemented</td><td>a</td><TD> </TD><TD> </TD></tr>
-        <tr> <th colspan="2">General utilities < stdlib.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">General utilities < stdlib.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atof-atof-l-wtof-wtof-l?view=vs-2019">double atof(const char *nptr)</a></td><td>C90, is not yet implemented</td><TD></TD><TD></TD><td></td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l?view=vs-2019">int atoi(const char *nptr)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atol-atol-l-wtol-wtol-l?view=vs-2019">long int atol(const char *nptr)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -107,7 +106,7 @@ NOTE:
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctomb-wctomb-l?view=vs-2019">int wctomb(char *s, wchar_t wchar)</a></td><td>C90, is implemented</td>                             <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbstowcs-mbstowcs-l?view=vs-2019">size_t mbstowcs(wchar_t *  pwcs,const char *  s, size_t n)</a></td><td>C90, is implemented</td> <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcstombs-wcstombs-l?view=vs-2019">size_t wcstombs(char *  s,const wchar_t *  pwcs, size_t n)</a></td><td>C90, is </td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
-        <tr> <th colspan="2">String handling < string.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">String handling < string.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=vs-2019">void *memcpy(void *  s1,const void *  s2, size_t n)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=vs-2019">void *memmove(void *s1, const void *s2, size_t n)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcpy-wcscpy-mbscpy?view=vs-2019">char *strcpy(char *  s1,const char *  s2)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -130,7 +129,7 @@ NOTE:
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memset-wmemset?view=vs-2019">void *memset(void *s, int c, size_t n)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strerror-strerror-wcserror-wcserror?view=vs-2019">char *strerror(int errnum)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l?view=vs-2019">size_t strlen(const char *s)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
-        <tr> <th colspan="2">Date and time < time.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Date and time < time.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/clock?view=vs-2019">clock_t clock(void)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/difftime-difftime32-difftime64?view=vs-2019">double difftime(time_t time1, time_t time0)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mktime-mktime32-mktime64?view=vs-2019">time_t mktime(struct tm *timeptr)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -140,7 +139,7 @@ NOTE:
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/gmtime-gmtime32-gmtime64?view=vs-2019">struct tm *gmtime(const time_t *timer)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/localtime-localtime32-localtime64?view=vs-2019">struct tm *localtime(const time_t *timer)</a></td><td>C90, function supports UTC only</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l?view=vs-2019">size_t strftime(char *  s,size_t maxsize,const char *  format,const struct tm *  timeptr)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
-        <tr> <th colspan="2">Extended multibyte/wide character utilities < wchar.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Extended multibyte/wide character utilities < wchar.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l?view=vs-2019">int fwprintf(FILE *  stream,const wchar_t *  format, ...)</a></td><td>C95, is implemented</td><TD>a</TD><TD></TD><td></td></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l?view=vs-2019">int fwscanf(FILE *  stream,const wchar_t *  format, ...)</a></td><td>C95, is implemented</td><TD>a</TD><TD></TD><td></td></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l?view=vs-2019">int wprintf(const wchar_t *  format, ...)</a></td><td>C95, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -195,7 +194,7 @@ NOTE:
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcrtomb?view=vs-2019">size_t wcrtomb(char *  s, wchar_t wc,mbstate_t *  ps)</a></td><td>C95, is not yet implemented</td><TD></TD><TD></TD><td></td></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbsrtowcs?view=vs-2019">size_t mbsrtowcs(wchar_t *  dst,const char **  src, size_t len,mbstate_t *  ps)</a></td><td>C95, is not yet implemented</td><TD></TD><TD></TD><td></td></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcsrtombs?view=vs-2019">size_t wcsrtombs(char *  dst,const wchar_t **  src, size_t len,mbstate_t *  ps)</a></td><td>C95, is not yet implemented</td><TD></TD><TD></TD><td></td></tr>
-        <tr> <th colspan="2">Wide character classification and mapping utilities < wctype.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+        <tr> <th colspan="2">Wide character classification and mapping utilities < wctype.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
 		<tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019">int iswalnum(wint_t wc)</a></td>                  <td>C95, is implemented</td>    <td>a</td><TD>a</TD><TD>a</TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l?view=vs-2019">int iswalpha(wint_t wc)</a></td>                  <td>C95, is implemented</td>    <td>a</td><TD>a</TD><TD>a</TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l?view=vs-2019">int iswblank(wint_t wc)</a></td>                  <td>C99, is implemented</td>    <td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -237,12 +236,12 @@ NOTE:
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fabs-fabsf-fabsl?view=vs-2019">double fabs(double x)</a></td><td>C90, is not yet implemented</td>                                     <td></td><TD></TD><TD></TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=vs-2019">double floor(double x)</a></td><td>C90, is not yet implemented</td>                                 <td></td><TD></TD><TD></TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fmod-fmodf?view=vs-2019">double fmod(double x, double y)</a></td><td>C90, is not yet implemented</td>                                 <td></td><TD></TD><TD></TD></tr>
-    <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< io.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+    <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< io.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions?view=msvc-160">intptr_t _findfirst(const char *filespec, struct _finddata_t *fileinfo)</a></td><td>Microsoft specific, is implemented</td>    <td>a</td><TD> </TD><TD> </TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions?view=msvc-160">int _findnext(intptr_t handle,struct _finddata_t *fileinfo)</a></td><td>Microsoft specific, is implemented</td>                 <td>a</td><TD> </TD><TD> </TD></tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose?view=msvc-160">int _findclose(intptr_t handle)</a></td><td>Microsoft specific, is implemented</td>                                                      <td>a</td><TD> </TD><TD> </TD></tr>
-    <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+    <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mkdir-wmkdir?view=msvc-160">int _mkdir(const char *dirname)</a></td><td>Microsoft specific, is implemented</td>    <td>a</td><TD> </TD><TD> </TD></tr>
-    <tr> <th colspan="2">non-C-Standard and Microsoft specific / POSIX functions< sys/stat.h ></th><th>TCL</th><th>DXE</th> <th>PEI</th> </tr>
+    <tr> <th colspan="2">non-C-Standard and Microsoft specific / POSIX functions< sys/stat.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stat-functions?view=msvc-160">int _stat64i32(const char *path, struct _stat64i32 *buffer)</a></td><td>Microsoft specific, is implemented</td>    <td>a</td><TD> </TD><TD> </TD></tr>
 </table>
