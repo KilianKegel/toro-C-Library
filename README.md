@@ -165,8 +165,18 @@ The functions below are already implemented and carefully tested, every single o
     - `fputws()`
     - `fwide()`
     - `fwprintf()`
-  fwscanf(), getwc, getwchar(), putwc(), putwchar(), swscanf(), ungetwc(), vfwscanf(), vswscanf(), wcscoll()
-  wcsxfrm(), btowc()
+    - `fwscanf()`
+    - `getwc()`
+    - `getwchar()`
+    - `putwc()`
+    - `putwchar()`
+    - `swscanf()`
+    - `ungetwc()`
+    - `vfwscanf()`
+    - `vswscanf()`
+    - `wcscoll()`
+    - `wcsxfrm()`
+    - `btowc()`
 * fix "BINARY MODE" for wide printf()/scanf() family functions
 * imitate funny Microsoft behaviour when replacing and pushing back  -ungetc()- a character by CTRL-Z to a stream (in that case the stream *is not terminated*)
 * fix fscanf() family return value for "event of an early matching failure" http://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=299
