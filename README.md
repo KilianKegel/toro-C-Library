@@ -157,7 +157,14 @@ The functions below are already implemented and carefully tested, every single o
 
 ## Revision history
 ### 20220109
-* add Standard C Library functions: strcoll(), strxfrm(), fgetwc(), fputwc, fputws(), fwide(), fwprintf()
+* add Standard C Library functions: 
+    - `strcoll()`
+    - `strxfrm()`
+    - `fgetwc()`
+    - `fputwc()`
+    - `fputws()`
+    - `fwide()`
+    - `fwprintf()`
   fwscanf(), getwc, getwchar(), putwc(), putwchar(), swscanf(), ungetwc(), vfwscanf(), vswscanf(), wcscoll()
   wcsxfrm(), btowc()
 * fix "BINARY MODE" for wide printf()/scanf() family functions
