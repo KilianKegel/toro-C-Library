@@ -156,6 +156,29 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20220501
+* add Microsoft/POSIX C Library functions: 
+    - `_open()`
+    - `_close()`
+    - `_read()`
+    - `_write()`
+    - `_fdopen()`
+    - `_fileno()`
+    - `_wfopen()`
+    - `_fseeki64()`
+    - `_ftelli64()`
+* fixed `errno` values for file position functions with negative offsets (`fsetpos()`, `fseek()`)
+* fixed UEFI BUG: gap of non-initialized disk space<br>
+  File positioning bug, if data written behind EOF, data range between old EOF and new data contains medium data / garbage, instead of 0
+* simplify `CDETRACE()` implemantation, improve portability of that `CdePkg` specific debug macro
+* add `_strefierror()`: rename Toro-C-Library UEFI-specific function `strefierror()` to ANSI C naming convention compatible `_strefierror()`
+* implement full `__chkstk()` for Windows 64Bit: https://docs.microsoft.com/en-us/windows/win32/devnotes/-win32-chkstk
+* partially implementation of the %G `fprintf()`-- format specifier for [Visual-LIBXLSXWRITER-for-UEFI-Shell](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell#visual-libxlsxwriter-for-uefi-shell)
+* fixed `fread()` end-of-file indicator not set correctly when EOF is reached within a buffer instead of reading of 0 bytes from the mass storage device
+* changed exit code of the `abort()` function from 3 to 0xC0000409
+* fixed: reassigned (by running `freopen()`) filepointer to `stdout`/`stderr`  are not flushed at exit
+* `CdePkg`--SMM Driver: Erroneous message shown at startup: `FATAL ERROR : CdeServices SMM not available`
+
 ### 20220109
 * add Standard C Library functions: 
     - `strcoll()`
