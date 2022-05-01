@@ -176,7 +176,7 @@ The functions below are already implemented and carefully tested, every single o
 * partially implementation of the %G `fprintf()`-- format specifier for [Visual-LIBXLSXWRITER-for-UEFI-Shell](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell#visual-libxlsxwriter-for-uefi-shell)
 * fixed `fread()` end-of-file indicator not set correctly when EOF is reached within a buffer instead of reading of 0 bytes from the mass storage device
 * changed exit code of the `abort()` function from 3 to 0xC0000409
-* fixed: reassigned (by running `freopen()`) filepointer to `stdout`/`stderr`  are not flushed at exit
+* fixed: reassigned (by running `freopen()`) filepointers to `stdout`/`stderr` are not flushed at exit
 * `CdePkg`--SMM Driver: Erroneous message shown at startup: `FATAL ERROR : CdeServices SMM not available`
 
 ### 20220109
