@@ -90,7 +90,7 @@ and then against **toro C Library** for WinNT to be able to compare program beha
 Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
 build and debug environment of Visual Studio.
 
-**It is considered the only effective way to reach the ANSI C compatibility and strive for a *faultless implemenation*
+**It is considered the only effective way to reach the ANSI C compatibility and strive for a *faultless implementation*
 within a reasonable amount of time, because by far most parts of each single function test can be run through, 
 debugged and tested natively on the (Windows) development machine. Only final tests need to be run on the UEFI Shell target.**
 This proceeding can be reached only by the [OSIF](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (Operating System Interface) architecture of the library.
