@@ -156,6 +156,13 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20220522
+* add  C++ minimum support
+    - `void* operator new(size_t size)`
+    - `void* operator new[](size_t size)`
+    - `void operator delete[](void* ptr)`
+    - `void operator delete(void* ptr, unsigned __int64 size)`
+
 ### 20220501
 * add Microsoft/POSIX C Library functions: 
     - `_open()`
