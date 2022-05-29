@@ -156,6 +156,9 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20220529
+* fixed: `free()` and C++ operator `delete()`  crash to free `NULL` pointer
+
 ### 20220522
 * add  C++ minimum support
     - `void* operator new(size_t size)`
