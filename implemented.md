@@ -3,7 +3,7 @@ NOTE:
 * "n/a" -> not approved
 ## Validation Status
 <table>
-        <tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                                              <th>Shell</th>    <th>DXE</th>         <th>PEI</th> </tr>
+<tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                                              <th>Shell</th>    <th>DXE</th>         <th>PEI</th> </tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert?view=vs-2019">void _wassert (const wchar_t *,const wchar_t *,unsigned)</a></td><td>C90, MSFT implementation for assert macro</td><td>a</td><TD>a</TD><TD>a</TD></tr>
         <tr> <th colspan="2">Character handling < ctype.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
         <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019">int isalnum(int)</a></td>             <td>C90, is implemented</td>                <td>a</td><TD>a</TD><TD>a</TD></tr>
@@ -114,19 +114,15 @@ NOTE:
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctomb-wctomb-l?view=vs-2019">int wctomb(char *s, wchar_t wchar)</a></td><td>C90, is implemented</td>                             <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbstowcs-mbstowcs-l?view=vs-2019">size_t mbstowcs(wchar_t *  pwcs,const char *  s, size_t n)</a></td><td>C90, is implemented</td> <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcstombs-wcstombs-l?view=vs-2019">size_t wcstombs(char *  s,const wchar_t *  pwcs, size_t n)</a></td><td>C90, is implemented</td> <TD>a</TD><TD>a</TD><td>a</td></tr>
-
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/d5t0h1wd(v=vs.110)">wchar_t* _ultow(unsigned long _Value, wchar_t* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/d5t0h1wd(v=vs.110)">char* _ultoa(unsigned long _Value, char* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
-
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)">char* _ui64toa(unsigned long long _Value, char* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)">wchar_t* _itow(int _Value, wchar_t* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)">char* _itoa(int _Value, char* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)">wchar_t* _i64tow(long long _Value, wchar_t* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)">char* _i64toa(long long _Value, char* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
-
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/6y51bcy2(v=vs.140)">wchar_t* _ltow(long _Value, wchar_t* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
             <tr><td><a href="https://docs.microsoft.com/en-us/previous-versions/6y51bcy2(v=vs.140)">char* _ltoa(long _Value, char* _Buffer, int _Radix)</a></td><td>MSFT specific, is implemented</td>            <TD>a</TD><TD>a</TD><td>a</td></tr>
-
         <tr> <th colspan="2">String handling < string.h ></th><th>Shell</th><th>DXE</th> <th>PEI</th> </tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=vs-2019">void *memcpy(void *  s1,const void *  s2, size_t n)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
     <tr><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=vs-2019">void *memmove(void *s1, const void *s2, size_t n)</a></td><td>C90, is implemented</td><td>a</td><TD>a</TD><TD>a</TD></tr>
