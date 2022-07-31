@@ -156,6 +156,35 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20220731
+* add Standard C90 Library functions: 
+    - `wcstoul()`
+    - `wcstol()`
+* add Standard C99 Library functions: 
+    - `strtoull()`
+    - `strtoll()`
+    - `strtoimax()`
+    - `strtoumax()`
+    - `wcstoull()`
+    - `wcstoll()`
+    - `wcstoimax()`
+    - `wcstoumax()`
+* add Microsoft/POSIX C Library functions: 
+    - `_ultow()`
+    - `_ultoa()`
+    - `_ui64tow()`
+    - `_ui64toa()`
+    - `_ltow()`
+    - `_ltoa()`
+    - `_itow()`
+    - `_itoa()`
+    - `_i64tow()`
+    - `_i64toa()`
+* implement full `__chkstk()` for Windows 32Bit: https://docs.microsoft.com/en-us/windows/win32/devnotes/-win32-chkstk
+* fixed stdout/stderr redirection `>` and `>>` didn't work anymore (since `20220501`)
+* fixed `"a"`/`O_APPEND` append file open attribute didn't work anymore (since `20220501`)
+* fixed `ftell()`/`fgetpos()` reports wrong offset after writing to `"a"`/`O_APPEND` opened files
+
 ### 20220529
 * fixed: `free()` and C++ operator `delete()`  crash to free `NULL` pointer
 
