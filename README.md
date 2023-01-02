@@ -1,13 +1,13 @@
 # Toro C Library (formerly known as Torito C Library)
-* [Toro C Library](https://github.com/KilianKegel/torito-C-Library#torito-c-library)<br>
-* [Goal](https://github.com/KilianKegel/torito-C-Library#goal)<br>
-* [Approach](https://github.com/KilianKegel/torito-C-Library#approach)<br>
-* [Riding the UEFI Shell](https://github.com/KilianKegel/torito-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-* [HELLO is now WELCOME](https://github.com/KilianKegel/torito-C-Library#hello-is-now-welcome)<br>
-* [Status](https://github.com/KilianKegel/torito-C-Library#status)<br>
-* [Known bugs](https://github.com/KilianKegel/torito-C-Library#known-bugs)<br>
+* [Toro C Library](https://github.com/KilianKegel/torito-C-Library#toro-c-library)<br>
+* [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
+* [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
+* [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
+* [HELLO is now WELCOME](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome)<br>
+* [Status](https://github.com/KilianKegel/toro-C-Library#status)<br>
+* [Known bugs](https://github.com/KilianKegel/toro-C-Library#known-bugs)<br>
     * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
-* [Revision history](https://github.com/KilianKegel/torito-C-Library#revision-history)<br>
+* [Revision history](https://github.com/KilianKegel/toro-C-Library#revision-history)<br>
 
 ![C](https://github.com/KilianKegel/pictures/blob/master/C.png)
 
