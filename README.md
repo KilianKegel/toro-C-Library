@@ -1,5 +1,5 @@
 # Toro C Library (formerly known as Torito C Library)
-* [Toro C Library](https://github.com/KilianKegel/torito-C-Library#toro-c-library)<br>
+* [Usecases](https://github.com/KilianKegel/toro-C-Library#usecases)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
@@ -23,6 +23,19 @@ Additions of a C Library function set won't be done for "torito C Library" but f
 **toro C Library** is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
 design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2022.
+
+## Usecases
+1.  create menu driven applications for the UEFI shell execution environment
+    * VIDEO:    https://www.youtube.com/watch?v=gMwCKA6SQrk
+    * SOURCE:   https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell
+2.  easily port existing Standard C programs to the UEFI shell execution environment, e.g. the [ACPI reference implementation](https://acpica.org)
+    * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2022-01-16#cdepkgblog-2022-01-16
+    * VIDEO:    https://www.youtube.com/watch?v=POfSJQXi2aM
+    * SOURCE:   https://github.com/KilianKegel/Visual-ACPICA-for-UEFI-Shell
+3.  easily reimplement MSDOS programs for the UEFI shell execution environment
+    * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2021-11-28#cdepkgblog-2021-11-28
+4.  quickly implement simple CLI tools for the UEFI shell execution environment
+    * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2021-11-14#cdepkgblog-2021-11-14
 
 ## Goal
 
@@ -156,6 +169,18 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20230103
+* add Microsoft/POSIX C Library functions: 
+    - `_isatty()`
+* imitate funny/buggy Microsoft behaviour for `fopen()` with `fmode` parameter `w+` or `a`:<br>
+  function terminates successfully with `errno` set to 22, `Invalid argument`
+* imitate funny/buggy Microsoft behaviour for `_fileno()` with invalid filepointer:<br>
+  MSFT: `_fileno(-1)` just crashes by an invalid memory access<br>
+  This behaviour is imitated by an `exit(3)` invocation
+* fixed application crash at termination when a redirected I/O stream `STDERR` is reopened with `reopen()`
+* improve existing invalidate parameter handling; enable file name string, function name string, line number string and expression string
+  at RELEASE runtime  
+  NOTE: Microsoft enables this feature only when using DEBUG version of LIBCMT.LIB.
 ### 20221022
 * add O_TEMPORARY support to Microsoft/POSIX _open()
 * fixed "fall time bug" (autumn). Broken time calculation on 

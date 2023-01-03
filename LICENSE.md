@@ -1,6 +1,6 @@
 Toro C Library for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,<br>
 C Development Environment for UEFI<br>
-Copyright (c) 2021, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/KilianKegel/torito-C-Library<br>
+Copyright (c) 2017-2023, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/KilianKegel/toro-C-Library<br>
 <br>
 Permission to use Toro C Library for the sole purpose of creating
 UEFI Shell, UEFI POST drivers and Windows NT console applications applications, which may be
