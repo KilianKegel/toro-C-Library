@@ -169,6 +169,8 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20230104
+* fixed `strftime()` parameter: `%I`, `%m`, `%x`
 ### 20230103
 * add Microsoft/POSIX C Library functions: 
     - `_isatty()`
