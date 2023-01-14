@@ -1,5 +1,5 @@
 # Toro C Library (formerly known as Torito C Library)
-* [Usecases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
+* [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
