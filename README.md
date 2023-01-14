@@ -1,5 +1,5 @@
 # Toro C Library (formerly known as Torito C Library)
-* [Usecases](https://github.com/KilianKegel/toro-C-Library#usecases)<br>
+* [Usecases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
@@ -24,7 +24,7 @@ Additions of a C Library function set won't be done for "torito C Library" but f
 to create applications for different operating systems using
 design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2022.
 
-## Usecases
+## Use cases
 1.  create menu driven applications for the UEFI shell execution environment
     * VIDEO:    https://www.youtube.com/watch?v=gMwCKA6SQrk
     * SOURCE:   https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell
