@@ -1,5 +1,6 @@
 # Toro C Library (formerly known as Torito C Library)
 * [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
+* [Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
@@ -36,6 +37,9 @@ design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2
     * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2021-11-28#cdepkgblog-2021-11-28
 4.  quickly implement simple CLI tools for the UEFI shell execution environment
     * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2021-11-14#cdepkgblog-2021-11-14
+
+## Source Code
+https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI
 
 ## Goal
 
@@ -169,6 +173,14 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20230212
+* introduce `CDEABI`, an additional application binary interface ABI to ease coexistance of `CdePkg` based BIOS 
+    drivers with incomplete [tianocore EDK2](https://github.com/tianocore/edk2) `C Library` 
+    [fragments](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)
+
+    NOTE: `CDEABI` uses the Microsoft DLL interface [`__declspec(dllimport)`](https://learn.microsoft.com/en-us/cpp/build/importing-into-an-application-using-declspec-dllimport?view=msvc-170) for EDK2-built drivers .
+    Technically this uses *indirect function calls* on machine code level.
+* promote `CDETRACE()`, remove former, alternate trace method (`CDEMOFINE()`) completely
 ### 20230104
 * fixed `strftime()` parameter: `%I`, `%m`, `%x`
 ### 20230103
