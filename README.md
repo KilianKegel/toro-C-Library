@@ -131,12 +131,23 @@ int main(int argc, char **argv){
 WELCOME.c can be translated in the VS2022 64Bit command line environment by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
 
 ```bat
+@echo off
+echo Compiling the C source...
+cl /nologo /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
 
-cl /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
+echo Linking the .OBJ to UEFI SHELL Executable WELCOME.EFI 
+link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
 
-link /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
+echo Linking the .OBJ to Windows NT Executable WELCOME.EXE
+link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0WinNT /OUT:welcome.exe /SUBSYSTEM:CONSOLE WELCOME.obj toroC64.lib KERNEL32.LIB
 ```
 
+With just one additional link-step in the above script, without re-compiling, a Windows NT executable could be created.
+
+If you prefer to use state-of-the-art build environment **Visual Studio 2022**, please follow
+the step-by-step-configuration [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)
+
+To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell).
 
 ## Status
 The **toro C Library** is still in state of EVALUATION
@@ -170,6 +181,11 @@ The functions below are already implemented and carefully tested, every single o
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20230415
+* fixed: in the pre-Memory-Discovered PEI (Pre Efi Initialization) POST x86-32
+  Standard C function `localeconv()` crashed the platform.<br>
+  NOTE: All x86-64 operation modes (UEFI Shell, UEFI SMM, UEFI DXE, Windows NT)
+  and post-Memory-Discovered PEI (Pre Efi Initialization) x86-32 was not affected by that bug.
 ### 20230409
 NOTE: This release **20230409** doesn't change UEFI Shell programs behavior<br>
 The improvements provided here only affects PEI drivers, based on **toro C Library**/[**CdePkg**](https://github.com/KilianKegel/CdePkg#cdepkg) listed below:
