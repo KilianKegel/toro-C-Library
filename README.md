@@ -4,7 +4,7 @@
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-* [HELLO is now WELCOME](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome)<br>
+* [HELLO is now WELCOME: ](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome) Howto build **hello.c** using **commandline** and **Visual Studio 2022**<br>
 * [Status](https://github.com/KilianKegel/toro-C-Library#status)<br>
 * [Known bugs](https://github.com/KilianKegel/toro-C-Library#known-bugs)<br>
     * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
@@ -147,7 +147,7 @@ With just one additional link-step in the above script, without re-compiling, a 
 If you prefer to use state-of-the-art build environment **Visual Studio 2022**, please follow
 the step-by-step-configuration [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)
 
-To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell).
+To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell#visual-ansi-c-for-uefi-shell).
 
 ## Status
 The **toro C Library** is still in state of EVALUATION
