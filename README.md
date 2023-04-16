@@ -208,6 +208,7 @@ The improvements provided here only affects PEI drivers, based on **toro C Libra
 * improve `CDEABI` (*C Development Environment Application Binary Interface*), used as collision avoidance with EDK2 `StdLibC` and relatives<br>
   **NOTE: In real-world UEFI implementations various components provide [*"reduced"*](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)(*mildly put*)
   Standard C Interface just fitting the requirements of that particular package (`CryptoPkg`, `RedfishPkg`).**<br>
+   
   To avoid symbol double definitions at link time or link order failures , `CDEABI`:<br>
     * provides Standard C Functions in their `__declspec(dllimport)` incarnation only
     * except for Microsoft compiler intrinsics `__cdecl memset()` and `__cdecl memcmp()` that are paired with the its `__declsspec(dllimport)` counterpart in the same COMDAT (same .OBJ module)
