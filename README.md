@@ -206,7 +206,7 @@ The improvements provided here only affects PEI drivers, based on **toro C Libra
       This proceeding prevents `LocatePpi()` to return an invalid pointer to the first instance, while a second instance is currently active.
       
 * improve `CDEABI` (*C Development Environment Application Binary Interface*), used as collision avoidance with EDK2 `StdLibC` and relatives<br>
-  NOTE: In real-world UEFI implementations various components provide [*reduced*](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)
+  NOTE: In real-world UEFI implementations various components provide [*"reduced" -- mildly put*](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)
   Standard C Interface just fitting the requirements of that particular package (`CryptoPkg`, `RedfishPkg`).<br>
   To avoid symbol double definitions at link time or link order failures , `CDEABI`:<br>
     * provides Standard C Functions in their `__declspec(dllimport)` incarnation only
