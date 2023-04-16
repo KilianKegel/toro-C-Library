@@ -1,4 +1,4 @@
-# Toro C Library (formerly known as Torito C Library)
+# <img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">Toro C Library (formerly known as Torito C Library)
 * <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18">[Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
 * <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18">[Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
