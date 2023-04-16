@@ -189,7 +189,7 @@ The functions below are already implemented and carefully tested, every single o
 ### 20230409
 NOTE: This release **20230409** doesn't change UEFI Shell programs behavior<br>
 The improvements provided here only affects PEI drivers, based on **toro C Library**/[**CdePkg**](https://github.com/KilianKegel/CdePkg#cdepkg) listed below:
-* add Memory Discovered (https://uefi.org/sites/default/files/resources/PI_Spec_1_6.pdf#page=111) handling for PEIM (Pre-EFI Initialization Module)
+* add [Memory Discovered](https://uefi.org/sites/default/files/resources/PI_Spec_1_6.pdf#page=111) handling for PEIM (Pre-EFI Initialization Module)
     * restart memory management when switching from CAR (Cash As RAM) to permanent memory
     * reassign `CDE_SERVICES` pointer when switching from CAR (Cash As RAM) to permanent memory
 * support of multi-invocation of `CdePkg`-based PEIM
@@ -206,8 +206,8 @@ The improvements provided here only affects PEI drivers, based on **toro C Libra
       This proceeding prevents `LocatePpi()` to return an invalid pointer to the first instance, while a second instance is currently active.
       
 * improve `CDEABI` (*C Development Environment Application Binary Interface*), used as collision avoidance with EDK2 `StdLibC` and relatives<br>
-  NOTE: In real-world UEFI implementations various components provide [*"reduced"*](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)(*mildly put*)
-  Standard C Interface just fitting the requirements of that particular package (`CryptoPkg`, `RedfishPkg`).<br>
+  **NOTE: In real-world UEFI implementations various components provide [*"reduced"*](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)(*mildly put*)
+  Standard C Interface just fitting the requirements of that particular package (`CryptoPkg`, `RedfishPkg`).**<br>
   To avoid symbol double definitions at link time or link order failures , `CDEABI`:<br>
     * provides Standard C Functions in their `__declspec(dllimport)` incarnation only
     * except for Microsoft compiler intrinsics `__cdecl memset()` and `__cdecl memcmp()` that are paired with the its `__declsspec(dllimport)` counterpart in the same COMDAT (same .OBJ module)
