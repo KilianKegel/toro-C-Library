@@ -205,21 +205,21 @@ The improvements provided here only affects PEI drivers, based on **toro C Libra
 
       This proceeding prevents `LocatePpi()` to return an invalid pointer to the first instance, while a second instance is currently active.
       
-* improve `CDEABI` (*C Development Environment Application Binary Interface*), used as collision avoidance with EDK2 `StdLibC` and relatives<br>
+* improve **`CDEABI`** (*C Development Environment Application Binary Interface*), used as **collision avoidance** with EDK2 `StdLibC` and relatives<br>
   **NOTE: In real-world UEFI implementations various components provide [*"reduced"*](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)(*mildly put*)
   Standard C Interface just fitting the requirements of that particular package (`CryptoPkg`, `RedfishPkg`).**<br>
    
-  To avoid symbol double definitions at link time or link order failures , `CDEABI`:<br>
+  To avoid symbol double definitions at link time or link order failures with EDK2 `StdLibC`, **`CDEABI`**:<br>
     * provides Standard C Functions in their `__declspec(dllimport)` incarnation only
     * except for Microsoft compiler intrinsics `__cdecl memset()` and `__cdecl memcmp()` that are paired with the its `__declsspec(dllimport)` counterpart in the same COMDAT (same .OBJ module)
 ### 20230304
 * fixed `strtok()`, `wcstok()`
 ### 20230212
-* introduce `CDEABI`, an additional application binary interface ABI to ease coexistance of `CdePkg` based BIOS 
+* introduce **`CDEABI`**, an additional application binary interface ABI to ease coexistance of `CdePkg` based BIOS 
     drivers with incomplete [tianocore EDK2](https://github.com/tianocore/edk2) `C Library` 
     [fragments](https://github.com/tianocore/edk2/blob/master/CryptoPkg/Library/BaseCryptLib/SysCall/CrtWrapper.c#L603)
 
-    NOTE: `CDEABI` uses the Microsoft DLL interface [`__declspec(dllimport)`](https://learn.microsoft.com/en-us/cpp/build/importing-into-an-application-using-declspec-dllimport?view=msvc-170) for EDK2-built drivers .
+    NOTE: **`CDEABI`** uses the Microsoft DLL interface [`__declspec(dllimport)`](https://learn.microsoft.com/en-us/cpp/build/importing-into-an-application-using-declspec-dllimport?view=msvc-170) for EDK2-built drivers .
     Technically this uses *indirect function calls* on machine code level.
 * promote `CDETRACE()`, remove former, alternate trace method (`CDEMOFINE()`) completely
 ### 20230104
