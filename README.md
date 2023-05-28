@@ -151,17 +151,17 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 
 ## Implementation Status
 <table>
-<tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                                              <th>Shell</th>    <th>DXE</th>         <th>PEI</th> </tr> 
+<tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                       
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/assert_h/_wassert.c">void _wassert (const wchar_t *,const wchar_t *,unsigned)</a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert">C90, MSFT implementation for assert macro</a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
 <tr> <th colspan="2">Character handling < ctype.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/ctype_h/isalnum.c">  int isalnum(int)    </a></td>           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l?view=vs-2019">          C90, is implemented</a></td>                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/ctype_h/isalpha.c">  int isalpha(int)    </a></td>           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l?view=vs-2019">          C90, is implemented</a></td>                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/ctype_h/iscntrl.c">  int iscntrl(int)    </a></td>           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l?view=vs-2019">          C90, is implemented</a></td>                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -178,14 +178,14 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">Errors < errno.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/errno_h/errno.c">int *_errno(void)</a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr?view=vs-2019">C90, MSFT implementation for errno macro</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 <tr> <th colspan="2">Format conversion of integer types < inttypes.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/inttypes_h/strtoimax.c">intmax_t strtoimax(const char* strSource,char** endptr,int base)</a></td>          <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l?view=msvc-170">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/inttypes_h/strtoumax.c">uintmax_t strtoumax(const char* strSource, char** endptr, int base)</a></td>       <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l?view=msvc-170">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/inttypes_h/wcstoimax.c">intmax_t wcstoimax(const wchar_t* strSource,wchar_t** endptr,int base)</a></td>    <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l?view=msvc-170">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -193,29 +193,29 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">Localization < locale.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/locale_h/localeconv.c" >struct lconv *localeconv(void)                     </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/localeconv?view=vs-2019"          >C90, is implemented (C-locale)</a></td>     <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/locale_h/setlocale.c">char *setlocale(int category, const char *locale)  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=vs-2019">C90, is implemented (C-locale)</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
 <tr> <th colspan="2">Nonlocal jumps < setjmp.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/setjmp_h/longjmp64.asm">void longjmp(jmp_buf env, int val)  </a></td>    <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/longjmp?view=vs-2019">C90, is implemented        </a></td>                                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/setjmp_h/setjmp64.asm"> int setjmp(jmp_buf env)             </a></td>    <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setjmp?view=vs-2019"> C90, _setjmp is implemented</a></td>                                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
 <tr> <th colspan="2">Signal handling < signal.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/signal_h/raise.c"    >int raise(int sig)                                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/raise?view=vs-2019"   >C90, is implemented</a></td>                            <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/signal_h/signal.c"   >void (*signal(int sig, void (*func)(int)))(int)      </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/signal?view=vs-2019"  >C90, is implemented</a></td>                            <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 <tr> <th colspan="2">Input/output < stdio.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdio_h/clearerr.c   ">void clearerr(FILE *stream)                                                               </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/clearerr?view=vs-2019                                                 ">C90, is implemented            </a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdio_h/Fclose.c     ">int fclose(FILE *stream)                                                                  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fclose-fcloseall?view=vs-2019                                         ">C90, is implemented            </a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdio_h/Feof.c       ">int feof(FILE *stream)                                                                    </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/feof?view=vs-2019                                                     ">C90, is implemented            </a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
@@ -266,8 +266,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">String handling < string.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/_StrDup.c           ">char *_strdup(const char *strSource)                                              </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strdup-wcsdup-mbsdup?view=msvc-160                                    ">MSFT specific, is implemented</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/_StrICmp.c          ">int _stricmp(const char *string1, const char *string2)                            </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l?view=msvc-160   ">MSFT specific, is implemented</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/_StrNICmp.c         ">int _strnicmp(const char* pszDst, const char* pszSrc, size_t count)               </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l           ">MSFT specific, is implemented</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -296,8 +296,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">Date and time < time.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/time_h/asctime.c             ">char *asctime(const struct tm *timeptr)                                                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/asctime-wasctime?view=vs-2019                                 ">C90, is implemented</a></td>   <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/time_h/clock.c               ">clock_t clock(void)                                                                       </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/clock?view=vs-2019                                            ">C90, is implemented</a></td>   <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/time_h/ctime.c               ">char *ctime(const time_t *timer)                                                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64?view=vs-2019   ">C90, is implemented</a></td>   <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -310,8 +310,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">Extended multibyte/wide character utilities < wchar.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/btowc.c      ">wint_t btowc(int c)                                                                               </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/btowc                                                                ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/cstod.c      ">double wcstod(const wchar_t *  nptr,wchar_t **  endptr)                                           </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l                                      ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Fgetwc.c     ">wint_t fgetwc(FILE *stream)                                                                       </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fgetc-fgetwc                                                         ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
@@ -372,8 +372,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">General utilities < stdlib.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/_i64toa.c"> char* _i64toa(long long _Value, char* _Buffer, int _Radix)</a></td>                                                           <td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)                                                ">MSFT specific, is implemented   </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/_i64tow.c"> wchar_t* _i64tow(long long _Value, wchar_t* _Buffer, int _Radix)</a></td>                                                     <td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)                                                ">MSFT specific, is implemented   </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/_itoa.c">   char* _itoa(int _Value, char* _Buffer, int _Radix)</a></td>                                                                   <td><a href="https://docs.microsoft.com/en-us/previous-versions/yakksftt(v=vs.140)                                                ">MSFT specific, is implemented   </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -414,8 +414,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">Wide character classification and mapping utilities < wctype.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
 		    <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wctype_h/iswalnum.c  ">int iswalnum(wint_t wc)</a></td>                                                                                          <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l         ">C95, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wctype_h/iswalpha.c  ">int iswalpha(wint_t wc)</a></td>                                                                                          <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l         ">C95, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wctype_h/iswblank.c  ">int iswblank(wint_t wc)</a></td>                                                                                          <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l         ">C99, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -437,8 +437,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">mathematical functions< math.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/acos.c    ">double acos(double x)</a>                         </td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl                      ">C90, is not yet implemented</a></td>         <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/asin.c    ">double asin(double x)</a>                         </td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/asin-asinf-asinl                      ">C90, is not yet implemented</a></td>         <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/atan.c    ">double atan(double x)</a>                         </td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l  ">C90, is not yet implemented</a></td>         <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
@@ -464,8 +464,8 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< io.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_isatty.c       ">int _isatty( int fd );</a></td>                                                       <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/isatty               ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_findfirst.c    ">intptr_t _findfirst(const char *filespec, struct _finddata_t *fileinfo)</a></td>      <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions   ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_findnext.c     ">int _findnext(intptr_t handle,struct _finddata_t *fileinfo)</a></td>                  <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions    ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
@@ -473,14 +473,14 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/direct_h/_mkdir.c">int _mkdir(const char *dirname)</a></td>              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mkdir-wmkdir              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 <tr> <th colspan="2">non-C-Standard and Microsoft specific / POSIX functions< sys/stat.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â DXEÂ </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">Â PEIÂ </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/sys/stat_h/_stat64i32.c">int _stat64i32(const char *path, struct _stat64i32 *buffer)</a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stat-functions">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 </table>
 
@@ -489,7 +489,7 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
 * 20181129: <del>file operations does not yet support drive mappings and path</del>
 * 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
-   Letters aâ€“z or Aâ€“Z representing digits in the range [10, 36] are not (yet) supported.</del>
+   Letters aÃ¢Â€Â“z or AÃ¢Â€Â“Z representing digits in the range [10, 36] are not (yet) supported.</del>
 * <time.h>: UTC-only support. No Daylightsaving, no timezones.
 * <locale.h>: C-locale-only support
 * <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
