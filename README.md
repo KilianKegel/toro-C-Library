@@ -1,16 +1,16 @@
-# <img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">Toro C Library (formerly known as Torito C Library)
-* <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18">[Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
-* <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18">[Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
+# <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->Toro C Library (formerly known as Torito C Library)
+* [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
+* [Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status)<br>
+* [Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
 * [HELLO is now WELCOME: ](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome) <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18"> Howto build **hello.c** using **commandline** and **Visual Studio 2022**<br>
-* <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18">[Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status)<br>
 * [Known bugs](https://github.com/KilianKegel/toro-C-Library#known-bugs)<br>
     * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
 * [Revision history](https://github.com/KilianKegel/toro-C-Library#revision-history)<br>
 
-![C](https://github.com/KilianKegel/pictures/blob/master/C.png)
+![C](https://github.com/KilianKegel/pictures/blob/master/380px-C_Programming_Language.svg.png)
 
 The **toro C Library** is a *monolithic* Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2022.
@@ -37,117 +37,6 @@ design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2
     * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2021-11-28#cdepkgblog-2021-11-28
 4.  quickly implement simple CLI tools for the UEFI shell execution environment
     * INTRODUCTION: https://github.com/tianocore/edk2-staging/tree/CdePkg/blogs/2021-11-14#cdepkgblog-2021-11-14
-
-## Source Code
-https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI
-
-## Goal
-
-The **toro C Library** is designed to enable the developer to create
-Standard C programs for UEFI Shell, Windows NT and Linux (in future releases)
-running in x86-64 mode. Standard C compliant source code shall be easily portable to operating systems
-supported by **toro C Library**.
-
-The **toro C Library** shall provide full library compatibility with
-
-* [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
-* ISO/IEC 9899 First edition 1990-12-15 ("C90")
-* ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
-
-### Forwards to the roots
-Extentions to these standards (ISO 9899:1999 etc.), [*secure*](https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019) / *bounds checking interface* functions `xyz_s()` from [ISO 9899:2011, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf#page=600), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand) into **toro C Library**.
-
-Be aware, that functions like <del>[`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion)</del>,
-a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>0</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-1.md)), 
-<del>fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead)</del> and <del>[`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations</del>, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and therefore _currently not_ available in the **toro C Library**, but will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand).
-
-These functions are required to fulfill be ANSI C/C90/C95 standard:<br>
-https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md
-
-[ANSI C Specification](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
-
-As long as the developer moves within these standards[<sup>1</sup>](http://www.torek.net/torek/c/index.html) and does not use
-any OS-specific interface or platform dependent idiosyncrasy, the created
-executable shall be producible merely by linking the object modules against **toro C Library**
-and choosing the OS-dependent /ENTRY:_cdeCRT0`OSNAME`, e.g. `_cdeCRT0UefiShell` or `_cdeCRT0WinNT`.
-
-
-## Approach
-
-The C-Standards mentioned above leave some freedom for a particular library implementation;
-this affects return values that provide flags beside beeing only 'nonzero' as specified
-or different handling of text vs. binary mode for file operations.
-
-C-Library vendors usually describe their own specific details, but not the Standard C requirements.
-Using and relying on such implementation-specific details makes the source code non-portable
-to other C-Libraries, e.g. GLIBC.
-
-The **toro C Library** is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2022.
-(It is assumed, that LIBCMT.LIB of VS2022 is compliant to aforementioned standards.)
-
-[Microsoft C Language Reference](https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference?view=vs-2019)
-
-Doing so, the development of **toro C Library** itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
-with VS2022 are utilized instead.
-
-The developer using **toro C Library** benefits from this approach because the experience remains unchanged using the VS2022 environment.
-
-## Riding the UEFI shell / enabling the platform for developers
-
-With the disappearance of MSDOS as a simple, single threaded, unprotected operating system with full hardware access to user programs on upcoming personal computer models the UEFI shell was intended to be the successor of MSDOS.
-
-But the lack of an established, well known programming interface (as is the Standard C library)
-makes it cumbersome to get started on UEFI Shell programming.
-
-## Reimplementing LIBCMT.LIB for WinNT
-
-The sole purpose of **toro C Library** for WinNT is to validate the C library compatibility
-on a Windows-x64-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
-and then against **toro C Library** for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
-Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
-build and debug environment of Visual Studio.
-
-**It is considered the only effective way to reach the ANSI C compatibility and strive for a *faultless implementation*
-within a reasonable amount of time, because by far most parts of each single function test can be run through, 
-debugged and tested natively on the (Windows) development machine. Only final tests need to be run on the UEFI Shell target.**
-This proceeding can be reached only by the [OSIF](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (Operating System Interface) architecture of the library.
-
-## HELLO is now WELCOME
-
-```c
-//
-// WELCOME.c
-//
-#include <stdio.h>
-
-int main(int argc, char **argv){
-
-    printf("WELCOME, to ANSI C\n");
-
-    return 0;
-}
-```
-
-WELCOME.c can be translated in the VS2022 64Bit command line environment by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
-
-```bat
-@echo off
-echo Compiling the C source...
-cl /nologo /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
-
-echo Linking the .OBJ to UEFI SHELL Executable WELCOME.EFI 
-link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
-
-echo Linking the .OBJ to Windows NT Executable WELCOME.EXE
-link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0WinNT /OUT:welcome.exe /SUBSYSTEM:CONSOLE WELCOME.obj toroC64.lib KERNEL32.LIB
-```
-
-With just one additional link-step in the above script, without re-compiling, a Windows NT executable could be created.
-
-If you prefer to use state-of-the-art build environment **Visual Studio 2022**, please follow
-the step-by-step-configuration [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)
-
-To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell#visual-ansi-c-for-uefi-shell).
 
 ## Implementation Status
 <table>
@@ -272,10 +161,10 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/_StrICmp.c          ">int _stricmp(const char *string1, const char *string2)                            </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l?view=msvc-160   ">MSFT specific, is implemented</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/_StrNICmp.c         ">int _strnicmp(const char* pszDst, const char* pszSrc, size_t count)               </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l           ">MSFT specific, is implemented</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemChr.c            ">void *memchr(const void *s, int c, size_t n)                                      </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memchr-wmemchr?view=vs-2019                                           ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemCmp.c            ">int memcmp(const void *s1, const void *s2, size_t n)                              </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcmp-wmemcmp?view=vs-2019                                           ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemCmpCDEINTRINABI.c">int memcmp(const void *s1, const void *s2, size_t n)                              </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcmp-wmemcmp?view=vs-2019                                           ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemCpy.c            ">void *memcpy(void *  s1,const void *  s2, size_t n)                               </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=vs-2019                                           ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemMove.c           ">void *memmove(void *s1, const void *s2, size_t n)                                 </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=vs-2019                                         ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemSet.c            ">void *memset(void *s, int c, size_t n)                                            </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memset-wmemset?view=vs-2019                                           ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/MemSetCDEINTRINABI.c">void *memset(void *s, int c, size_t n)                                            </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memset-wmemset?view=vs-2019                                           ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/StrCat.c            ">char *strcat(char *  s1,const char *  s2)                                         </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcat-wcscat-mbscat?view=vs-2019                                     ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/StrChr.c            ">char *strchr(const char *s, int c)                                                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l?view=vs-2019                            ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/StrCmp.c            ">int strcmp(const char *s1, const char *s2)                                        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp?view=vs-2019                                     ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -323,10 +212,10 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Fwscanf.c    ">int fwscanf(FILE *  stream,const wchar_t *  format, ...)                                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Getwc.c      ">wint_t getwc(FILE *stream)                                                                        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fgetc-fgetwc                                                         ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Getwchar.c   ">wint_t getwchar(void)                                                                             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/getchar-getwchar                                                     ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbrlen.c     ">size_t mbrlen(const char *  s, size_t n,mbstate_t *  ps)                                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbrlen                                                               ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbrtowc.c    ">size_t mbrtowc(wchar_t *  pwc,const char *  s, size_t n,mbstate_t *  ps)                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbrtowc                                                              ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbsinit.c    ">int mbsinit(const mbstate_t *ps)                                                                  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbsinit                                                              ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbsrtowcs.c  ">size_t mbsrtowcs(wchar_t *  dst,const char **  src, size_t len,mbstate_t *  ps)                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbsrtowcs                                                            ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbrlen.c     ">size_t mbrlen(const char *  s, size_t n,mbstate_t *  ps)                                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbrlen                                                               ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbrtowc.c    ">size_t mbrtowc(wchar_t *  pwc,const char *  s, size_t n,mbstate_t *  ps)                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbrtowc                                                              ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbsinit.c    ">int mbsinit(const mbstate_t *ps)                                                                  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbsinit                                                              ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/mbsrtowcs.c  ">size_t mbsrtowcs(wchar_t *  dst,const char **  src, size_t len,mbstate_t *  ps)                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mbsrtowcs                                                            ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Putwc.c      ">wint_t putwc(wchar_t c, FILE *stream)                                                             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/putc-putwc                                                           ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Putwchar.c   ">wint_t putwchar(wchar_t c)                                                                        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/putchar-putwchar                                                     ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Swprintf.c   ">int swprintf(wchar_t *  s, size_t n,const wchar_t *  format, ...)                                 </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l                     ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -337,13 +226,13 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Vswprintf.c  ">int vswprintf(wchar_t *  s, size_t n,const wchar_t *  format, va_list arg)                        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l                ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Vswscanf.c   ">int vswscanf(const wchar_t *buffer, const wchar_t *format, va_list arglist)                       </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/vsscanf-vswscanf?view=msvc-170                                       ">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Vwprintf.c   ">int vwprintf(const wchar_t *  format,va_list arg)                                                 </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/vprintf-vprintf-l-vwprintf-vwprintf-l                                ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wcrtomb.c    ">size_t wcrtomb(char *  s, wchar_t wc,mbstate_t *  ps)                                             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcrtomb                                                              ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wcrtomb.c    ">size_t wcrtomb(char *  s, wchar_t wc,mbstate_t *  ps)                                             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcrtomb                                                              ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsCat.c     ">wchar_t *wcscat(wchar_t *  s1,const wchar_t *  s2)                                                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcat-wcscat-mbscat                                                 ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsChr.c     ">wchar_t *wcschr(const wchar_t *s, wchar_t c)                                                      </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l                                        ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsCmp.c     ">int wcscmp(const wchar_t *s1, const wchar_t *s2)                                                  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp                                                 ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsColl.c    ">int wcscoll(const wchar_t *s1, const wchar_t *s2)                                                 </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l                ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsCSpn.c    ">size_t wcscspn(const wchar_t *s1, const wchar_t *s2)                                              </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcspn-wcscspn-mbscspn-mbscspn-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wcsftime.c   ">size_t wcsftime(wchar_t *  s, size_t maxsize,const wchar_t *  format,const struct tm *  timeptr)  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l                              ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wcsftime.c   ">size_t wcsftime(wchar_t *  s, size_t maxsize,const wchar_t *  format,const struct tm *  timeptr)  </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l                              ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsLen.c     ">size_t wcslen(const wchar_t *s)                                                                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsNCat.c    ">wchar_t *wcsncat(wchar_t *  s1,const wchar_t *  s2, size_t n)                                     </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l                ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsNCmp.c    ">int wcsncmp(const wchar_t *s1, const wchar_t *s2,size_t n)                                        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -352,7 +241,7 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsPbrk.c    ">wchar_t *wcspbrk(const wchar_t *s1, const wchar_t *s2)                                            </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strpbrk-wcspbrk-mbspbrk-mbspbrk-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsPpy.c     ">wchar_t *wcscpy(wchar_t *  s1,const wchar_t *  s2)                                                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strcpy-wcscpy-mbscpy                                                 ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsRChr.c    ">wchar_t *wcsrchr(const wchar_t *s, wchar_t c)                                                     </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wcsrtombs.c  ">size_t wcsrtombs(char *  dst,const wchar_t **  src, size_t len,mbstate_t *  ps)                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcsrtombs                                                            ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wcsrtombs.c  ">size_t wcsrtombs(char *  dst,const wchar_t **  src, size_t len,mbstate_t *  ps)                   </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcsrtombs                                                            ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsSpn.c     ">size_t wcsspn(const wchar_t *s1, const wchar_t *s2)                                               </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l                                        ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsStr.c     ">wchar_t *wcsstr(const wchar_t *s1, const wchar_t *s2)                                             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l                                        ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WcsTok.c     ">wchar_t *wcstok(wchar_t *  s1,const wchar_t *  s2,wchar_t **  ptr)                                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l                      ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -368,7 +257,7 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WMemMove.c   ">wchar_t *wmemmove(wchar_t *s1, const wchar_t *s2,size_t n)                                        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove                                                     ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WMemSet.c    ">wchar_t *wmemset(wchar_t *s, wchar_t c, size_t n)                                                 </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memset-wmemset                                                       ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Wprintf.c    ">int wprintf(const wchar_t *  format, ...)                                                         </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wscanf.c     ">int wscanf(const wchar_t *  format, ...)                                                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l                                        ">C95, is not yet implemented</a></td>   <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wscanf.c     ">int wscanf(const wchar_t *  format, ...)                                                          </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l                                        ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 <tr> <th colspan="2">General utilities < stdlib.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
@@ -461,6 +350,19 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sqrt.c    ">double sqrt(double x)</a></td>                            <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sqrt-sqrtf-sqrtl                      ">C90, is not yet implemented</a></td>         <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tan.c     ">double tan(double x)</a>                          </td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tan-tanf-tanl                         ">C90, is not yet implemented</a></td>         <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tan.c     ">double tan(double x)</a>                          </td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tanh-tanhf-tanhl                      ">C90, is not yet implemented</a></td>         <td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
+<tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/direct_h/_mkdir.c">int _mkdir(const char *dirname)</a></td>              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mkdir-wmkdir              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
+<tr> <th colspan="2">non-C-Standard and Microsoft specific functions< mbctype.h ></th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/mbctype_h/_getmbcp.c">int _getmbcp(void)</a></td>              <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/getmbcp              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/mbctype_h/_setmbcp.c">int _setmbcp(int codepage) </a></td>     <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/setmbcp              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
 <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< io.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
@@ -470,12 +372,6 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_findfirst.c    ">intptr_t _findfirst(const char *filespec, struct _finddata_t *fileinfo)</a></td>      <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findfirst-functions   ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_findnext.c     ">int _findnext(intptr_t handle,struct _finddata_t *fileinfo)</a></td>                  <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findnext-functions    ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_findclose.c    ">int _findclose(intptr_t handle)</a></td>                                              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/findclose             ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
-<tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/direct_h/_mkdir.c">int _mkdir(const char *dirname)</a></td>              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mkdir-wmkdir              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 <tr> <th colspan="2">non-C-Standard and Microsoft specific / POSIX functions< sys/stat.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
@@ -483,6 +379,118 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/sys/stat_h/_stat64i32.c">int _stat64i32(const char *path, struct _stat64i32 *buffer)</a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stat-functions">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
 </table>
+
+## Source Code
+https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI
+
+
+## Goal
+
+The **toro C Library** is designed to enable the developer to create
+Standard C programs for UEFI Shell, Windows NT and Linux (in future releases)
+running in x86-64 mode. Standard C compliant source code shall be easily portable to operating systems
+supported by **toro C Library**.
+
+The **toro C Library** shall provide full library compatibility with
+
+* [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
+* ISO/IEC 9899 First edition 1990-12-15 ("C90")
+* ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
+
+### Forwards to the roots
+Extentions to these standards (ISO 9899:1999 etc.), [*secure*](https://docs.microsoft.com/en-us/cpp/c-runtime-library/security-features-in-the-crt?view=vs-2019) / *bounds checking interface* functions `xyz_s()` from [ISO 9899:2011, Annex K](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf#page=600), [POSIX](https://en.wikipedia.org/wiki/C_POSIX_library) functions or  Microsoft specific add-ons will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand) into **toro C Library**.
+
+Be aware, that functions like <del>[`stricmp()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp?view=vs-2019) (case sensitive string handling), [`itoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=vs-2019) (integer to string conversion)</del>,
+a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>0</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-1.md)), 
+<del>fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead)</del> and <del>[`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations</del>, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and therefore _currently not_ available in the **toro C Library**, but will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand).
+
+These functions are required to fulfill be ANSI C/C90/C95 standard:<br>
+https://github.com/KilianKegel/torito-C-Library/blob/master/implemented.md
+
+[ANSI C Specification](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
+
+As long as the developer moves within these standards[<sup>1</sup>](http://www.torek.net/torek/c/index.html) and does not use
+any OS-specific interface or platform dependent idiosyncrasy, the created
+executable shall be producible merely by linking the object modules against **toro C Library**
+and choosing the OS-dependent /ENTRY:_cdeCRT0`OSNAME`, e.g. `_cdeCRT0UefiShell` or `_cdeCRT0WinNT`.
+
+
+## Approach
+
+The C-Standards mentioned above leave some freedom for a particular library implementation;
+this affects return values that provide flags beside beeing only 'nonzero' as specified
+or different handling of text vs. binary mode for file operations.
+
+C-Library vendors usually describe their own specific details, but not the Standard C requirements.
+Using and relying on such implementation-specific details makes the source code non-portable
+to other C-Libraries, e.g. GLIBC.
+
+The **toro C Library** is intended to be identical in all aspects to functions specified in ANSI C, C90 and C95 provided in LIBCMT.LIB that comes with VS2022.
+(It is assumed, that LIBCMT.LIB of VS2022 is compliant to aforementioned standards.)
+
+[Microsoft C Language Reference](https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference?view=vs-2019)
+
+Doing so, the development of **toro C Library** itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files -- the header files delivered
+with VS2022 are utilized instead.
+
+The developer using **toro C Library** benefits from this approach because the experience remains unchanged using the VS2022 environment.
+
+## Riding the UEFI shell / enabling the platform for developers
+
+With the disappearance of MSDOS as a simple, single threaded, unprotected operating system with full hardware access to user programs on upcoming personal computer models the UEFI shell was intended to be the successor of MSDOS.
+
+But the lack of an established, well known programming interface (as is the Standard C library)
+makes it cumbersome to get started on UEFI Shell programming.
+
+## Reimplementing LIBCMT.LIB for WinNT
+
+The sole purpose of **toro C Library** for WinNT is to validate the C library compatibility
+on a Windows-x64-Platform. Usually testprograms are linked once against the original LIBCMT.LIB
+and then against **toro C Library** for WinNT to be able to compare program behavior in Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
+Most of all bugs and pitfalls can be found quickly, debugged easily and fixed soon, in the
+build and debug environment of Visual Studio.
+
+**It is considered the only effective way to reach the ANSI C compatibility and strive for a *faultless implementation*
+within a reasonable amount of time, because by far most parts of each single function test can be run through, 
+debugged and tested natively on the (Windows) development machine. Only final tests need to be run on the UEFI Shell target.**
+This proceeding can be reached only by the [OSIF](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (Operating System Interface) architecture of the library.
+
+## HELLO is now WELCOME
+
+```c
+//
+// WELCOME.c
+//
+#include <stdio.h>
+
+int main(int argc, char **argv){
+
+    printf("WELCOME, to ANSI C\n");
+
+    return 0;
+}
+```
+
+WELCOME.c can be translated in the VS2022 64Bit command line environment by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
+
+```bat
+@echo off
+echo Compiling the C source...
+cl /nologo /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
+
+echo Linking the .OBJ to UEFI SHELL Executable WELCOME.EFI 
+link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
+
+echo Linking the .OBJ to Windows NT Executable WELCOME.EXE
+link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0WinNT /OUT:welcome.exe /SUBSYSTEM:CONSOLE WELCOME.obj toroC64.lib KERNEL32.LIB
+```
+
+With just one additional link-step in the above script, without re-compiling, a Windows NT executable could be created.
+
+If you prefer to use state-of-the-art build environment **Visual Studio 2022**, please follow
+the step-by-step-configuration [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)
+
+To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell#visual-ansi-c-for-uefi-shell).
 
 ## Known bugs
 * printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
@@ -505,6 +513,23 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20230625
+* add Standard C95 Library functions: 
+	- [`mbrlen()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/mbrlen.c)
+	- [`mbrtowc()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/mbrtowc.c)
+	- [`mbsinit()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/mbsinit.c)
+	- [`mbsrtowcs()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/mbsrtowcs.c)
+	- [`wcrtomb()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/wcrtomb.c)
+	- [`wcsftime()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/wcsftime.c)
+	- [`wcsrtombs()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/wcsrtombs.c)
+	- [`wscanf()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/wscanf.c)
+* add Microsoft C Library functions from `mbctype.h`: 
+    - [`_getmbcp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/mbctype_h/_getmbcp.c)
+    - [`_setmbcp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/mbctype_h/_setmbcp.c)
+* fixed: `printf()`/`wprintf()`-family handling of wide characters > value 255
+* adjust internal `invalid_parameter_handler()` to suppress additional debug/file information
+* fixed: `wcsxfrm()`/`strxfrm()` add `invalid_parameter_handler()` support as original Microsoft C Library
+
 ### 20230415
 * fixed: in the pre-Memory-Discovered PEI (Pre Efi Initialization) POST x86-32
   Standard C function `localeconv()` crashed the platform.<br>
