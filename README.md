@@ -389,7 +389,7 @@ design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2
 </table>
 
 ## Source Code
-https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI
+[![Repo name](https://github-readme-stats.vercel.app/api/pin/?username=KilianKegel&repo=Visual-TORO-C-LIBRARY-for-UEFI)](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI)
 
 
 ## Goal
