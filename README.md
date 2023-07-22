@@ -41,12 +41,12 @@ design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2
 
 ## Implementation Status
 <table>
-<tr> <th colspan="2">Toro C Library specific extensions</th>                                                                                                                       
+<tr> <th colspan="2">non-C-Standard, Toro C Library specific extensions</th>                                                                                                                       
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
-    <tr><td><a href="https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/string_h/_StrEfiError.c">char* _strefierror(EFI_STATUS errcode) </a></td><td></a>Gets a EFI_STATUS message string</td><td>&#x2610</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td>
+    <tr><td><a href="https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/string_h/_StrEfiError.c">char* _strefierror(EFI_STATUS errcode) </a></td><td></a>UEFI counterpart of strerror()</td><td>&#x2610</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td>
 </tr>
 <tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                       
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
