@@ -1,4 +1,4 @@
-![Visitor](https://visitor-badge.laobi.icu/badge?page_id=KilianKegel-KilianKegel)
+![Visitor](https://visitor-badge.laobi.icu/badge?page_id=KilianKegel.kiliankegel)
 # <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->Toro C Library (formerly known as Torito C Library)
 * [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
 * [Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status)<br>
