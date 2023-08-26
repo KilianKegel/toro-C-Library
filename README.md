@@ -24,7 +24,7 @@ Additions of a C Library function set won't be done for "torito C Library" but f
 
 **toro C Library** is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
-design --and debug-- infrastructure provided by Microsoft Visual Studio 2022 VS2022.
+design –and debug– infrastructure provided by Microsoft Visual Studio 2022 VS2022.
 
 ## Use cases
 1.  create menu driven applications for the UEFI shell execution environment
@@ -650,11 +650,11 @@ The improvements provided here only affects PEI drivers, based on **toro C Libra
 * simplify `CDETRACE()` implemantation, improve portability of that `CdePkg` specific debug macro
 * add `_strefierror()`: rename Toro-C-Library UEFI-specific function `strefierror()` to ANSI C naming convention compatible `_strefierror()`
 * implement full `__chkstk()` for Windows 64Bit: https://docs.microsoft.com/en-us/windows/win32/devnotes/-win32-chkstk
-* partially implementation of the %G `fprintf()`-- format specifier for [Visual-LIBXLSXWRITER-for-UEFI-Shell](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell#visual-libxlsxwriter-for-uefi-shell)
+* partially implementation of the %G `fprintf()` – format specifier for [Visual-LIBXLSXWRITER-for-UEFI-Shell](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell#visual-libxlsxwriter-for-uefi-shell)
 * fixed `fread()` end-of-file indicator not set correctly when EOF is reached within a buffer instead of reading of 0 bytes from the mass storage device
 * changed exit code of the `abort()` function from 3 to 0xC0000409
 * fixed: reassigned (by running `freopen()`) filepointers to `stdout`/`stderr` are not flushed at exit
-* `CdePkg`--SMM Driver: Erroneous message shown at startup: `FATAL ERROR : CdeServices SMM not available`
+* `CdePkg`– SMM Driver: Erroneous message shown at startup: `FATAL ERROR : CdeServices SMM not available`
 
 ### 20220109
 * add Standard C Library functions: 
