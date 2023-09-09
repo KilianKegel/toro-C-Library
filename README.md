@@ -476,7 +476,8 @@ int main(int argc, char **argv){
 }
 ```
 
-WELCOME.c can be translated in the VS2022 64Bit command line environment by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
+WELCOME.c can be translated in the [VS2022 64Bit command line environment](https://github.com/tianocore/edk2-staging/blob/CdePkg/blogs/2021-11-14/README.md#starting-visual-studio-2022)
+by running the [build.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/build.bat) script below:
 
 ```bat
 @echo off
@@ -518,6 +519,33 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20230909
+* add `CDE`(*C Development Environment*)-interface for native **Tianocore UEFI SHELL** [`UEFISHELLDRV`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/tree/main/toroCLibrary/OSInterface/UEFISHELLDRV).<br>
+  Enable [**Toro-C-Library**–`DXE`](https://github.com/KilianKegel/toro-C-Library#implementation-status) function set at `CRT0()`
+  and full [**Toro-C-Library**–`SHELL`](https://github.com/KilianKegel/toro-C-Library#implementation-status) function set with availability
+  of the `EfiShellProtocol`/`EFI_SHELL_PROTOCOL_GUID`:<br>
+  https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/tree/main/toroCLibrary/OSInterface/UEFISHELLDRV<br>
+
+  This is the foundation of an **ANSI-C-API**-extended "**CDE UEFI SHELL**"
+
+* prepare `system()` **ANSI-C-API** call for MSDOS drive name support (**A:**, **B:**, **C:** ...) coming soon for [**Visual-UEFI-SHELL**](https://github.com/KilianKegel/Visual-UEFI-SHELL#edk2-uefi-shell--visual-uefi-shell)
+* update [`MdePkg`](https://github.com/KilianKegel/MdePkgInc) to version **edk2-stable202308**
+* improve [`CDEABI`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/README.md#20230212) (*C Development Environment Application Binary Interface*)<br>
+    * force *all* `Core` and operating system interface `osif` modules to uses exclusively **ANSI-C-API** on `CDEABI` to avoid collision with EDK2 `StdLibC` and relatives<br>
+      primarily remaining `errno()`, `setjmp()`, `longjmp()`, `strlen()`, `strcpy()`, `strcmp()`, `wcslen()`, `wcscpy()`, `wcscmp()`
+* improve `freopen()` to set *redirection flag* `O_CDEREDIR` to speed up character transission to file
+* fix `fscanf()`: assignment suppression indicated by a "*": https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf#page=295 
+* fix `raise()`
+* INTERN: 
+	* add:  `size_t _cdeInt2EfiStatus(int intstatus)`
+	* add:  `int _cdeEfiStatus2Int(size_t Status)`
+	* move selected file functions to [`CdeAppIf`](https://github.com/KilianKegel/CdePkg/blob/master/Include/CdeServices.h#L421) driver side.<br>
+	This allows future/upcoming code size reduced shell application type.
+	* preliminary: LINUX-OSIF buildable, ALPHA
+	* preliminary: `osifCdeUefiShellAppEntryPoint()`, `osifCdeUefiShellAppCRT0Service()` for future/upcoming shell application type
+        that doesn't include entire `CdeAppIf` machine code to each .EFI application, but share `CdeAppIf` provided by a **CDE UEFI SHELL**.
+        This allows code size reduced applications.
+
 ### 20230625
 * add Standard C95 Library functions: 
 	- [`mbrlen()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/mbrlen.c)
