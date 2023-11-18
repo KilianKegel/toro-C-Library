@@ -519,6 +519,14 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20231118
+* add ACPI timer based synchronization for **toro C Library** Shell programs.
+  NOTE: On recent Intel platforms the previously used legacy timer's (i8254) input clock frequency is
+  clocked down to an unspecified frequency with setup default `Enable 8254 Clock Gate`.
+  Additionally the I/O latency to access i8254 ports is increased with setup default `Legacy IO Low Latency`
+  that lowers i8254 based timing precision.<br>
+  So i8254 gets unusable for UEFI Shell programs on new platforms.
+* improve synchronization error correction for i8254 based POST drivers (with `Enable 8254 Clock Gate := disable`, `Legacy IO Low Latency := enable`)
 ### 20231014
 * fixed: [**libxlsxwriter**](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell#visual-libxlsxwriter-for-uefi-shell) based
     UEFI and Windows applications create .XLSX that can't be opened with **Microsoft Excel 2016**. 
