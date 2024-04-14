@@ -526,6 +526,16 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20240414, v0.8.2 Build 73
+* add timeout detection for disabled **COM1**/**UART at I/O 3F8h** used for debug traces.
+  NOTE: Disabled I/O devices usually do not respond to I/O cycles.  
+  Internally this is done by ignoring the chipselect for that particular I/O address range, e.g. 3F8h .. 3FFh for **COM1**.  
+  FFh is driven to the data bus when reading registers of those disabled devices.<br>
+  On special implementations hardware designers chose a different approach to disabled devices:<br>
+    1. address decoding is kept enabled
+    2. internal clock line is stopped or decoupled from internal circuitry<br>
+       The disadvantage of this aproach is, that status registers are still visible
+       but not updated anymore.
 ### 20240309, v0.8.1 Build 54
 * add Microsoft/POSIX C Library functions: 
     - [`_lseek()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/io_h/_Lseek.c)
