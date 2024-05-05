@@ -526,6 +526,10 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20240505, v0.8.4 Build 91
+* fixed EDK2 `DEBUG` trace macro won't crash anymore with
+  UEFI specific (non-ANSI-C) format specifiers: **%g**, **%t** and **%r**<br>
+**NOTE: The improvement above doesn't change ANSI-C related behaviour of previous library versions**
 ### 20240414, v0.8.2 Build 73
 * add timeout detection for disabled **COM1**/**UART at I/O 3F8h** used for debug traces.<br>
   NOTE: Disabled I/O devices usually do not respond to I/O cycles.  
