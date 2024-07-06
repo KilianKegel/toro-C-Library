@@ -408,7 +408,7 @@ supported by **toro C Library**.
 
 The **toro C Library** shall provide full library compatibility with
 
-* [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/c/ff234b6fa870c030/ESjnf4ne05VCgF7Q8UTycRgBCtxR3CDC_pUwDZ7iYGcXRQ?e=QfgC06)
+* [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/c/ff234b6fa870c030/ESjnf4ne05VCgF7Q8UTycRgBCtxR3CDC_pUwDZ7iYGcXRQ)
 * ISO/IEC 9899 First edition 1990-12-15 ("C90")
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
