@@ -527,7 +527,7 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 
 ## Revision history
 ### 20240908, v0.8.6 Build 187
-* introduce intrinsic math function (`_allXYZ()`, `_aullXYZ()` and `__ltod3()`) extraction from Microsoft **LIBCMT.LIB<br>
+* introduce intrinsic math function (`_allXYZ()`, `_aullXYZ()` and `__ltod3()`) extraction from Microsoft **LIBCMT.LIB**<br>
     * remove disassembled `__allXYZ()` and `__aullXYZ()` from `toroCLibrary`
 * fixed `stat()` running on WINDOWS reports wrong time stamp
 * fixed `stat()` running on UEFI reports from erronous time stamp by exacly one month
