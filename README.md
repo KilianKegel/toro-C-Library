@@ -543,7 +543,7 @@ math function from Microsoft **LIBCMT.LIB**:
     original Microsoft functions are now available in the **toro C Library** for 32Bit.
 * **NEW**: Introduce **preliminary alpha** version of `MATH.H` functions<br>
     **NOTE**: Use functions below fails with special parameters.<br>
-    **It is recommented to not to use these functions in productive code.**<br>
+    **It is recommended not to use these functions in productive code.**<br>
     * [`acos()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/acos.c)
     * [`asin()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/asin.c)
     * [`atan()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/atan.)
