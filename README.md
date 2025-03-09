@@ -335,28 +335,28 @@ design –and debug– infrastructure provided by Microsoft Visual Studio 2022 V
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> DXE </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> PEI </th> </tr> 
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/acos.c    ">acos()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/asin.c    ">asin()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/asin-asinf-asinl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/atan.c    ">atan()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l  ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/atan2.c   ">atan2()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l  ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/ceil.c    ">ceil()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/cos.c     ">cos()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/cosh.c    ">cosh()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/cosh-coshf-coshl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/exp.c     ">exp()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/exp-expf                              ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/fabs.c    ">fabs()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fabs-fabsf-fabsl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/floor.c   ">floor()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl                   ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/fmod.c    ">fmod()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fmod-fmodf                            ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/frexp.c   ">frexp()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/frexp                                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/ldexp.c   ">ldexp()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ldexp                                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/log.c     ">log()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/log-logf-log10-log10f                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/log10.c   ">log10()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/log-logf-log10-log10f                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/modf.c    ">modf()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/modf-modff-modfl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/pow.c     ">pow()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/pow-powf-powl                         ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sin.c     ">sin()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sin-sinf-sinl                         ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sinh.c    ">sinh()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sinh-sinhf-sinhl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sqrt.c    ">sqrt()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sqrt-sqrtf-sqrtl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tan.c     ">tan()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tan-tanf-tanl                         ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tanh.c    ">tan()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tanh-tanhf-tanhl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td><td>&#x1F3D7</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/acos.c    ">acos()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/asin.c    ">asin()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/asin-asinf-asinl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/atan.c    ">atan()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l  ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/atan2.c   ">atan2()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l  ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/ceil.c    ">ceil()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/cos.c     ">cos()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/acos-acosf-acosl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/cosh.c    ">cosh()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/cosh-coshf-coshl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/exp.c     ">exp()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/exp-expf                              ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/fabs.c    ">fabs()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fabs-fabsf-fabsl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/floor.c   ">floor()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl                   ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/fmod.c    ">fmod()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fmod-fmodf                            ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/frexp.c   ">frexp()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/frexp                                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/ldexp.c   ">ldexp()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/ldexp                                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/log.c     ">log()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/log-logf-log10-log10f                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/log10.c   ">log10()                   </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/log-logf-log10-log10f                 ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/modf.c    ">modf()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/modf-modff-modfl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/pow.c     ">pow()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/pow-powf-powl                         ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sin.c     ">sin()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sin-sinf-sinl                         ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sinh.c    ">sinh()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sinh-sinhf-sinhl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sqrt.c    ">sqrt()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sqrt-sqrtf-sqrtl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tan.c     ">tan()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tan-tanf-tanl                         ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tanh.c    ">tan()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tanh-tanhf-tanhl                      ">C90, **premiminary, alpha**, don't use</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
 <tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40">SHELL</th>
@@ -408,7 +408,7 @@ supported by **toro C Library**.
 
 The **toro C Library** shall provide full library compatibility with
 
-* [ANSI X3.159-1989 ("ANSI C")](https://1drv.ms/b/c/ff234b6fa870c030/ESjnf4ne05VCgF7Q8UTycRgBCtxR3CDC_pUwDZ7iYGcXRQ)
+* [ANSI X3.159-1989 ("ANSI C")](https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub160.pdf)
 * ISO/IEC 9899 First edition 1990-12-15 ("C90")
 * ISO/IEC 9899 First edition 1990-12-15, Amendment 1, 1995-04-01 ("C95")
 
@@ -419,7 +419,7 @@ Be aware, that functions like <del>[`stricmp()`](https://docs.microsoft.com/en-u
 a very famous [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit?view=vs-2019) (check for keystroke at console[<sup>0</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-1.md)), 
 <del>fopen()-mode-strings like `"rt"`, `"wt"` (textmode read/write, just use `"r"`, `"w"` instead)</del> and <del>[`open()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/open?view=vs-2019) (POSIX) are provided in various C-Library-implementations</del>, but not specified by ANSI X3.159-1989 or ISO/IEC 9899:1990, and therefore _currently not_ available in the **toro C Library**, but will be implemented [_on demand_](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand).
 
-[ANSI C Specification](https://1drv.ms/b/s!AmMwYrfjYfPyhmLlWx7oT5rO6UDg?e=Am2R2v)
+[ANSI C Specification](https://nvlpubs.nist.gov/nistpubs/Legacy/FIPS/fipspub160.pdf)
 
 As long as the developer moves within these standards[<sup>1</sup>](http://www.torek.net/torek/c/index.html) and does not use
 any OS-specific interface or platform dependent idiosyncrasy, the created
@@ -508,14 +508,15 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 ## Known bugs
 * printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
 * scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
-* 20181129: <del>file operations does not yet support drive mappings and path</del>
-* 20180107: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
+* 2018-11-29: <del>file operations does not yet support drive mappings and path</del>
+* 2018-01-07: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
    Letters aâz or AâZ representing digits in the range [10, 36] are not (yet) supported.</del>
-* <time.h>: UTC-only support. No Daylightsaving, no timezones.
-* <locale.h>: C-locale-only support
-* <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
-* 20191017: <del>CTRL-C interception not yet implemented</del>
-* 20191017: <del>**toro C Library based progams use ASCII console interface only, not UCS-2!**</del>
+* <time.h>: UTC-only support. No Daylightsaving, no timezones. **This is not a bug!** It conforms to the Standard C specification because<br>
+  ["The local time zone and Daylight Saving Time are implementation-defined."](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=350)
+* <locale.h>: C-locale-only support. **This is not a bug!** It conforms to the Standard C specification because only the ["C" locale](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=217) is mandatory.
+* 2025-02-09: <del><math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)</del>
+* 2019-10-17: <del>CTRL-C interception not yet implemented</del>
+* 2019-10-17: <del>**toro C Library based progams use ASCII console interface only, not UCS-2!**</del>
     - <del>ASCII is written to `stdout`and `stderr`</del>
     - <del>ASCII is read from `stdin`</del>
     <del>pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators</del>
@@ -526,6 +527,59 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20250309, v0.9.0 Build 243
+#### finalize MATH.H implementation
+The architecture of this math library introduces a space optimized implementation of C's MATH.H functions,
+while keeping precision and correctness as good as already known in earlier x87-based math libraries.<BR>
+Since the traditional math coprocessor 80387 is still present in current x86 processors and is also not deprecated
+in the [X86S specification](https://www.intel.com/content/www/us/en/developer/articles/technical/envisioning-future-simplified-architecture.html) [.PDF](https://github.com/KilianKegel/4KPages-TechDocs/blob/main/x86s-eas-external-1.1.pdf),
+it can be used here.<br><br>
+The 80387 processor has various improvements over its 8087 predecessor, such as<br>
+  * range extension for transcendental function:
+
+    | Instruction  | function           |
+    |--------------|--------------------|
+    |FPTAN         | Partial tangent    |
+    |FPATAN        | Partial arctangent |
+    |F2XM1         | 2^X - 1            |
+    |FYL2X         | Y * log2X          |
+    |FYL2XP        |Y*log2(X + 1)       |
+    
+* new instructions, e.g.
+
+    | Instruction  | function                 |
+    |--------------|--------------------------|
+    |FXAM          |  Examine Floating-Point  |
+    |FSIN          | sine                     |
+    |FCOS          | cosine                   |
+
+* That has reduced the programming effort dramatically and made algorithms very simple and easy to implement.<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/KL_intel_i387DX.jpg" width="200"/>
+    * [`acos()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/acos.c)
+    * [`asin()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/asin.c)
+    * [`atan()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/atan.c)
+    * [`atan2()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/atan2.c)
+    * [`ceil()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/ceil.c)
+    * [`cos()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/cos.c)
+    * [`cosh()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/cosh.c)
+    * [`exp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/exp.c)
+    * [`fabs()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/fabs.c)
+    * [`floor()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/floor.c)
+    * [`fmod()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/fmod.c)
+    * [`frexp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/frexp.c)
+    * [`ldexp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/ldexp.c)
+    * [`log()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/log.c)
+    * [`log10()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/log10.c)
+    * [`modf()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/modf.c)
+    * [`pow()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/pow.c)
+    * [`sin()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/sin.c)
+    * [`sinh()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/sinh.c)
+    * [`sqrt()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/sqrt.c)
+    * [`tan()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/tan.c)    
+    * [`tanh()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/tanh.c)
+
+**All these functions run also in UEFI POST stages PEI, DXE, SMM.**
+
 ### 20241222, v0.8.8 Build 227
 * fix [`abort()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/stdlib_h/abort.c)
   processes [`atexit()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/stdlib_h/atexit.c)
@@ -551,31 +605,6 @@ math function from Microsoft **LIBCMT.LIB**:
     * `lldiv.obj`
     original Microsoft functions are now available in the **toro C Library** for 32Bit.
 * **NEW**: Introduce **preliminary alpha** version of `MATH.H` functions<br>
-    **NOTE**: Use functions below fails with special parameters.<br>
-    **It is recommended not to use these functions in productive code.**<br>
-    * [`acos()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/acos.c)
-    * [`asin()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/asin.c)
-    * [`atan()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/atan.c)
-    * [`atan2()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/atan2.c)
-    * [`ceil()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/ceil.c)
-    * [`cos()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/cos.c)
-    * [`cosh()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/cosh.c)
-    * [`exp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/exp.c)
-    * [`fabs()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/fabs.c)
-    * [`floor()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/floor.c)
-    * [`fmod()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/fmod.c)
-    * [`frexp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/frexp.c)
-    * [`ldexp()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/ldexp.c)
-    * [`log()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/log.c)
-    * [`log10()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/log10.c)
-    * [`modf()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/modf.c)
-    * [`pow()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/pow.c)
-    * [`sin()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/sinc.)
-    * [`sinh()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/sinh.c)
-    * [`sqrt()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/sqrt.c)
-    * [`tan()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/tan.c)    
-    * [`tanh()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/tanh.c)
-
 ### 20240908, v0.8.6 Build 187
 * introduce intrinsic math function (`_allXYZ()`, `_aullXYZ()` and `__ltod3()`) extraction from Microsoft **LIBCMT.LIB**<br>
     * remove disassembled `__allXYZ()` and `__aullXYZ()` from `toroCLibrary`
