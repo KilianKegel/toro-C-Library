@@ -9,12 +9,12 @@ UEFI Shell, UEFI POST drivers and Windows NT console applications applications, 
 distributed with or without fee, is hereby granted.
 
 The library binary files:<br>
-* **toroC64.lib**
-* **toroC64LLVMUefiShell.lib**
-* **toroC64LLVMWinNT.lib**
-* **toroC32.lib**
-* **toroC32LLVMUefiShell.lib**
-* **toroC32LLVMWinNT.lib**
+* [**toroC64.lib**](https://github.com/KilianKegel/toro-C-Library/blob/master/toroC64.lib), 64bit all-in-one library for UEFI Shell/DXE/SMM and Windows NT for Microsoft linker
+* [**toroC64LLVMUefiShell.lib**](https://github.com/KilianKegel/toro-C-Library/blob/master/toroC64LLVMUefiShell.lib), 64bit UEFI Shell library for the LLVM linker
+* [**toroC64LLVMWinNT.lib**](https://github.com/KilianKegel/toro-C-Library/blob/master/toroC64LLVMWinNT.lib), 64bit WinNT library for the LLVM linker
+* [**toroC32.lib**](https://github.com/KilianKegel/toro-C-Library/blob/master/toroC32.lib), 32bit all-in-one library for UEFI Shell/DXE/PEI and Windows NT for Microsoft linker
+* [**toroC32LLVMUefiShell.lib**](https://github.com/KilianKegel/toro-C-Library/blob/master/toroC32LLVMUefiShell.lib), 32bit UEFI Shell library for the LLVM linker
+* [**toroC32LLVMWinNT.lib**](https://github.com/KilianKegel/toro-C-Library/blob/master/toroC32LLVMWinNT.lib), 32bit WinNT library for the LLVM linker
 
 are **explicitely excluded from the GPL license**.<br>
 This is called the **Toro C Library Runtime Exception**, similiar to the [GCC Runtime Library Exception](https://www.gnu.org/licenses/gcc-exception-3.1-faq.html).<br>
