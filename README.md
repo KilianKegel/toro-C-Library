@@ -17,7 +17,7 @@ The library binary files:<br>
 * **toroC32LLVMWinNT.lib**
 
 are **explicitely excluded from the GPL license**.<br>
-This is called the **Toro C Library  Runtime Library Exception**, similiar to the [GCC Runtime Library Exception](https://www.gnu.org/licenses/gcc-exception-3.1-faq.html).<br>
+This is called the **Toro C Library Runtime Exception**, similiar to the [GCC Runtime Library Exception](https://www.gnu.org/licenses/gcc-exception-3.1-faq.html).<br>
 
 
 It is not allowed to sell Toro C Library as a stand alone product or
