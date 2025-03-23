@@ -1,4 +1,38 @@
 # <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->Toro C Library (formerly known as Torito C Library)
+## LICENSE
+**Toro C Library binary** for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,<br>
+C Development Environment for UEFI<br>
+Copyright (c) 2017-2025, Kilian Kegel (kilian_kegel@hotmail.com), https://github.com/KilianKegel/toro-C-Library<br>
+<br>
+Permission to use **Toro C Library binary** for the sole purpose of creating
+UEFI Shell, UEFI POST drivers and Windows NT console applications applications, which may be
+distributed with or without fee, is hereby granted.
+
+The library binary files:<br>
+* **toroC64.lib**
+* **toroC64LLVMUefiShell.lib**
+* **toroC64LLVMWinNT.lib**
+* **toroC32.lib**
+* **toroC32LLVMUefiShell.lib**
+* **toroC32LLVMWinNT.lib**
+
+are **explicitely excluded from the GPL license**.<br>
+This is called the **Toro C Library  Runtime Library Exception**, similiar to the [GCC Runtime Library Exception](https://www.gnu.org/licenses/gcc-exception-3.1-faq.html).<br>
+
+
+It is not allowed to sell Toro C Library as a stand alone product or
+to modify it's content in any way.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL,DIRECT,INDIRECT,
+OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+SOFTWARE.
+
+### Contents
+
 * [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
 * [Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status)<br>
 * [Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
@@ -302,8 +336,10 @@ design –and debug– infrastructure provided by Microsoft Visual Studio 2022 V
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/Realloc.c">realloc()                    </a></td>                                                                                <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/realloc?view=vs-2019                                ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/srand.c">srand()                        </a></td>                                                                                        <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/srand?view=vs-2019                                  ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtod.c">strtod()                      </a></td>                                                                    <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l?view=vs-2019        ">C90, is not yet implemented     </a></td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td><td>&#x2610</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtol.c">strtol()                      </a></td>                                                        <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l?view=vs-2019        ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtoul.c">strtoul()                    </a></td>                                              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l?view=vs-2019    ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtol.c">strtol()                      </a></td>                                                        <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l        ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtoll.c">strtoll()                    </a></td>                                                        <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoll-strtoll-l-wcstoll-wcstoll-l   ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtoul.c">strtoul()                    </a></td>                                              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l        ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
+            <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/strtoull.c">strtoull()                  </a></td>                                              <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoull-strtoull-l-wcstoull-wcstoull-l    ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/system.c">system()                      </a></td> <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/system-wsystem?view=vs-2019                         ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/wcstombs.c">wcstombs()                  </a></td>                                                           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcstombs-wcstombs-l?view=vs-2019                    ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/wctomb.c">wctomb()                      </a></td>                                                                                   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctomb-wctomb-l?view=vs-2019                        ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
@@ -498,7 +534,20 @@ echo Linking the .OBJ to Windows NT Executable WELCOME.EXE
 link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0WinNT /OUT:welcome.exe /SUBSYSTEM:CONSOLE WELCOME.obj toroC64.lib KERNEL32.LIB
 ```
 
-With just one additional link-step in the above script, without re-compiling, a Windows NT executable could be created.
+With the CLANG/LLVM tool chain, the same source code can be translated by running the [buildLLVM.bat](https://github.com/KilianKegel/torito-C-Library/blob/master/buildLLVM.bat)
+```bat
+@echo off
+title LLVM Build Script for UEFI Shell and Windows NT Console
+echo Compiling the C source with the LLVM tool chain...
+CLANG-cl /nologo /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
+
+echo Linking the .OBJ to UEFI SHELL Executable WELCOME.EFI 
+LLD-link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64LLVMUefiShell.lib
+
+echo Linking the .OBJ to Windows NT Executable WELCOME.EXE
+LLD-link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0WinNT /OUT:welcome.exe /SUBSYSTEM:CONSOLE WELCOME.obj toroC64LLVMWinNT.lib KERNEL32.LIB
+```
+**With just one additional link-step in the above script, without re-compiling, a Windows NT executable could be created.**
 
 If you prefer to use state-of-the-art build environment **Visual Studio 2022**, please follow
 the step-by-step-configuration [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)
@@ -527,6 +576,19 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20250322, v0.9.1 Build 267
+* introduce **toro C Library** for the **Microsoft VS2022 LLVM tool chain** for **Windows NT** and **UEFI Shell** targets<br>
+    - toroc64LLVMUefiShell.lib
+    - toroc64LLVMWinNT.lib
+    - toroc32LLVMUefiShell.lib
+    - toroc32LLVMWinNT.lib
+
+  **NOTE:** The LLVM linker **lld-link** can't deal with the multi-entrypoint library **toro C Library** directly.<br>
+            To remedy this, the **toro C Library** is simply split into the above separate libraries.
+* fix double float representation using printf()-**%G**-format specifier used in [**libxlsxwriter**](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell#visual-libxlsxwriter-for-uefi-shell).
+* fix [`pow()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/pow.c): +-INFINITY^NEGATIVE is now correctly.
+* add missing import library version of [`wctob()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/wchar_h/wctobCDEABI.c)
+
 ### 20250309, v0.9.0 Build 243
 #### finalize MATH.H implementation
 The architecture of this math library introduces a space optimized implementation of C's MATH.H functions,
