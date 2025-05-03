@@ -49,12 +49,6 @@ SOFTWARE.
 The **toro C Library** is a *monolithic* Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2022.
 
-**toro C Library** is the successor of "torito C Library". "torito C Library" is discontinued with version 20210820/R166. 
-The main difference is, that **toro C Library** is build using the Visual Studio 2022 build environment, while "torito C Library"
-uses an UEFI EDK2 2016 build environment. 
-
-Additions of a C Library function set won't be done for "torito C Library" but for its grownup version **toro C Library** only.
-
 **toro C Library** is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
 design –and debug– infrastructure provided by Microsoft Visual Studio 2022 VS2022.
