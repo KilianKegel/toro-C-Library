@@ -1,4 +1,4 @@
-# <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->Toro C Library (formerly known as Torito C Library)
+# <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->Toro C Library binary (formerly known as Torito C Library)
 ## LICENSE
 **Toro C Library binary** for IBM PC AT(tm) compatible x86-64 UEFI shell and Windows NT executables,<br>
 C Development Environment for UEFI<br>
