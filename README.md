@@ -33,6 +33,7 @@ SOFTWARE.
 
 ### Contents
 
+* [Introduction](https://github.com/KilianKegel/toro-C-Library#introduction)<br>
 * [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
 * [Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status)<br>
 * [Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
@@ -44,14 +45,16 @@ SOFTWARE.
     * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
 * [Revision history](https://github.com/KilianKegel/toro-C-Library#revision-history)<br>
 
-![C](https://github.com/KilianKegel/pictures/blob/master/380px-C_Programming_Language.svg.png)
 
+<img src="https://github.com/KilianKegel/pictures/blob/master/380px-C_Programming_Language.svg.png" alt="Logo" width="100" height="100">
+
+## Introduction
 The **toro C Library** is a *monolithic* Standard C Library for UEFI x86-64 target platform
 for Microsoft Visual Studio 2022.
 
 **toro C Library** is an implementation targeting the ANSI/ISO C Standard Library compatibility
 to create applications for different operating systems using
-design –and debug– infrastructure provided by Microsoft Visual Studio 2022 VS2022.
+design –and debug– infrastructure provided by Microsoft **Visual Studio 2022**.
 
 ## Use cases
 1.  create menu driven applications for the UEFI shell execution environment
