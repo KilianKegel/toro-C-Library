@@ -4,7 +4,7 @@
 * [License](https://github.com/KilianKegel/toro-C-Library#license)<br>
 * [Introduction](https://github.com/KilianKegel/toro-C-Library#introduction)<br>
 * [Use cases](https://github.com/KilianKegel/toro-C-Library#use-cases)<br>
-* [Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status-cross-matrix)<br>
+* [Implemenation Status](https://github.com/KilianKegel/toro-C-Library#implementation-status--cross-matrix)<br>
 * [Source Code](https://github.com/KilianKegel/toro-C-Library#source-code)<br>
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
