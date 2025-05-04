@@ -1,4 +1,4 @@
-# <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->Toro C Library binary (formerly known as Torito C Library)
+# <!--<img src="https://github.com/KilianKegel/pictures/blob/master/refresh-icon.png"  width="48" height="48">-->toro C Library binary (formerly known as Torito C Library)
 ### Contents
 
 * [License](https://github.com/KilianKegel/toro-C-Library#license)<br>
