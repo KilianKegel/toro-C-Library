@@ -72,20 +72,13 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
 
 ## Implementation status — cross matrix
 <table>
-<tr> <th colspan="2">non-C-Standard, toro C Library specific extensions</th>                                                                                                                       
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
-    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br>PEI</th> </tr> 
-    <tr><td><a href="https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/string_h/_StrEfiError.c">_strefierror() </a></td><td></a>UEFI counterpart of strerror()</td><td>&#x2610</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td>
-</tr>
-<tr> <th colspan="2">Diagnostics < assert.h ></th>                                                                                                                       
+<tr> <th colspan="2">assert.h  —  Diagnostics</th>                                                                                                                       
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/assert_h/_wassert.c">_wassert()</a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/assert-macro-assert-wassert">C90, MSFT implementation for assert macro</a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Character handling < ctype.h ></th>
+<tr> <th colspan="2">ctype.h  —  Character handling</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -103,13 +96,13 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/ctype_h/isxdigit.c">isxdigit()   </a></td>           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l?view=vs-2019">      C90, is implemented</a></td>                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/ctype_h/tolower.c">tolower()    </a></td>           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l?view=vs-2019">  C90, is implemented</a></td>                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/ctype_h/toupper.c">toupper()    </a></td>           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l?view=vs-2019">  C90, is implemented</a></td>                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Errors < errno.h ></th>
+<tr> <th colspan="2">errno.h  —  Errors</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/errno_h/errno.c">_errno()</a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr?view=vs-2019">C90, MSFT implementation for errno macro</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Format conversion of integer types < inttypes.h ></th>
+<tr> <th colspan="2">inttypes.h  —  Format conversion of integer types</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -118,28 +111,28 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/inttypes_h/strtoumax.c">strtoumax()</a></td>     <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l?view=msvc-170">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/inttypes_h/wcstoimax.c">wcstoimax()</a></td>     <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l?view=msvc-170">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/inttypes_h/wcstoumax.c">wcstoumax()</a></td>     <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtoimax-strtoimax-l-wcstoimax-wcstoimax-l?view=msvc-170">C99, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Localization < locale.h ></th>
+<tr> <th colspan="2">locale.h  —  Localization</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/locale_h/localeconv.c" >localeconv()</a>          </td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/localeconv?view=vs-2019"          >C90, is implemented (C-locale)</a></td>     <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/locale_h/setlocale.c">setlocale()</a></td>        <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setlocale-wsetlocale?view=vs-2019">C90, is implemented (C-locale)</a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Nonlocal jumps < setjmp.h ></th>
+<tr> <th colspan="2">setjmp.h  —  Nonlocal jumps</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/setjmp_h/longjmp64CDEINTRINABI.asm">longjmp()</a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/longjmp?view=vs-2019">C90, is implemented        </a></td>                                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/setjmp_h/setjmp64CDEINTRINABI.asm">setjmp()</a></td>     <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setjmp?view=vs-2019"> C90, _setjmp is implemented</a></td>                                <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Signal handling < signal.h ></th>
+<tr> <th colspan="2">signal.h  —  Signal handling</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/signal_h/raise.c"    >raise()</a></td>                   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/raise?view=vs-2019"   >C90, is implemented</a></td>                            <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/signal_h/signal.c"   >signal()</a></td>                  <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/signal?view=vs-2019"  >C90, is implemented</a></td>                            <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Input/output < stdio.h ></th>
+<tr> <th colspan="2">stdio.h  —  Input/output</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -191,7 +184,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdio_h/Vsnwprintf.c ">_vsnwprintf()                                                             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l?view=vs-2019  ">MSFT specific, is implemented  </a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdio_h/Vsprintf.c   ">vsprintf()                                                                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l?view=vs-2019    ">C90, is implemented            </a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdio_h/Vsscanf.c    ">vsscanf()                                                                 </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/vsscanf-vswscanf?view=vs-2019                                         ">C99, is implemented            </a></td>       <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">String handling < string.h ></th>
+<tr> <th colspan="2">string.h  —  String handling</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -221,7 +214,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/StrStr.c            ">strstr()                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l?view=vs-2019                            ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/StrTok.c            ">strtok()                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l?view=vs-2019          ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/string_h/Strxfrm.c           ">strxfrm()             </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l?view=vs-2019                      ">C90, is implemented</a></td>                 <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Date and time < time.h ></th>
+<tr> <th colspan="2">time.h  —  Date and time</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -235,7 +228,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/time_h/mktime.c              ">mktime()              </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mktime-mktime32-mktime64?view=vs-2019                         ">C90, is implemented</a></td>   <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/time_h/strftime.c            ">strftime()            </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l?view=vs-2019          ">C90, is implemented</a></td>   <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/time_h/time.c                ">time()                </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/time-time32-time64?view=vs-2019                               ">C90, is implemented</a></td>   <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Extended multibyte/wide character utilities < wchar.h ></th>
+<tr> <th colspan="2">wchar.h  —  Extended multibyte/wide character utilities/th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -297,7 +290,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/WMemSet.c    ">wmemset()                     </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memset-wmemset                                                       ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/Wprintf.c    ">wprintf()                     </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l                                    ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wchar_h/wscanf.c     ">wscanf()                      </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l                                        ">C95, is implemented</a></td>           <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
-<tr> <th colspan="2">General utilities < stdlib.h ></th>
+<tr> <th colspan="2">stdlib.h  —  General utilities</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -341,7 +334,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/system.c">system()                      </a></td> <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/system-wsystem?view=vs-2019                         ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/wcstombs.c">wcstombs()                  </a></td>                                                           <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wcstombs-wcstombs-l?view=vs-2019                    ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/stdlib_h/wctomb.c">wctomb()                      </a></td>                                                                                   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctomb-wctomb-l?view=vs-2019                        ">C90, is implemented             </a></td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">Wide character classification and mapping utilities < wctype.h ></th>
+<tr> <th colspan="2">wctype.h  —  Wide character classification and mapping utilities</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -364,7 +357,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wctype_h/towupper.c  ">towupper()                </a></td>                                                                                       <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l ">C95, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wctype_h/wctrans.c   ">wctrans()                 </a></td>                                                                          <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctrans                                       ">C95, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/wctype_h/wctype.c    ">wctype()                  </a></td>                                                                            <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/wctype                                        ">C95, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">mathematical functions< math.h ></th>
+<tr> <th colspan="2">math.h  —  Mathematical functions</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -391,20 +384,20 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/sqrt.c    ">sqrt()                    </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/sqrt-sqrtf-sqrtl                      ">C90, is implemented</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tan.c     ">tan()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tan-tanf-tanl                         ">C90, is implemented</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/math_h/tanh.c    ">tan()                     </a></td>   <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/tanh-tanhf-tanhl                      ">C90, is implemented</a></td>         <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">non-C-Standard and Microsoft specific functions< direct.h ></th>
+<tr> <th colspan="2">direct.h  —  non-C-Standard and Microsoft specific functions</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/direct_h/_mkdir.c">_mkdir()                  </a></td>              <td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/mkdir-wmkdir              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
-<tr> <th colspan="2">non-C-Standard and Microsoft specific functions< mbctype.h ></th>
+<tr> <th colspan="2">mbctype.h  —  non-C-Standard and Microsoft specific functions</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/mbctype_h/_getmbcp.c">_getmbcp()             </a></td>              <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/getmbcp              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/mbctype_h/_setmbcp.c">_setmbcp()             </a></td>     <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/setmbcp              ">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td></tr>
-<tr> <th colspan="2">non-C-Standard and Microsoft specific functions< io.h ></th>
+<tr> <th colspan="2">io.h  —  Microsoft specific / POSIX like functions</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
@@ -421,12 +414,19 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
         <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_Open.c         ">_open()                   </a></td>                      <td><a href="https://learn.microsoft.com/de-de/cpp/c-runtime-library/reference/open-wopen           ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
         <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_Read.c         ">_read()                   </a></td>     <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/read                 ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
         <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/io_h/_Write.c        ">_write()                  </a></td>                   <td><a href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/write                ">MSFT specific, is implemented</a></td>        <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
-<tr> <th colspan="2">non-C-Standard and Microsoft specific / POSIX functions< sys/stat.h ></th>
+<tr> <th colspan="2">sys/stat.h  —  Microsoft specific / POSIX like functions</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
     <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br><br>PEI </th> </tr> 
             <tr><td><a href="https://github.com/KilianKegel/torosrc/blob/main/toroCLibrary/Library/sys/stat_h/_stat64i32.c">_stat64i32()        </a></td><td><a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/stat-functions">MSFT specific, is implemented</a></td>    <td>&#x2611</td><td>&#x2611</td><td>&#x2610</td><td>&#x2610</td></tr>
+<tr> <th colspan="2"><i>toro C Library</i> specific extensions</th>                                                                                                                       
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/Windows11-logo.png" width="80" height="40"></th> 
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"<br>SHELL</th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"> <br>DXE/SMM </th>
+    <th><img src="https://github.com/KilianKegel/pictures/blob/master/uefi-logo.png" width="40" height="40"><br>PEI</th> </tr> 
+    <tr><td><a href="https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/string_h/_StrEfiError.c">_strefierror() </a></td><td></a>UEFI counterpart of strerror()</td><td>&#x2610</td><td>&#x2611</td><td>&#x2611</td><td>&#x2611</td>
+</tr>
 </table>
 
 ## Source Code
@@ -496,12 +496,12 @@ However, the absence of a compatible and stable programming interface, such as t
 combined with a well-established and widely recognized development environment (like **Visual Studio 2022**), 
 has made it challenging to get started with **UEFI Shell** programming for everyone.
 
-## Reimplementing LIBCMT.LIB for WinNT
+## Reimplementing LIBCMT.LIB for Windows NT
 
 The primary purpose of the **toro C Library** for WinNT is to validate C library compatibility on 
 a Windows x64 platform for both **x86-32** and **x86-64** architectures.
 
-Typically, test programs are linked first against the original LIBCMT.LIB and then against the **toro C Library** for WinNT. This allows for a direct comparison of program behavior on Windows.<sup>4</sup>
+Typically, test programs are linked first against the original LIBCMT.LIB and then against the **toro C Library** for WinNT. This allows for a direct comparison of program behavior on Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
 
 Most bugs and pitfalls can be identified, debugged, and resolved efficiently within the build and debug environment of Visual Studio 2022.
 
@@ -510,7 +510,7 @@ Most bugs and pitfalls can be identified, debugged, and resolved efficiently wit
 **The majority of function tests can be executed, debugged, and validated natively on the Windows 
 development machine, with only the final tests requiring execution on the UEFI Shell target.**
 
-This methodology is made possible by the  [**OSIF**](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (**O**perating **S**ystem **I**nter**f**ace) architecture of the library.
+This methodology is made possible by the [**OSIF**](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (**O**perating **S**ystem **I**nter**f**ace) architecture of the library.
 
 ![OSIF](https://github.com/KilianKegel/CdePkg/blob/master/archview.png)
 
@@ -612,11 +612,11 @@ The 80387 processor has various improvements over its 8087 predecessor, such as<
 
     | Instruction  | function           |
     |--------------|--------------------|
-    |FPTAN         | Partial tangent    |
-    |FPATAN        | Partial arctangent |
-    |F2XM1         | 2<sup>x</sup> - 1  |
-    |FYL2X         | Y * log<sub>2</sub>X          |
-    |FYL2XP        |Y*log<sub>2</sub>(X + 1)       |
+    |FPTAN         | Partial tangent            |
+    |FPATAN        | Partial arctangent         |
+    |F2XM1         | 2<sup>x</sup> - 1          |
+    |FYL2X         | Y * log<sub>2</sub>X       |
+    |FYL2XP        | Y * log<sub>2</sub>(X + 1) |
     
 * new instructions, e.g.
 
