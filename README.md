@@ -587,6 +587,18 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20250720, v0.9.4 Build 672
+* **add LLVM/CLANG-cl-family support — the library source code itself is now buildable with LLVM/CLANG-cl:**
+    * support VS2022 v17.14 with **LLVM (clang-cl)** tool chain
+    * support **Intel C++ Compiler 2024** tool chain<br>
+      **NOTE:** Only [**Intel oneAPI Base Toolkir ver 2024.2.1**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html)
+      provides the 32Bit compiler.<br>In versions **2025.x.y** the 32Bit compiler isn't shipped anymore.
+* Windows SDK version **10.0.26100.0**
+* support Microsoft tool chain:
+    * **v143(VS2022)**
+    * **v142(VS2019)** 
+    * **v141(VS2017)**
+
 ### 20250322, v0.9.1 Build 267
 * introduce **toro C Library** for the **Microsoft VS2022 LLVM tool chain** for **Windows NT** and **UEFI Shell** targets<br>
     - toroc64LLVMUefiShell.lib
