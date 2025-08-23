@@ -12,6 +12,7 @@
 * [HELLO is now WELCOME: ](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome) <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18"> Howto build **hello.c** using **commandline** and **Visual Studio 2022**<br>
 * [Known bugs](https://github.com/KilianKegel/toro-C-Library#known-bugs)<br>
     * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
+* [Resolved bugs](https://github.com/KilianKegel/toro-C-Library#resolved-bugs)<br>
 * [Revision history](https://github.com/KilianKegel/toro-C-Library#revision-history)<br>
 
 ## LICENSE
@@ -567,20 +568,20 @@ To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 
 ## Known bugs
 * printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
-* scanf()-family's format specifiers <del>[],p</del>,e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
-* 2018-11-29: <del>file operations does not yet support drive mappings and path</del>
-* 2018-01-07: <del>strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
-   Letters aâz or AâZ representing digits in the range [10, 36] are not (yet) supported.</del>
+* scanf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
 * <time.h>: UTC-only support. No Daylightsaving, no timezones. **This is not a bug!** It conforms to the Standard C specification because<br>
   ["The local time zone and Daylight Saving Time are implementation-defined."](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=350)
 * <locale.h>: C-locale-only support. **This is not a bug!** It conforms to the Standard C specification because only the ["C" locale](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=217) is mandatory.
-* 2025-02-09: <del><math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)</del>
-* 2019-10-17: <del>CTRL-C interception not yet implemented</del>
-* 2019-10-17: <del>**toro C Library based progams use ASCII console interface only, not UCS-2!**</del>
-    - <del>ASCII is written to `stdout`and `stderr`</del>
-    - <del>ASCII is read from `stdin`</del>
-    <del>pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators</del>
-
+## Resolved bugs
+* 2025-02-09: <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
+* 2019-10-17: CTRL-C interception not yet implemented
+* 2019-10-17: **toro C Library based progams use ASCII console interface only, not UCS-2!**
+    - ASCII is written to `stdout`and `stderr`
+    - ASCII is read from `stdin`
+    pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators
+* 2018-11-29: file operations does not yet support drive mappings and path<
+* 2018-01-07: strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
+* scanf()-family's format specifiers `[]`,p
 ### non-Standard C90/C95 functions that will be implemented _on demand_
 * [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit)
 * <del>[`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)</del>
@@ -639,7 +640,7 @@ The 80387 processor has various improvements over its 8087 predecessor, such as<
     |FCOS          | cosine                   |
 
 * That has reduced the programming effort dramatically and made algorithms very simple and easy to implement.<br>
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/KL_intel_i387DX.jpg" width="200"/><br>
+<img src="https://en.wikipedia.org/wiki/Intel_8087#/media/File:Intel_C8087.jpg" width="200"/><br>
     * [`acos()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/acos.c)
     * [`asin()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/asin.c)
     * [`atan()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/math_h/atan.c)
