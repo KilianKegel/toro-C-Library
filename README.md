@@ -434,7 +434,7 @@ infrastructure provided by current **Microsoft C tool chain** in **Visual Studio
 
 The source code of **toro C Library binary** is available at:
 
-[![Repo name](https://github-readme-stats.vercel.app/api/pin/?username=KilianKegel&repo=Visual-TORO-C-LIBRARY-for-UEFI)](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI)
+https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI
 
 It builds **DEBUG/RELEASE** configurations for **x86-32** and **x86-64** platforms directly.
 
