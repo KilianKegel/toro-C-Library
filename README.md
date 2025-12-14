@@ -9,8 +9,8 @@
 * [Goal](https://github.com/KilianKegel/toro-C-Library#goal)<br>
 * [Approach](https://github.com/KilianKegel/toro-C-Library#approach)<br>
 * [Riding the UEFI Shell](https://github.com/KilianKegel/toro-C-Library#riding-the-uefi-shell--enabling-the-platform-for-developers)<br>
-* [HELLO is now WELCOME: ](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome) <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18"> Howto build **hello.c** using **commandline** and **Visual Studio 2022**<br>
-* [Known bugs](https://github.com/KilianKegel/toro-C-Library#known-bugs)<br>
+* [HELLO is now WELCOME: ](https://github.com/KilianKegel/toro-C-Library#hello-is-now-welcome) <img src="https://github.com/KilianKegel/pictures/blob/master/New-icon.png"  width="18" height="18"> Howto build **hello.c** using **commandline** and **Visual Studio 2026**<br>
+* [Known limitations](https://github.com/KilianKegel/toro-C-Library#known-limitations)<br>
     * [missing non-standard functions](https://github.com/KilianKegel/torito-C-Library#non-standard-c90c95-functions-that-will-be-implemented-on-demand)<br>
 * [Resolved bugs](https://github.com/KilianKegel/toro-C-Library#resolved-bugs)<br>
 * [Revision history](https://github.com/KilianKegel/toro-C-Library#revision-history)<br>
@@ -56,7 +56,7 @@ target platform.
 
 The **toro C Library** is implemented to target [**ANSI/ISO C Standard Library**]( https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf#page=176) compatibility,
 enabling the creation of applications and drivers for UEFI systems using the design and debugging 
-infrastructure provided by current **Microsoft C tool chain** in **Visual Studio 2022**.
+infrastructure provided by current **Microsoft C tool chain** in **Visual Studio 2026**.
 
 ## Use cases
 1.  create menu driven applications for the UEFI shell execution environment
@@ -477,38 +477,45 @@ This flexibility can affect aspects such as return values, which may provide fla
 or differences in handling text versus binary modes for file operations.
 
 The **toro C Library** aims to be fully identical in behavior to the functions specified in
-ANSI C, C90, and C95, as implemented in the **Standard C Library** (LIBCMT.LIB) provided with **Visual Studio 2022**.<br>
+ANSI C, C90, and C95, as implemented in the **Standard C Library** (LIBCMT.LIB) provided with **Visual Studio 2026**.<br>
 
 
 [Microsoft C Language Reference](https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference?view=vs-2019)
 
 Doing so, the development of **toro C Library** itself is unburdened from the exegesis of the specifications mentioned above and the creation of the required header files — the header files delivered
-with **Visual Studio 2022** are utilized instead.
+with **Visual Studio 2026** are utilized instead.
 
-The developer using **toro C Library** benefits from this approach because the experience remains unchanged using the **Visual Studio 2022** environment.
+The developer using **toro C Library** benefits from this approach because the experience remains unchanged using the **Visual Studio 2026** environment.
 
-## Riding the UEFI shell / enabling the platform for developers
+## Riding the UEFI shell — Enabling the platform for developers
 
 With the disappearance of **MSDOS** – a simple, single-threaded, unprotected operating system that provided 
 full hardware access to user programs – the **UEFI shell** was envisioned as its successor for modern personal computer.
 
 However, the absence of a compatible and stable programming interface, such as the 
 [**ANSI/ISO C Standard Library**]( https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf#page=176), 
-combined with a well-established and widely recognized development environment (like **Visual Studio 2022**), 
+combined with a well-established and widely recognized development environment (like **Visual Studio 2026**), 
 has made it challenging to get started with **UEFI Shell** programming for everyone.
 
-## Reimplementing LIBCMT.LIB for Windows NT
+Most PC manufacturers use Linux or Windows (PE Preinstallation Environment)
+in their factory manufacturing and provisioning processes. 
+These operating systems provide the necessary tools, interfaces and developer experience to create the required software components efficiently.
 
-The primary purpose of the **toro C Library** for WinNT is to validate C library compatibility on 
+`EFI_xyz_PASS_THRU_PROTOCOL` to implement UEFI Shell test/burn-in/validation applications that 
+access hardware devices directly are widely unused in the industry.
+
+## Reimplementing LIBCMT.LIB for Windows
+
+The primary purpose of the **toro C Library** for Windows is to validate C library compatibility on 
 a Windows x64 platform for both **x86-32** and **x86-64** architectures.
 
 Typically, test programs are linked first against the original LIBCMT.LIB and then against the **toro C Library** for WinNT. This allows for a direct comparison of program behavior on Windows.[<sup>4</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-4.md)
 
-Most bugs and pitfalls can be identified, debugged, and resolved efficiently within the build and debug environment of Visual Studio 2022.
+Most bugs and pitfalls can be identified, debugged, and resolved efficiently within the build and debug environment of **Visual Studio 2026**.
 
 **This approach is considered the most effective way to achieve ANSI C compatibility and ensure a faultless implementation within a reasonable timeframe.** 
 
-**The majority of function tests can be executed, debugged, and validated natively on the Windows 
+**The majority of function tests can be executed, debugged and validated natively on the Windows 
 development machine, with only the final tests requiring execution on the UEFI Shell target.**
 
 This methodology is made possible by the [**OSIF**](https://github.com/KilianKegel/CdePkg/blob/master/README.md#interface-architecture) (**O**perating **S**ystem **I**nter**f**ace) architecture of the library.
@@ -561,33 +568,63 @@ LLD-link /nologo /NODEFAULTLIB /ENTRY:_cdeCRT0WinNT /OUT:welcome.exe /SUBSYSTEM:
 ```
 **With just one additional link-step in the above script, without re-compiling, a Windows NT executable could be created.**
 
-If you prefer to use state-of-the-art build environment **Visual Studio 2022**, please follow
+If you prefer to use state-of-the-art build environment **Visual Studio 2026**, please follow
 the step-by-step-configuration [HowTo-configure-VS2022-to-build-.EFI-executables](https://github.com/KilianKegel/HowTo-configure-VS2022-to-build-.EFI-executables#howto-configure-vs2022-to-build-efi-executables)
 
-To run **Visual Studio 2022** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell#visual-ansi-c-for-uefi-shell).
+To run **Visual Studio 2026** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Shell](https://github.com/KilianKegel/Visual-ANSI-C-for-UEFI-Shell#visual-ansi-c-for-uefi-shell).
 
-## Known bugs
+## Known limitations
 * printf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md) not yet implemented
 * scanf()-family's format specifiers e,f,g[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md),C,S not yet implemented
-* <time.h>: UTC-only support. No Daylightsaving, no timezones. **This is not a bug!** It conforms to the Standard C specification because<br>
+* <time.h>: UTC-only support. No Daylightsaving, no timezones.<br>**This is a limitation, not a bug!** It conforms to the Standard C specification because<br>
   ["The local time zone and Daylight Saving Time are implementation-defined."](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=350)
-* <locale.h>: C-locale-only support. **This is not a bug!** It conforms to the Standard C specification because only the ["C" locale](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=217) is mandatory.
+* <locale.h>: C-locale-only support.<br> 
+   **This is a limitation, not a bug!** It conforms to the Standard C specification because only the ["C" locale](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=217) is mandatory.
 ## Resolved bugs
-* 2025-02-09: <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
-* 2019-10-17: CTRL-C interception not yet implemented
-* 2019-10-17: **toro C Library based progams use ASCII console interface only, not UCS-2!**
+**NOTE: Resolved bugs are kept here for documentation purposes.<br>They have been fixed at the given date.**<br><br>
+***Regrettably, some of them were reported by AI search engines as bugs.***<br>
+* **RESOLVED 2025-02-09:** <math.h> not yet implemented[<sup>2</sup>](https://github.com/KilianKegel/torito-C-Library/blob/master/footnotes/footnote-2.md)
+* **RESOLVED 2019-10-17:** CTRL-C interception not yet implemented
+* **RESOLVED 2019-10-17:** toro C Library based progams use ASCII console interface only, not UCS-2!
     - ASCII is written to `stdout`and `stderr`
     - ASCII is read from `stdin`
     pay attention when dealing with `>`, `<`, `|` and `>a`, `<a`, `|a` shell operators
-* 2018-11-29: file operations does not yet support drive mappings and path<
-* 2018-01-07: strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
-* scanf()-family's format specifiers `[]`,p
+* **RESOLVED 2018-11-29:** file operations does not yet support drive mappings and path
+* **RESOLVED 2018-01-07:** strtol()'s/strtoul()'s base parameter accepts only 0d, 8d, 10d, 16d.
+* **RESOLVED:** scanf()-family's format specifiers `[]`,p
 ### non-Standard C90/C95 functions that will be implemented _on demand_
 * [`kbhit()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/posix-kbhit)
 * <del>[`strnlen()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strnlen-strnlen-s)</del>
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20251213, v0.9.9 Build 799
+* fix **LLVM/CLANG-cl-family** (`clang version 20.1.8`) translated library application link error
+```
+    lld-link : error : duplicate symbol: mktime
+      >>> defined at C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\time.h:544
+      >>>            toroC64LLVMWinNT.lib(osifWinNTGetTime.obj)
+      >>> defined at toroC64LLVMWinNT.lib(mktime.obj)
+```
+Root cause is that compiler  `clang version 20.1.8` internally reports `_MSC_VER 1950` and the 
+snippet from `time.h` below: 
+```C
+// Ensure that `_STATIC_INLINE_UCRT_FUNCTIONS` is always defined.
+// The STL needs this to know if it's safe to export UCRT functions through C++ modules.
+#ifndef _STATIC_INLINE_UCRT_FUNCTIONS
+    #if defined _MSC_VER && _MSC_VER >= 1950
+        #define _STATIC_INLINE_UCRT_FUNCTIONS 0
+    #else
+        #define _STATIC_INLINE_UCRT_FUNCTIONS 1
+    #endif
+#endif // !defined _STATIC_INLINE_UCRT_FUNCTIONS
+```
+doesn't generated inline functions with `static` linkage.<br>
+
+**NOTE: This bugfix is irrelevant for the released LLVM-Library-binaries, because those where build with Microsoft compiler.<br>It is only relevant for the clang tool chain (VS2026) built of ***toro C Library*** sourcecode**
+
+`_STATIC_INLINE_UCRT_FUNCTIONS = 1` must be set for **toro C Library** build with `clang-cl`.<br>
+
 ### 20250913, v0.9.7 Build 764
 * fix [**errno.h**]((https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=198)) support for [**math.h** functions](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf#page=224) in **UEFI POST drivers** (Power On Self Test)<br>
 ### 20250906, v0.9.6 Build 757

@@ -1,6 +1,6 @@
 @echo off
 echo Compiling the C source...
-cl /nologo /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS WELCOME.c
+cl /nologo /c /GS- /D_NO_CRT_STDIO_INLINE /D_CRT_SECURE_NO_WARNINGS /D_STATIC_INLINE_UCRT_FUNCTIONS=1 WELCOME.c
 
 echo Linking the .OBJ to UEFI SHELL Executable WELCOME.EFI 
 link /nologo /MAP:welcome.efi.map /NODEFAULTLIB /ENTRY:_cdeCRT0UefiShell /OUT:welcome.efi /SUBSYSTEM:EFI_APPLICATION WELCOME.obj toroC64.lib
