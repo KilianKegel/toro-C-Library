@@ -598,6 +598,31 @@ To run **Visual Studio 2026** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
 * <del>[`_ltoa()`](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/itoa-itow?view=msvc-160)</del>
 
 ## Revision history
+### 20260315, v0.9.11 Build 857
+* add Microsoft compatible wide character support for `printf()` family
+    * add `_setmode()` to control wide character handling<br>
+**NOTE: This enables developers to directly use UEFI box-drawing symbols with formatted output functions:**<br>
+    ```
+        wprintf(L"─│┌┐└┘├┤┬┴┼═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬░▲►▼◄←↑→↓\n");
+
+        wprintf(L"  ↑ ↓ ↑ ↓ ↑ ↓ ↑ ↓  \n");
+        wprintf(L" ┌────────────────┐\n");
+        wprintf(L"8│██░░██░░██░░██░░│←\n");
+        wprintf(L"7│░░██░░██░░██░░██│→\n");
+        wprintf(L"6│██░░██░░██░░██░░│←\n");
+        wprintf(L"5│░░██░░██░░██░░██│→\n");
+        wprintf(L"4│██░░██░░██░░██░░│←\n");
+        wprintf(L"3│░░██░░██░░██░░██│→\n");
+        wprintf(L"2│██░░██░░██░░██░░│←\n");
+        wprintf(L"1│░░██░░██░░██░░██│→\n");
+        wprintf(L" └────────────────┘\n");
+        wprintf(L"  a b c d e f g h \n"); 
+    ```
+* add [`_get_invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/stdlib_h/_get_invalid_parameter_handler.c)
+* fix [`_set_invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/stdlib_h/_set_invalid_parameter_handler.c) to return **NULL** when default invaid parameter handler is installed
+* imporove [`invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/Intrinsics/_cdeDefaultInvalidParameterHandler.c) to emulate Microsoft `FAST_FAIL` behavior
+* Ensure **`FATAL ERROR: CdeServices DXE not available.`** is emitted to `ConOut`.
+* add UEFI Box Draw definitions: [`CdeBoxDraw.h`](https://github.com/KilianKegel/CdePkg/Include/CdeBoxDraw.h)
 ### 20251213, v0.9.9 Build 799
 * fix **LLVM/CLANG-cl-family** (`clang version 20.1.8`) translated library application link error
 ```
