@@ -620,9 +620,9 @@ To run **Visual Studio 2026** .EFI samples, check out [Visual-ANSI-C-for-UEFI-Sh
     ```
 * add [`_get_invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/stdlib_h/_get_invalid_parameter_handler.c)
 * fix [`_set_invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/stdlib_h/_set_invalid_parameter_handler.c) to return **NULL** when default invaid parameter handler is installed
-* imporove [`invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Library/Intrinsics/_cdeDefaultInvalidParameterHandler.c) to emulate Microsoft `FAST_FAIL` behavior
+* imporove [`invalid_parameter_handler()`](https://github.com/KilianKegel/Visual-TORO-C-LIBRARY-for-UEFI/blob/main/toroCLibrary/Intrinsics/_cdeDefaultInvalidParameterHandler.c) to emulate Microsoft `FAST_FAIL` behavior
 * Ensure **`FATAL ERROR: CdeServices DXE not available.`** is emitted to `ConOut`.
-* add UEFI Box Draw definitions: [`CdeBoxDraw.h`](https://github.com/KilianKegel/CdePkg/Include/CdeBoxDraw.h)
+* add UEFI Box Draw definitions: [`CdeBoxDraw.h`](https://github.com/KilianKegel/CdePkg/blob/master/Include/CdeBoxDraw.h)
 ### 20251213, v0.9.9 Build 799
 * fix **LLVM/CLANG-cl-family** (`clang version 20.1.8`) translated library application link error
 ```
